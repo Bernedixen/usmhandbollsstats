@@ -2,6 +2,12 @@ const SNAPSHOT_URL = "./data/usm-f14-stage4-2026.json";
 const LIVE_SOURCE_URL = "https://www.profixio.com/app/lx/competition/leagueid17925";
 const STAGE3_A_TABLES_URL = "https://www.profixio.com/app/leagueid17925/category/1176782";
 const STAGE3_B_TABLES_URL = "https://www.profixio.com/app/leagueid17925/category/1176783";
+const PROXY_URLS = {
+  competition: "/api/profixio/competition",
+  stage3A: "/api/profixio/stage3-a",
+  stage3B: "/api/profixio/stage3-b",
+  stage3GoalDiffs: "/api/profixio/stage3-goaldiffs",
+};
 const STAGE3_A_COLORS = [
   { accent: "#005f73", background: "#d9f0f3" },
   { accent: "#9b2226", background: "#f8d7d9" },
@@ -371,10 +377,9 @@ async function refreshLiveData() {
   setStatus("Attempting live refresh from Profixio.");
 
   try {
-    const [competitionResponse, stage3AResponse, stage3BResponse] = await Promise.all([
-      fetch(LIVE_SOURCE_URL),
-      fetch(STAGE3_A_TABLES_URL),
-      fetch(STAGE3_B_TABLES_URL),
+    const [competitionResponse, goalDiffsResponse] = await Promise.all([
+      fetchWithFallback(PROXY_URLS.competition, LIVE_SOURCE_URL),
+      fetch(PROXY_URLS.stage3GoalDiffs),
     ]);
 
     if (!competitionResponse.ok) {
@@ -384,13 +389,7 @@ async function refreshLiveData() {
     const competitionHtml = await competitionResponse.text();
     const liveDataset = parseProfixioCompetitionPage(competitionHtml);
 
-    const stage3GoalDiffs = {};
-    if (stage3AResponse.ok) {
-      Object.assign(stage3GoalDiffs, parseStage3GoalDiffs(await stage3AResponse.text()));
-    }
-    if (stage3BResponse.ok) {
-      Object.assign(stage3GoalDiffs, parseStage3GoalDiffs(await stage3BResponse.text()));
-    }
+    const stage3GoalDiffs = goalDiffsResponse.ok ? await goalDiffsResponse.json() : {};
 
     mergeStage3GoalDiffs(liveDataset.groups, stage3GoalDiffs);
     applyDataset(liveDataset, "live Profixio page");
@@ -399,8 +398,21 @@ async function refreshLiveData() {
   } catch (error) {
     setStatus(error.message || "Live refresh failed.");
     elements.sourceNote.textContent =
-      "Direct browser fetch to Profixio is often blocked by cross-origin rules. Keep using the local snapshot in the browser, and switch this same adapter to native HTTP once the app is wrapped with Capacitor.";
+      "Live refresh failed. For browser testing, run this app through `node server.js` so the local `/api/profixio/*` proxy can fetch Profixio server-side. The same fetch layer can later move to Capacitor native HTTP.";
   }
+}
+
+async function fetchWithFallback(proxyUrl, directUrl) {
+  try {
+    const proxyResponse = await fetch(proxyUrl);
+    if (proxyResponse.ok) {
+      return proxyResponse;
+    }
+  } catch {
+    // Fall back to direct browser fetch for static hosting setups.
+  }
+
+  return fetch(directUrl);
 }
 
 function applyDataset(dataset, sourceLabel) {
@@ -977,23 +989,65 @@ function parseProfixioCompetitionPage(html) {
 
 function parseStage3GoalDiffs(html) {
   const documentNode = new DOMParser().parseFromString(html, "text/html");
-  const normalizedLines = documentNode.body.textContent
-    .split("\n")
-    .map((line) => line.trim())
-    .filter(Boolean);
-
   const goalDiffs = {};
+  const knownTeams = Object.keys(STAGE3_LOOKUP);
 
-  normalizedLines.forEach((line, index) => {
-    const nextLine = normalizedLines[index + 1];
-    const previousLine = normalizedLines[index - 1];
-    const parsedGoalDiff = Number(line);
-
-    if (!Number.isFinite(parsedGoalDiff)) {
+  const tables = Array.from(documentNode.querySelectorAll("table"));
+  tables.forEach((table) => {
+    const headerRow = Array.from(table.querySelectorAll("tr")).find((row) => row.querySelector("th"));
+    if (!headerRow) {
       return;
     }
 
-    if (previousLine !== "G diff" && previousLine !== "Goal +/-") {
+    const headerTexts = Array.from(headerRow.querySelectorAll("th, td")).map((cell) =>
+      normalizeWhitespace(cell.textContent).toLowerCase()
+    );
+    const goalDiffIndex = headerTexts.findIndex((header) =>
+      ["+/-", "g diff", "goal +/-", "diff"].includes(header)
+    );
+    if (goalDiffIndex === -1) {
+      return;
+    }
+
+    const rows = Array.from(table.querySelectorAll("tr")).filter((row) => row !== headerRow);
+    rows.forEach((row) => {
+      const cells = Array.from(row.querySelectorAll("th, td"));
+      if (!cells.length) {
+        return;
+      }
+
+      const cellTexts = cells.map((cell) => normalizeWhitespace(cell.textContent));
+      const teamName = cellTexts.find((text) => knownTeams.includes(text));
+      if (!teamName) {
+        return;
+      }
+
+      const goalDiffValue = parseSignedNumber(cellTexts[goalDiffIndex]);
+      if (goalDiffValue !== null) {
+        goalDiffs[teamName] = goalDiffValue;
+      }
+    });
+  });
+
+  if (Object.keys(goalDiffs).length) {
+    return goalDiffs;
+  }
+
+  const normalizedLines = documentNode.body.textContent
+    .split("\n")
+    .map((line) => normalizeWhitespace(line))
+    .filter(Boolean);
+
+  normalizedLines.forEach((line, index) => {
+    const previousLine = normalizedLines[index - 1];
+    const nextLine = normalizedLines[index + 1];
+    const parsedGoalDiff = parseSignedNumber(line);
+
+    if (parsedGoalDiff === null) {
+      return;
+    }
+
+    if (!["G diff", "Goal +/-", "+/-", "Diff"].includes(previousLine)) {
       return;
     }
 
@@ -1005,6 +1059,20 @@ function parseStage3GoalDiffs(html) {
   });
 
   return goalDiffs;
+}
+
+function parseSignedNumber(value) {
+  const normalized = normalizeWhitespace(value).replace(/[−–]/g, "-");
+  if (!/^[+-]?\d+$/.test(normalized)) {
+    return null;
+  }
+
+  const parsed = Number(normalized);
+  return Number.isFinite(parsed) ? parsed : null;
+}
+
+function normalizeWhitespace(value) {
+  return String(value || "").replace(/\s+/g, " ").trim();
 }
 
 function mergeStage3GoalDiffs(groups, goalDiffs) {

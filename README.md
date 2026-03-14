@@ -20,7 +20,20 @@ Offline-first web app scaffold for tracking USM F14 stage 4, built so it can lat
 
 ## Run locally during development
 
-Use any static file server, for example:
+Preferred for live Profixio refresh:
+
+```powershell
+node server.js
+```
+
+Then open `http://localhost:8000`.
+
+The local server does two things:
+
+- serves the static app
+- proxies Profixio requests through same-origin `/api/profixio/*` endpoints
+
+Fallback if you only want the local bundled snapshot:
 
 ```powershell
 python -m http.server 8000
@@ -30,7 +43,7 @@ Then open `http://localhost:8000`.
 
 ## Live data note
 
-Direct browser fetch to Profixio may fail because of cross-origin restrictions. That is expected for a pure web app. Once the app is wrapped with Capacitor, the same source logic can be routed through a native HTTP plugin to make the live sync much more reliable.
+Direct browser fetch to Profixio may fail because of cross-origin restrictions. The included `server.js` avoids that in local development by fetching Profixio server-side. Once the app is wrapped with Capacitor, the same source logic can be routed through a native HTTP plugin to make the live sync much more reliable.
 
 ## Next useful steps
 

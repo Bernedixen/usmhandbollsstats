@@ -101,6 +101,7 @@ select {
   border-radius: 20px;
   border: 1px solid var(--line);
   background: var(--surface-strong);
+  min-width: 0;
 }
 
 .hero-stat span,
@@ -367,6 +368,7 @@ input[type="range"] {
   display: grid;
   gap: 0.55rem;
   margin-top: 1rem;
+  min-width: 0;
 }
 
 .team-row {
@@ -379,6 +381,7 @@ input[type="range"] {
   border-radius: 14px;
   background: var(--stage3-bg, rgba(17, 60, 54, 0.04));
   border-left: 6px solid transparent;
+  min-width: 0;
 }
 
 .groups-grid.has-breakdowns .team-row {
@@ -410,6 +413,7 @@ input[type="range"] {
   gap: 0.4rem;
   font-weight: 600;
   min-width: 0;
+  max-width: 100%;
 }
 
 .info-button {
@@ -436,46 +440,41 @@ input[type="range"] {
 
 .team-stage3-strip {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 0.45rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.35rem;
   width: 100%;
   flex-basis: 100%;
   margin-top: 0.15rem;
+  align-items: stretch;
+  min-width: 0;
 }
 
 .team-stage3-chip {
-  padding: 0.45rem 0.55rem 0.5rem;
+  padding: 0.4rem 0.45rem 0.45rem;
   border-radius: 14px;
   background: rgba(255, 255, 255, 0.72);
   border: 1px solid rgba(21, 33, 31, 0.06);
   min-width: 0;
   text-align: center;
+  overflow: hidden;
 }
 
 .team-stage3-chip-group {
-  text-align: left;
-}
-
-.team-stage3-kicker {
-  display: block;
-  color: var(--muted);
-  font-size: 0.64rem;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  line-height: 1.2;
+  text-align: center;
 }
 
 .team-stage3-chip strong {
   display: block;
   margin-top: 0.15rem;
-  font-size: 1.05rem;
+  font-size: 0.98rem;
   line-height: 1.1;
-  overflow-wrap: anywhere;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .team-stage3-group {
-  font-size: 0.92rem;
+  font-size: 0.86rem;
 }
 
 .winner-star {
