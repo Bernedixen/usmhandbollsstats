@@ -673,14 +673,14 @@ function renderGroups(groups) {
   elements.resultsCount.textContent = `${groups.length} groups shown from ${state.activeSourceLabel}.`;
 
   groups.forEach((group) => {
-    const rankedTeams = getRankedTeams(group.teams);
-    const predictedWinner = rankedTeams[0];
+    const sortedTeams = getStage3SeededTeams(group.teams);
+    const predictedWinner = getPredictedWinner(group.teams);
     const fragment = elements.groupTemplate.content.cloneNode(true);
     fragment.querySelector(".group-label").textContent = group.stageLabel;
     fragment.querySelector(".group-name").textContent = group.name;
     const teamList = fragment.querySelector(".team-list");
 
-    rankedTeams.forEach((team) => {
+    sortedTeams.forEach((team) => {
       const stage3 = getStage3Data(team.name);
       const stage3Color = getStage3Color(team.name);
       const scoreBreakdown = getScoreBreakdown(team.name);
@@ -836,10 +836,45 @@ function getRankedTeams(teams) {
       ...team,
       predictionScore: getPredictionScore(team.name),
     }))
-    .sort((left, right) =>
-      right.predictionScore - left.predictionScore ||
-      right.name.localeCompare(left.name) * -1
-    );
+      .sort((left, right) =>
+        right.predictionScore - left.predictionScore ||
+        right.name.localeCompare(left.name) * -1
+      );
+}
+
+function getStage3SeededTeams(teams) {
+  return [...teams].sort((left, right) => {
+    const leftStage3 = STAGE3_LOOKUP[left.name];
+    const rightStage3 = STAGE3_LOOKUP[right.name];
+
+    if (!leftStage3 && !rightStage3) {
+      return left.name.localeCompare(right.name);
+    }
+
+    if (!leftStage3) {
+      return 1;
+    }
+
+    if (!rightStage3) {
+      return -1;
+    }
+
+    const leftPathRank = leftStage3.group.endsWith("A") ? 0 : 1;
+    const rightPathRank = rightStage3.group.endsWith("A") ? 0 : 1;
+    if (leftPathRank !== rightPathRank) {
+      return leftPathRank - rightPathRank;
+    }
+
+    if (leftStage3.place !== rightStage3.place) {
+      return leftStage3.place - rightStage3.place;
+    }
+
+    if (leftStage3.points !== rightStage3.points) {
+      return rightStage3.points - leftStage3.points;
+    }
+
+    return left.name.localeCompare(right.name);
+  });
 }
 
 function getPredictionScore(teamName) {

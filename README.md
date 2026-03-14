@@ -28,6 +28,31 @@ node server.js
 
 Then open `http://localhost:8000`.
 
+## Deploy to Render
+
+This repo is now set up for a simple Render web service deploy.
+
+Files involved:
+
+- `render.yaml`
+- `package.json` with `npm start`
+- `server.js --dist` serving the built app plus the Profixio proxy endpoints
+
+Typical Render flow:
+
+1. Push this repo to GitHub.
+2. In Render, create a new Blueprint or Web Service from the repo.
+3. Render will use:
+   - build command: `npm install`
+   - start command: `npm start`
+4. After deploy, open the Render URL on iPhone or desktop.
+
+Notes:
+
+- `npm start` runs the build first, then starts `server.js --dist`.
+- The Render deployment keeps the Profixio proxy server-side, so live refresh can work remotely without your home PC running.
+- If Profixio changes its HTML or starts rate-limiting Render traffic, the live refresh path may still need updates.
+
 The local server does two things:
 
 - serves the static app

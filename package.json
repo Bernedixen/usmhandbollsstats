@@ -5,10 +5,15 @@
   "description": "USM F14 stage 4 tracker prepared for later Capacitor packaging.",
   "scripts": {
     "build": "node scripts/build.mjs",
+    "prestart": "npm run build",
+    "start": "node server.js --dist",
     "serve": "node server.js",
     "serve:dist": "node server.js --dist",
     "cap:copy": "npx cap copy",
     "cap:sync": "npx cap sync"
+  },
+  "engines": {
+    "node": ">=18"
   },
   "dependencies": {
     "@capacitor/cli": "^6.2.1",
