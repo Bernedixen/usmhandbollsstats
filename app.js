@@ -1,14 +1,4 @@
 const SNAPSHOT_URL = "./data/usm-f14-stage4-2026.json";
-const LIVE_SOURCE_URL = "https://www.profixio.com/app/lx/competition/leagueid17925";
-const STAGE3_A_TABLES_URL = "https://www.profixio.com/app/leagueid17925/category/1176782";
-const STAGE3_B_TABLES_URL = "https://www.profixio.com/app/leagueid17925/category/1176783";
-const PROXY_URLS = {
-  competition: "/api/profixio/competition",
-  stage3A: "/api/profixio/stage3-a",
-  stage3B: "/api/profixio/stage3-b",
-  stage3GoalDiffs: "/api/profixio/stage3-goaldiffs",
-};
-const CAPACITOR_HTTP_PLUGIN_ID = "CapacitorHttp";
 const STAGE3_A_COLORS = [
   { accent: "#005f73", background: "#d9f0f3" },
   { accent: "#9b2226", background: "#f8d7d9" },
@@ -106,46 +96,46 @@ const STAGE2_LOOKUP = {
   "Torslanda HK": { group: "2:08 A", place: 1, points: 4, maxPoints: 4 }
 };
 const STAGE3_LOOKUP = {
-  "Härnösands HF 1": { group: "3:02 A", place: 2, points: 4, goalDiff: null },
-  "IFK Nyköping": { group: "3:01 A", place: 3, points: 2, goalDiff: null },
-  "IFK Tumba HK": { group: "3:11 B", place: 1, points: 6, goalDiff: null },
-  "Skuru IK": { group: "3:10 A", place: 1, points: 6, goalDiff: null },
-  "Täby HBK 1": { group: "3:09 A", place: 2, points: 5, goalDiff: null },
-  "Alingsås HK": { group: "3:05 A", place: 1, points: 6, goalDiff: null },
-  "BK Heid": { group: "3:16 B", place: 1, points: 6, goalDiff: null },
-  "HF Karlskrona": { group: "3:14 B", place: 1, points: 6, goalDiff: null },
-  "KFUM Kalmar HK": { group: "3:03 A", place: 2, points: 4, goalDiff: null },
-  "Redbergslids IK Blå": { group: "3:07 A", place: 2, points: 4, goalDiff: null },
-  "GF Kroppskultur 1": { group: "3:01 A", place: 2, points: 4, goalDiff: null },
-  "IFK Bankeryd": { group: "3:13 B", place: 1, points: 6, goalDiff: null },
-  "Kävlinge HK": { group: "3:15 B", place: 1, points: 5, goalDiff: null },
-  "Skara HF": { group: "3:08 A", place: 2, points: 4, goalDiff: null },
-  "Åhus Handboll": { group: "3:04 A", place: 1, points: 6, goalDiff: null },
-  "IK Sund": { group: "3:07 A", place: 3, points: 2, goalDiff: null },
-  "Kungälvs HK": { group: "3:17 B", place: 1, points: 6, goalDiff: null },
-  "Skövde HF 1": { group: "3:08 A", place: 3, points: 2, goalDiff: null },
-  "Tyresö Handboll": { group: "3:02 A", place: 1, points: 6, goalDiff: null },
-  "Önnereds HK 1": { group: "3:09 A", place: 1, points: 5, goalDiff: null },
-  "Hässleholms HF": { group: "3:04 A", place: 2, points: 4, goalDiff: null },
-  "IK Sävehof Svart": { group: "3:03 A", place: 1, points: 6, goalDiff: null },
-  "Kärra HF": { group: "3:10 A", place: 2, points: 4, goalDiff: null },
-  "Lödde Vikings HK": { group: "3:05 A", place: 3, points: 2, goalDiff: null },
-  "RP IF Linköping": { group: "3:19 B", place: 1, points: 6, goalDiff: null },
-  "Anderstorps SK": { group: "3:03 A", place: 3, points: 2, goalDiff: null },
-  "KFUM Trollhättan": { group: "3:06 A", place: 3, points: 2, goalDiff: null },
-  "Lugi HF 2": { group: "3:05 A", place: 2, points: 4, goalDiff: null },
-  "Strömstad HK": { group: "3:12 B", place: 1, points: 6, goalDiff: null },
-  "Växjö HF Gul": { group: "3:01 A", place: 1, points: 6, goalDiff: null },
-  "Eskilstuna Guif IF": { group: "3:02 A", place: 3, points: 2, goalDiff: null },
-  "Gustavsbergs IF HK": { group: "3:09 A", place: 3, points: 2, goalDiff: null },
-  "HK Ankaret Röd": { group: "3:08 A", place: 1, points: 4, goalDiff: null },
-  "HK Halmstad": { group: "3:06 A", place: 1, points: 6, goalDiff: null },
-  "Skövde HF 2": { group: "3:18 B", place: 1, points: 6, goalDiff: null },
-  "Haninge HK": { group: "3:10 A", place: 3, points: 2, goalDiff: null },
-  "Huddinge HK": { group: "3:20 B", place: 1, points: 6, goalDiff: null },
-  "IF Hallby HK": { group: "3:06 A", place: 2, points: 4, goalDiff: null },
-  "Mölndals HF": { group: "3:07 A", place: 1, points: 6, goalDiff: null },
-  "Torslanda HK": { group: "3:04 A", place: 3, points: 2, goalDiff: null }
+  "Härnösands HF 1": { group: "3:02 A", place: 2, points: 4, goalDiff: 20 },
+  "IFK Nyköping": { group: "3:01 A", place: 3, points: 2, goalDiff: -30 },
+  "IFK Tumba HK": { group: "3:11 B", place: 1, points: 6, goalDiff: 25 },
+  "Skuru IK": { group: "3:10 A", place: 1, points: 6, goalDiff: 29 },
+  "Täby HBK 1": { group: "3:09 A", place: 2, points: 5, goalDiff: 10 },
+  "Alingsås HK": { group: "3:05 A", place: 1, points: 6, goalDiff: 27 },
+  "BK Heid": { group: "3:16 B", place: 1, points: 6, goalDiff: 46 },
+  "HF Karlskrona": { group: "3:14 B", place: 1, points: 6, goalDiff: 32 },
+  "KFUM Kalmar HK": { group: "3:03 A", place: 2, points: 4, goalDiff: 4 },
+  "Redbergslids IK Blå": { group: "3:07 A", place: 2, points: 4, goalDiff: 13 },
+  "GF Kroppskultur 1": { group: "3:01 A", place: 2, points: 4, goalDiff: 1 },
+  "IFK Bankeryd": { group: "3:13 B", place: 1, points: 6, goalDiff: 28 },
+  "Kävlinge HK": { group: "3:15 B", place: 1, points: 5, goalDiff: 16 },
+  "Skara HF": { group: "3:08 A", place: 2, points: 4, goalDiff: 15 },
+  "Åhus Handboll": { group: "3:04 A", place: 1, points: 6, goalDiff: 29 },
+  "IK Sund": { group: "3:07 A", place: 3, points: 2, goalDiff: 1 },
+  "Kungälvs HK": { group: "3:17 B", place: 1, points: 6, goalDiff: 24 },
+  "Skövde HF 1": { group: "3:08 A", place: 3, points: 2, goalDiff: -9 },
+  "Tyresö Handboll": { group: "3:02 A", place: 1, points: 6, goalDiff: 21 },
+  "Önnereds HK 1": { group: "3:09 A", place: 1, points: 5, goalDiff: 24 },
+  "Hässleholms HF": { group: "3:04 A", place: 2, points: 4, goalDiff: 13 },
+  "IK Sävehof Svart": { group: "3:03 A", place: 1, points: 6, goalDiff: 33 },
+  "Kärra HF": { group: "3:10 A", place: 2, points: 4, goalDiff: 26 },
+  "Lödde Vikings HK": { group: "3:05 A", place: 3, points: 2, goalDiff: 15 },
+  "RP IF Linköping": { group: "3:19 B", place: 1, points: 6, goalDiff: 14 },
+  "Anderstorps SK": { group: "3:03 A", place: 3, points: 2, goalDiff: -8 },
+  "KFUM Trollhättan": { group: "3:06 A", place: 3, points: 2, goalDiff: -7 },
+  "Lugi HF 2": { group: "3:05 A", place: 2, points: 4, goalDiff: 4 },
+  "Strömstad HK": { group: "3:12 B", place: 1, points: 6, goalDiff: 24 },
+  "Växjö HF Gul": { group: "3:01 A", place: 1, points: 6, goalDiff: 53 },
+  "Eskilstuna Guif IF": { group: "3:02 A", place: 3, points: 2, goalDiff: -1 },
+  "Gustavsbergs IF HK": { group: "3:09 A", place: 3, points: 2, goalDiff: -12 },
+  "HK Ankaret Röd": { group: "3:08 A", place: 1, points: 4, goalDiff: 6 },
+  "HK Halmstad": { group: "3:06 A", place: 1, points: 6, goalDiff: 15 },
+  "Skövde HF 2": { group: "3:18 B", place: 1, points: 6, goalDiff: 31 },
+  "Haninge HK": { group: "3:10 A", place: 3, points: 2, goalDiff: -3 },
+  "Huddinge HK": { group: "3:20 B", place: 1, points: 6, goalDiff: 15 },
+  "IF Hallby HK": { group: "3:06 A", place: 2, points: 4, goalDiff: 4 },
+  "Mölndals HF": { group: "3:07 A", place: 1, points: 6, goalDiff: 26 },
+  "Torslanda HK": { group: "3:04 A", place: 3, points: 2, goalDiff: -13 }
 };
 const STAGE3_GROUP_TABLES = {
   "3:01 A": [
@@ -290,8 +280,6 @@ const elements = {
   weightGroupStrengthValue: document.querySelector("#weight-group-strength-value"),
   presetButtons: document.querySelectorAll(".preset-button"),
   weightsTotal: document.querySelector("#weights-total"),
-  refreshLiveButton: document.querySelector("#refresh-live-button"),
-  loadSnapshotButton: document.querySelector("#load-snapshot-button"),
   toggleBreakdownsButton: document.querySelector("#toggle-breakdowns-button"),
   statusText: document.querySelector("#status-text"),
   sourceNote: document.querySelector("#source-note"),
@@ -351,8 +339,6 @@ function wireEvents() {
     button.addEventListener("click", () => applyWeightPreset(button.dataset.preset));
   });
 
-  elements.refreshLiveButton.addEventListener("click", refreshLiveData);
-  elements.loadSnapshotButton.addEventListener("click", loadSnapshot);
   elements.toggleBreakdownsButton.addEventListener("click", toggleBreakdowns);
   updateWeightLabels();
 }
@@ -374,143 +360,12 @@ async function loadSnapshot() {
   }
 }
 
-async function refreshLiveData() {
-  setStatus("Attempting live refresh from Profixio.");
-
-  try {
-    const [competitionResponse, goalDiffsResponse] = await Promise.all([
-      fetchLiveResource(PROXY_URLS.competition, LIVE_SOURCE_URL, "text"),
-      loadLiveStage3GoalDiffs(),
-    ]);
-
-    if (!competitionResponse.ok) {
-      throw new Error(`Live request failed with status ${competitionResponse.status}.`);
-    }
-
-    const competitionHtml = competitionResponse.data;
-    const liveDataset = parseProfixioCompetitionPage(competitionHtml);
-
-    const stage3GoalDiffs = goalDiffsResponse.ok ? goalDiffsResponse.data : {};
-
-    mergeStage3GoalDiffs(liveDataset.groups, stage3GoalDiffs);
-    applyDataset(liveDataset, "live Profixio page");
-    const mappedGoalDiffs = Object.keys(stage3GoalDiffs).length;
-    setStatus(`Live refresh succeeded. Parsed ${state.groups.length} groups and ${mappedGoalDiffs} Stage 3 goal differences from Profixio.`);
-  } catch (error) {
-    setStatus(error.message || "Live refresh failed.");
-    elements.sourceNote.textContent =
-      "Live refresh failed. In a desktop browser, run `node server.js` so the local `/api/profixio/*` proxy can fetch Profixio server-side. Inside Capacitor, this app can use native HTTP when the plugin is available.";
-  }
-}
-
-async function fetchLiveResource(proxyUrl, directUrl, responseType) {
-  const nativeHttp = getCapacitorHttp();
-
-  if (nativeHttp && directUrl) {
-    const nativeResponse = await fetchViaCapacitor(nativeHttp, directUrl, responseType);
-    if (nativeResponse.ok) {
-      return nativeResponse;
-    }
-  }
-
-  try {
-    const proxyResponse = await fetch(proxyUrl, { cache: "no-store" });
-    const proxyData = responseType === "json"
-      ? await proxyResponse.json()
-      : await proxyResponse.text();
-
-    return {
-      ok: proxyResponse.ok,
-      status: proxyResponse.status,
-      data: proxyData,
-    };
-  } catch {
-    if (!directUrl) {
-      throw new Error("Proxy request failed and no direct URL is available.");
-    }
-  }
-
-  const directResponse = await fetch(directUrl, { cache: "no-store" });
-  const directData = responseType === "json"
-    ? await directResponse.json()
-    : await directResponse.text();
-
-  return {
-    ok: directResponse.ok,
-    status: directResponse.status,
-    data: directData,
-  };
-}
-
-async function loadLiveStage3GoalDiffs() {
-  const nativeHttp = getCapacitorHttp();
-
-  if (nativeHttp) {
-    const [stage3AResponse, stage3BResponse] = await Promise.all([
-      fetchViaCapacitor(nativeHttp, STAGE3_A_TABLES_URL, "text"),
-      fetchViaCapacitor(nativeHttp, STAGE3_B_TABLES_URL, "text"),
-    ]);
-
-    if (stage3AResponse.ok || stage3BResponse.ok) {
-      return {
-        ok: true,
-        status: 200,
-        data: {
-          ...parseStage3GoalDiffs(stage3AResponse.ok ? stage3AResponse.data : ""),
-          ...parseStage3GoalDiffs(stage3BResponse.ok ? stage3BResponse.data : ""),
-        },
-      };
-    }
-  }
-
-  return fetchLiveResource(PROXY_URLS.stage3GoalDiffs, null, "json");
-}
-
-function getCapacitorHttp() {
-  const capacitor = window.Capacitor;
-  if (!capacitor || typeof capacitor.isNativePlatform !== "function" || !capacitor.isNativePlatform()) {
-    return null;
-  }
-
-  return window.CapacitorHttp || capacitor.Plugins?.[CAPACITOR_HTTP_PLUGIN_ID] || null;
-}
-
-async function fetchViaCapacitor(nativeHttp, url, responseType) {
-  try {
-    const response = await nativeHttp.request({
-      url,
-      method: "GET",
-      responseType: responseType === "json" ? "json" : "text",
-      headers: {
-        Accept: responseType === "json"
-          ? "application/json,text/plain;q=0.9,*/*;q=0.8"
-          : "text/html,application/xhtml+xml,application/json;q=0.9,*/*;q=0.8",
-      },
-      connectTimeout: 15000,
-      readTimeout: 15000,
-    });
-
-    return {
-      ok: response.status >= 200 && response.status < 300,
-      status: response.status,
-      data: response.data,
-    };
-  } catch (error) {
-    return {
-      ok: false,
-      status: 0,
-      data: null,
-      error,
-    };
-  }
-}
-
 function applyDataset(dataset, sourceLabel) {
   state.competition = dataset.competition;
   state.groups = dataset.groups;
   state.activeSourceLabel = sourceLabel;
   elements.sourceNote.textContent =
-    `Current source: ${sourceLabel}. The fallback snapshot is bundled locally so the app still works offline.`;
+    `Current source: ${sourceLabel}. Stage 3 goal differences are now bundled directly into the app for offline use.`;
   populateDistrictFilter(dataset.groups);
   render();
 }
@@ -1064,195 +919,4 @@ function ordinal(value) {
 
 function formatSignedNumber(value) {
   return value > 0 ? `+${value}` : `${value}`;
-}
-
-function parseProfixioCompetitionPage(html) {
-  const documentNode = new DOMParser().parseFromString(html, "text/html");
-  const normalizedLines = documentNode.body.textContent
-    .split("\n")
-    .map((line) => line.trim())
-    .filter(Boolean);
-
-  const groupIds = [
-    "4:01 A",
-    "4:02 A",
-    "4:03 A",
-    "4:04 A",
-    "4:05 A",
-    "4:06 A",
-    "4:07 A",
-    "4:08 A",
-  ];
-
-  const districtByTeam = getDistrictLookup();
-  const groups = groupIds.map((groupId) => {
-    const marker = `Steg 4 A | Grupp ${groupId}`;
-    const startIndex = normalizedLines.indexOf(marker);
-    if (startIndex === -1) {
-      throw new Error(`Could not find ${marker} in live source.`);
-    }
-
-    const teams = normalizedLines
-      .slice(startIndex + 1, startIndex + 6)
-      .map((teamName) => ({
-        name: teamName,
-        district: districtByTeam[teamName] || "Unknown",
-      }));
-
-    return {
-      id: groupId,
-      name: `Group ${groupId}`,
-      stageLabel: "Steg 4 A",
-      teams,
-    };
-  });
-
-  return {
-    competition: {
-      name: "USM F14",
-      season: "2025-2026",
-      ageGroup: "Girls born 2011",
-      stage: "Steg 4 A",
-      stageDates: "2026-03-21 to 2026-03-22",
-      finalDates: "2026-05-08 to 2026-05-10",
-      qualificationRule: "Only the group winner in each of the eight groups qualifies for the final weekend.",
-      sources: [
-        {
-          label: "Svenskhandboll USM",
-          url: "https://www.svenskhandboll.se/handboll-i-sverige/tavling/usm",
-        },
-        {
-          label: "Svenskhandboll F14 groupings",
-          url: "https://www.svenskhandboll.se/handboll-i-sverige/tavling/usm/gruppindelningar/flickor-14",
-        },
-        {
-          label: "Profixio F14 competition",
-          url: LIVE_SOURCE_URL,
-        },
-      ],
-    },
-    groups,
-  };
-}
-
-function parseStage3GoalDiffs(html) {
-  const goalDiffs = {};
-  let goalDiffIndex = -1;
-  let headerCellCount = 0;
-  const knownTeams = new Set(Object.keys(STAGE3_LOOKUP));
-  const rowMatches = html.match(/<tr[\s\S]*?<\/tr>/g) || [];
-
-  rowMatches.forEach((rowHtml) => {
-    const cells = Array.from(rowHtml.matchAll(/<t[dh][^>]*>([\s\S]*?)<\/t[dh]>/g)).map((match) =>
-      normalizeHtmlCellText(match[1])
-    );
-    if (!cells.length) {
-      return;
-    }
-
-    const plusIndex = cells.findIndex((cell) => cell === "+/-");
-    const fallbackIndex = cells.findIndex((cell) => cell === "Mål +/-");
-    if (plusIndex !== -1 || fallbackIndex !== -1) {
-      goalDiffIndex = plusIndex !== -1 ? plusIndex : fallbackIndex;
-      headerCellCount = cells.length;
-      return;
-    }
-
-    if (goalDiffIndex === -1) {
-      return;
-    }
-
-    const teamName = cells.find((cell) => knownTeams.has(cell));
-    if (!teamName) {
-      return;
-    }
-
-    const cellOffset = Math.max(cells.length - headerCellCount, 0);
-    const rawGoalDiff = cells[goalDiffIndex + cellOffset];
-    const goalDiffValue = parseSignedNumber(rawGoalDiff);
-    if (goalDiffValue !== null) {
-      goalDiffs[teamName] = goalDiffValue;
-    }
-  });
-
-  return goalDiffs;
-}
-
-function parseSignedNumber(value) {
-  const normalized = normalizeWhitespace(value).replace(/[−–]/g, "-");
-  if (!/^[+-]?\d+$/.test(normalized)) {
-    return null;
-  }
-
-  const parsed = Number(normalized);
-  return Number.isFinite(parsed) ? parsed : null;
-}
-
-function normalizeWhitespace(value) {
-  return String(value || "").replace(/\s+/g, " ").trim();
-}
-
-function normalizeHtmlCellText(value) {
-  return String(value || "")
-    .replace(/<!--[\s\S]*?-->/g, " ")
-    .replace(/<[^>]+>/g, " ")
-    .replace(/&nbsp;/g, " ")
-    .replace(/\s+/g, " ")
-    .trim();
-}
-
-function mergeStage3GoalDiffs(groups, goalDiffs) {
-  groups.forEach((group) => {
-    group.teams.forEach((team) => {
-      const stage3 = STAGE3_LOOKUP[team.name];
-      if (stage3 && Number.isFinite(goalDiffs[team.name])) {
-        stage3.goalDiff = goalDiffs[team.name];
-      }
-    });
-  });
-}
-
-function getDistrictLookup() {
-  return {
-    "Eskilstuna Guif IF": "HF Mitt",
-    "IFK Nyköping": "HF Mitt",
-    "RP IF Linköping": "HF Mitt",
-    "Härnösands HF 1": "HF Norr",
-    "HF Karlskrona": "HF Syd",
-    "HK Ankaret Röd": "HF Syd",
-    "HK Halmstad": "HF Syd",
-    "Hässleholms HF": "HF Syd",
-    "IK Sund": "HF Syd",
-    "KFUM Kalmar HK": "HF Syd",
-    "Kävlinge HK": "HF Syd",
-    "Lugi HF 2": "HF Syd",
-    "Lödde Vikings HK": "HF Syd",
-    "Växjö HF Gul": "HF Syd",
-    "Åhus Handboll": "HF Syd",
-    "Alingsås HK": "HF Väst",
-    "Anderstorps SK": "HF Väst",
-    "BK Heid": "HF Väst",
-    "GF Kroppskultur 1": "HF Väst",
-    "IF Hallby HK": "HF Väst",
-    "IFK Bankeryd": "HF Väst",
-    "IK Sävehof Svart": "HF Väst",
-    "KFUM Trollhättan": "HF Väst",
-    "Kungälvs HK": "HF Väst",
-    "Kärra HF": "HF Väst",
-    "Mölndals HF": "HF Väst",
-    "Redbergslids IK Blå": "HF Väst",
-    "Skara HF": "HF Väst",
-    "Skövde HF 1": "HF Väst",
-    "Skövde HF 2": "HF Väst",
-    "Strömstad HK": "HF Väst",
-    "Torslanda HK": "HF Väst",
-    "Önnereds HK 1": "HF Väst",
-    "Gustavsbergs IF HK": "HF Öst",
-    "Haninge HK": "HF Öst",
-    "Huddinge HK": "HF Öst",
-    "IFK Tumba HK": "HF Öst",
-    "Skuru IK": "HF Öst",
-    "Tyresö Handboll": "HF Öst",
-    "Täby HBK 1": "HF Öst",
-  };
 }

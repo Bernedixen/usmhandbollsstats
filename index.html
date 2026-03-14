@@ -42,7 +42,7 @@
       <div class="panel-header">
         <div>
           <p class="section-label">Data source</p>
-          <h2>Live sync with fallback</h2>
+          <h2>Bundled official snapshot</h2>
         </div>
         <p class="hint" id="status-text">Loading official snapshot.</p>
       </div>
@@ -112,13 +112,11 @@
       </div>
 
       <div class="control-actions">
-        <button id="refresh-live-button" type="button" class="primary-button">Try live refresh</button>
-        <button id="load-snapshot-button" type="button" class="secondary-button">Reload official snapshot</button>
         <button id="toggle-breakdowns-button" type="button" class="secondary-button">Show score breakdowns</button>
       </div>
 
       <p class="source-note" id="source-note">
-        Browser fetch may be blocked by cross-origin rules. The same fetch flow is much more reliable once wrapped with Capacitor and a native HTTP plugin.
+        This build runs entirely from bundled data, including Stage 3 goal differences, so it behaves the same offline and on Render.
       </p>
     </section>
 
