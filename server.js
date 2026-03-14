@@ -66,7 +66,7 @@ function proxyRequest(targetUrl, response) {
   });
 }
 
-function fetchRemote(targetUrl) {
+function fetchRemote(targetUrl, redirectCount = 0) {
   return new Promise((resolve, reject) => {
     const request = https.get(
       targetUrl,
@@ -81,8 +81,29 @@ function fetchRemote(targetUrl) {
 
         upstreamResponse.on("data", (chunk) => chunks.push(chunk));
         upstreamResponse.on("end", () => {
+          const statusCode = upstreamResponse.statusCode || 502;
+          const location = upstreamResponse.headers.location;
+
+          if (location && statusCode >= 300 && statusCode < 400) {
+            if (redirectCount >= 5) {
+              reject(new Error(`Too many redirects while fetching ${targetUrl}`));
+              return;
+            }
+
+            let redirectedUrl;
+            try {
+              redirectedUrl = new URL(location, targetUrl).toString();
+            } catch {
+              reject(new Error(`Invalid redirect URL received for ${targetUrl}`));
+              return;
+            }
+
+            fetchRemote(redirectedUrl, redirectCount + 1).then(resolve, reject);
+            return;
+          }
+
           resolve({
-            statusCode: upstreamResponse.statusCode || 502,
+            statusCode,
             headers: upstreamResponse.headers,
             body: Buffer.concat(chunks),
           });
@@ -114,6 +135,20 @@ async function serveStage3GoalDiffs(response) {
     ...fallbackGoalDiffs,
     ...baseGoalDiffs,
   };
+
+  if (!Object.keys(goalDiffs).length) {
+    console.warn("Stage 3 goal diff parsing returned 0 rows.", {
+      stage3AStatus: stage3A.statusCode,
+      stage3BStatus: stage3B.statusCode,
+      stage3AContentType: stage3A.headers["content-type"] || "",
+      stage3BContentType: stage3B.headers["content-type"] || "",
+      fallbackUrlCount:
+        extractStage3GroupUrls(stage3AHtml, PROFIXIO_ENDPOINTS["/api/profixio/stage3-a"]).length +
+        extractStage3GroupUrls(stage3BHtml, PROFIXIO_ENDPOINTS["/api/profixio/stage3-b"]).length,
+      stage3ASnippet: normalizeCellText(stage3AHtml).slice(0, 200),
+      stage3BSnippet: normalizeCellText(stage3BHtml).slice(0, 200),
+    });
+  }
 
   response.writeHead(200, {
     "Content-Type": "application/json; charset=utf-8",
@@ -169,7 +204,7 @@ function extractStage3GroupUrls(html, categoryUrl) {
 
     let resolvedUrl;
     try {
-      resolvedUrl = new URL(rawUrl, category.origin);
+      resolvedUrl = new URL(rawUrl, categoryUrl);
     } catch {
       continue;
     }
@@ -233,12 +268,23 @@ function extractStage3GoalDiffs(html) {
 
     const cellOffset = Math.max(cells.length - headerCellCount, 0);
     const rawGoalDiff = cells[goalDiffIndex + cellOffset];
-    if (/^[+-]?\d+$/.test(rawGoalDiff)) {
-      goalDiffs[teamName] = Number(rawGoalDiff);
+    const parsedGoalDiff = parseSignedNumber(rawGoalDiff);
+    if (parsedGoalDiff !== null) {
+      goalDiffs[teamName] = parsedGoalDiff;
     }
   });
 
   return goalDiffs;
+}
+
+function parseSignedNumber(value) {
+  const normalized = normalizeCellText(value).replace(/[−–]/g, "-");
+  if (!/^[+-]?\d+$/.test(normalized)) {
+    return null;
+  }
+
+  const parsed = Number(normalized);
+  return Number.isFinite(parsed) ? parsed : null;
 }
 
 function normalizeCellText(value) {
