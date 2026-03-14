@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#113c36">
+  <title>USM F14 Tracker</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="app-shell">
+    <section class="hero panel">
+      <div>
+        <p class="eyebrow">USM handboll 2025-2026</p>
+        <h1>F14 Stage 4 Tracker</h1>
+        <p class="hero-copy">
+          Focused on girls born 2011. Track the eight Stage 4 groups, district spread, and the one-team-per-group path into the final weekend.
+        </p>
+      </div>
+      <div class="hero-grid">
+        <article class="hero-stat">
+          <span>Stage 4 dates</span>
+          <strong>21-22 Mar 2026</strong>
+        </article>
+        <article class="hero-stat">
+          <span>Final weekend</span>
+          <strong>8-10 May 2026</strong>
+        </article>
+        <article class="hero-stat">
+          <span>Qualification rule</span>
+          <strong>Group winners only</strong>
+        </article>
+      </div>
+    </section>
+
+    <section class="panel controls-panel">
+      <div class="panel-header">
+        <div>
+          <p class="section-label">Data source</p>
+          <h2>Live sync with fallback</h2>
+        </div>
+        <p class="hint" id="status-text">Loading official snapshot.</p>
+      </div>
+
+      <div class="controls-grid">
+        <label>
+          Team filter
+          <input id="team-filter" type="search" placeholder="Search team, for example Tumba or Hallby">
+        </label>
+        <label>
+          District filter
+          <select id="district-filter">
+            <option value="">All districts</option>
+          </select>
+        </label>
+      </div>
+
+      <div class="weights-layout">
+        <div class="weights-panel">
+          <div class="weights-header">
+            <p class="section-label">Prediction weights</p>
+            <p class="hint" id="weights-total">Total 100%</p>
+          </div>
+          <div class="weights-grid">
+            <label class="slider-field">
+              <span>Stage 1 form <strong id="weight-stage1-value">15%</strong></span>
+              <input id="weight-stage1" type="range" min="0" max="100" step="1" value="15">
+              <small>Rewards strong opening-round results: points won and final placement in Stage 1.</small>
+            </label>
+            <label class="slider-field">
+              <span>Stage 2 form <strong id="weight-stage2-value">20%</strong></span>
+              <input id="weight-stage2" type="range" min="0" max="100" step="1" value="20">
+              <small>Rewards how convincingly the team handled the tougher Stage 2 groups.</small>
+            </label>
+            <label class="slider-field">
+              <span>Stage 3 form <strong id="weight-stage3-value">40%</strong></span>
+              <input id="weight-stage3" type="range" min="0" max="100" step="1" value="40">
+              <small>Rewards the latest direct form: Stage 3 points and placement matter most here.</small>
+            </label>
+            <label class="slider-field">
+              <span>Group strength <strong id="weight-group-strength-value">25%</strong></span>
+              <input id="weight-group-strength" type="range" min="0" max="100" step="1" value="25">
+              <small>Boosts teams that survived stronger Stage 3 groups, so a tough runner-up can outrank a weak winner.</small>
+            </label>
+          </div>
+          <div class="preset-panel">
+            <p class="section-label">Presets</p>
+            <div class="preset-buttons">
+              <button type="button" class="preset-button" data-preset="default">Balanced default</button>
+              <button type="button" class="preset-button" data-preset="tough-path">Tough path</button>
+              <button type="button" class="preset-button" data-preset="stage2-path">Stage 2 + path</button>
+              <button type="button" class="preset-button" data-preset="stage1-only">Stage 1 only</button>
+              <button type="button" class="preset-button" data-preset="group-only">Group strength only</button>
+            </div>
+          </div>
+        </div>
+
+        <aside class="panel qualifiers-panel">
+          <div class="panel-header">
+            <div>
+              <p class="section-label">Projected Stage 5</p>
+              <h2>Current top 8</h2>
+            </div>
+          </div>
+          <ol id="qualifiers-list" class="qualifiers-list"></ol>
+        </aside>
+      </div>
+
+      <div class="control-actions">
+        <button id="refresh-live-button" type="button" class="primary-button">Try live refresh</button>
+        <button id="load-snapshot-button" type="button" class="secondary-button">Reload official snapshot</button>
+        <button id="toggle-breakdowns-button" type="button" class="secondary-button">Show score breakdowns</button>
+      </div>
+
+      <p class="source-note" id="source-note">
+        Browser fetch may be blocked by cross-origin rules. The same fetch flow is much more reliable once wrapped with Capacitor and a native HTTP plugin.
+      </p>
+    </section>
+
+    <section class="dashboard-grid">
+      <article class="panel">
+        <p class="section-label">Overview</p>
+        <div class="metrics" id="metrics"></div>
+      </article>
+
+      <article class="panel">
+        <div class="panel-header">
+          <div>
+            <p class="section-label">District spread</p>
+            <h2>Stage 4 A qualifiers</h2>
+          </div>
+        </div>
+        <div id="district-summary" class="district-summary"></div>
+      </article>
+    </section>
+
+    <section class="panel">
+      <div class="panel-header">
+        <div>
+          <p class="section-label">Groups</p>
+          <h2>Stage 4 A race</h2>
+        </div>
+        <p class="hint" id="results-count">8 groups loaded.</p>
+      </div>
+      <p class="hint prediction-note">
+        Starred team = projected group winner from official Stage 1-3 results, with live-tunable weight on each round and on Stage 3 group strength.
+      </p>
+      <p class="hint prediction-note">
+        If you want a form-heavy model, increase Stage 3. If you want a tougher-path model, increase Group strength.
+      </p>
+      <div id="groups-grid" class="groups-grid"></div>
+    </section>
+
+    <section class="panel">
+      <div class="panel-header">
+        <div>
+          <p class="section-label">Sources</p>
+          <h2>Official references</h2>
+        </div>
+      </div>
+      <ul id="sources-list" class="sources-list"></ul>
+    </section>
+  </main>
+
+  <template id="metric-template">
+    <article class="metric-card">
+      <span class="metric-label"></span>
+      <strong class="metric-value"></strong>
+    </article>
+  </template>
+
+  <template id="district-template">
+    <article class="district-card">
+      <div class="district-header">
+        <h3 class="district-name"></h3>
+        <strong class="district-count"></strong>
+      </div>
+      <div class="district-bar-track">
+        <div class="district-bar-fill"></div>
+      </div>
+    </article>
+  </template>
+
+  <template id="group-template">
+    <article class="group-card">
+      <div class="group-header">
+        <div>
+          <p class="group-label"></p>
+          <h3 class="group-name"></h3>
+        </div>
+        <span class="group-rule">Winner advances</span>
+      </div>
+      <ul class="team-list"></ul>
+    </article>
+  </template>
+
+  <template id="team-breakdown-template">
+    <div class="team-breakdown">
+      <p class="team-breakdown-total"></p>
+      <div class="team-breakdown-grid"></div>
+    </div>
+  </template>
+
+  <template id="team-stage3-template">
+    <div class="team-stage3-strip">
+      <div class="team-stage3-chip team-stage3-chip-group">
+        <span class="team-stage3-kicker">S3</span>
+        <strong class="team-stage3-group"></strong>
+      </div>
+      <div class="team-stage3-chip">
+        <span class="team-stage3-kicker">Pos</span>
+        <strong class="team-stage3-place"></strong>
+      </div>
+      <div class="team-stage3-chip">
+        <span class="team-stage3-kicker">Pts</span>
+        <strong class="team-stage3-points"></strong>
+      </div>
+      <div class="team-stage3-chip">
+        <span class="team-stage3-kicker">GD</span>
+        <strong class="team-stage3-goal-diff"></strong>
+      </div>
+    </div>
+  </template>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,123 @@
+{
+  "competition": {
+    "name": "USM F14",
+    "season": "2025-2026",
+    "ageGroup": "Girls born 2011",
+    "stage": "Steg 4 A",
+    "stageDates": "2026-03-21 to 2026-03-22",
+    "finalDates": "2026-05-08 to 2026-05-10",
+    "qualificationRule": "Only the group winner in each of the eight groups qualifies for the final weekend.",
+    "sources": [
+      {
+        "label": "Svenskhandboll USM overview",
+        "url": "https://www.svenskhandboll.se/handboll-i-sverige/tavling/usm"
+      },
+      {
+        "label": "Svenskhandboll F14 groupings",
+        "url": "https://www.svenskhandboll.se/handboll-i-sverige/tavling/usm/gruppindelningar/flickor-14"
+      },
+      {
+        "label": "Profixio F14 competition",
+        "url": "https://www.profixio.com/app/lx/competition/leagueid17925"
+      }
+    ]
+  },
+  "groups": [
+    {
+      "id": "4:01 A",
+      "name": "Group 4:01 A",
+      "stageLabel": "Steg 4 A",
+      "teams": [
+        { "name": "Härnösands HF 1", "district": "HF Norr" },
+        { "name": "IFK Nyköping", "district": "HF Mitt" },
+        { "name": "IFK Tumba HK", "district": "HF Öst" },
+        { "name": "Skuru IK", "district": "HF Öst" },
+        { "name": "Täby HBK 1", "district": "HF Öst" }
+      ]
+    },
+    {
+      "id": "4:02 A",
+      "name": "Group 4:02 A",
+      "stageLabel": "Steg 4 A",
+      "teams": [
+        { "name": "Alingsås HK", "district": "HF Väst" },
+        { "name": "BK Heid", "district": "HF Väst" },
+        { "name": "HF Karlskrona", "district": "HF Syd" },
+        { "name": "KFUM Kalmar HK", "district": "HF Syd" },
+        { "name": "Redbergslids IK Blå", "district": "HF Väst" }
+      ]
+    },
+    {
+      "id": "4:03 A",
+      "name": "Group 4:03 A",
+      "stageLabel": "Steg 4 A",
+      "teams": [
+        { "name": "GF Kroppskultur 1", "district": "HF Väst" },
+        { "name": "IFK Bankeryd", "district": "HF Väst" },
+        { "name": "Kävlinge HK", "district": "HF Syd" },
+        { "name": "Skara HF", "district": "HF Väst" },
+        { "name": "Åhus Handboll", "district": "HF Syd" }
+      ]
+    },
+    {
+      "id": "4:04 A",
+      "name": "Group 4:04 A",
+      "stageLabel": "Steg 4 A",
+      "teams": [
+        { "name": "IK Sund", "district": "HF Syd" },
+        { "name": "Kungälvs HK", "district": "HF Väst" },
+        { "name": "Skövde HF 1", "district": "HF Väst" },
+        { "name": "Tyresö Handboll", "district": "HF Öst" },
+        { "name": "Önnereds HK 1", "district": "HF Väst" }
+      ]
+    },
+    {
+      "id": "4:05 A",
+      "name": "Group 4:05 A",
+      "stageLabel": "Steg 4 A",
+      "teams": [
+        { "name": "Hässleholms HF", "district": "HF Syd" },
+        { "name": "IK Sävehof Svart", "district": "HF Väst" },
+        { "name": "Kärra HF", "district": "HF Väst" },
+        { "name": "Lödde Vikings HK", "district": "HF Syd" },
+        { "name": "RP IF Linköping", "district": "HF Mitt" }
+      ]
+    },
+    {
+      "id": "4:06 A",
+      "name": "Group 4:06 A",
+      "stageLabel": "Steg 4 A",
+      "teams": [
+        { "name": "Anderstorps SK", "district": "HF Väst" },
+        { "name": "KFUM Trollhättan", "district": "HF Väst" },
+        { "name": "Lugi HF 2", "district": "HF Syd" },
+        { "name": "Strömstad HK", "district": "HF Väst" },
+        { "name": "Växjö HF Gul", "district": "HF Syd" }
+      ]
+    },
+    {
+      "id": "4:07 A",
+      "name": "Group 4:07 A",
+      "stageLabel": "Steg 4 A",
+      "teams": [
+        { "name": "Eskilstuna Guif IF", "district": "HF Mitt" },
+        { "name": "Gustavsbergs IF HK", "district": "HF Öst" },
+        { "name": "HK Ankaret Röd", "district": "HF Syd" },
+        { "name": "HK Halmstad", "district": "HF Syd" },
+        { "name": "Skövde HF 2", "district": "HF Väst" }
+      ]
+    },
+    {
+      "id": "4:08 A",
+      "name": "Group 4:08 A",
+      "stageLabel": "Steg 4 A",
+      "teams": [
+        { "name": "Haninge HK", "district": "HF Öst" },
+        { "name": "Huddinge HK", "district": "HF Öst" },
+        { "name": "IF Hallby HK", "district": "HF Väst" },
+        { "name": "Mölndals HF", "district": "HF Väst" },
+        { "name": "Torslanda HK", "district": "HF Väst" }
+      ]
+    }
+  ]
+}
