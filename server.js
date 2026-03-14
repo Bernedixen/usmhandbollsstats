@@ -6,6 +6,7 @@ const { URL } = require("url");
 
 const PORT = Number(process.env.PORT || 8000);
 const ROOT = __dirname;
+const WEB_ROOT = process.argv.includes("--dist") ? path.join(ROOT, "dist") : ROOT;
 const STAGE4_DATA = JSON.parse(
   fs.readFileSync(path.join(ROOT, "data", "usm-f14-stage4-2026.json"), "utf8")
 );
@@ -165,9 +166,9 @@ function normalizeCellText(value) {
 function serveStatic(requestPath, response) {
   return new Promise((resolve, reject) => {
     const normalizedPath = requestPath === "/" ? "/index.html" : requestPath;
-    const filePath = path.normalize(path.join(ROOT, normalizedPath));
+    const filePath = path.normalize(path.join(WEB_ROOT, normalizedPath));
 
-    if (!filePath.startsWith(ROOT)) {
+    if (!filePath.startsWith(WEB_ROOT)) {
       response.writeHead(403, { "Content-Type": "text/plain; charset=utf-8" });
       response.end("Forbidden");
       resolve();

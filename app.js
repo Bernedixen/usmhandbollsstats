@@ -8,6 +8,7 @@ const PROXY_URLS = {
   stage3B: "/api/profixio/stage3-b",
   stage3GoalDiffs: "/api/profixio/stage3-goaldiffs",
 };
+const CAPACITOR_HTTP_PLUGIN_ID = "CapacitorHttp";
 const STAGE3_A_COLORS = [
   { accent: "#005f73", background: "#d9f0f3" },
   { accent: "#9b2226", background: "#f8d7d9" },
@@ -378,18 +379,18 @@ async function refreshLiveData() {
 
   try {
     const [competitionResponse, goalDiffsResponse] = await Promise.all([
-      fetchWithFallback(PROXY_URLS.competition, LIVE_SOURCE_URL),
-      fetch(PROXY_URLS.stage3GoalDiffs),
+      fetchLiveResource(PROXY_URLS.competition, LIVE_SOURCE_URL, "text"),
+      loadLiveStage3GoalDiffs(),
     ]);
 
     if (!competitionResponse.ok) {
       throw new Error(`Live request failed with status ${competitionResponse.status}.`);
     }
 
-    const competitionHtml = await competitionResponse.text();
+    const competitionHtml = competitionResponse.data;
     const liveDataset = parseProfixioCompetitionPage(competitionHtml);
 
-    const stage3GoalDiffs = goalDiffsResponse.ok ? await goalDiffsResponse.json() : {};
+    const stage3GoalDiffs = goalDiffsResponse.ok ? goalDiffsResponse.data : {};
 
     mergeStage3GoalDiffs(liveDataset.groups, stage3GoalDiffs);
     applyDataset(liveDataset, "live Profixio page");
@@ -398,21 +399,110 @@ async function refreshLiveData() {
   } catch (error) {
     setStatus(error.message || "Live refresh failed.");
     elements.sourceNote.textContent =
-      "Live refresh failed. For browser testing, run this app through `node server.js` so the local `/api/profixio/*` proxy can fetch Profixio server-side. The same fetch layer can later move to Capacitor native HTTP.";
+      "Live refresh failed. In a desktop browser, run `node server.js` so the local `/api/profixio/*` proxy can fetch Profixio server-side. Inside Capacitor, this app can use native HTTP when the plugin is available.";
   }
 }
 
-async function fetchWithFallback(proxyUrl, directUrl) {
-  try {
-    const proxyResponse = await fetch(proxyUrl);
-    if (proxyResponse.ok) {
-      return proxyResponse;
+async function fetchLiveResource(proxyUrl, directUrl, responseType) {
+  const nativeHttp = getCapacitorHttp();
+
+  if (nativeHttp && directUrl) {
+    const nativeResponse = await fetchViaCapacitor(nativeHttp, directUrl, responseType);
+    if (nativeResponse.ok) {
+      return nativeResponse;
     }
-  } catch {
-    // Fall back to direct browser fetch for static hosting setups.
   }
 
-  return fetch(directUrl);
+  try {
+    const proxyResponse = await fetch(proxyUrl, { cache: "no-store" });
+    const proxyData = responseType === "json"
+      ? await proxyResponse.json()
+      : await proxyResponse.text();
+
+    return {
+      ok: proxyResponse.ok,
+      status: proxyResponse.status,
+      data: proxyData,
+    };
+  } catch {
+    if (!directUrl) {
+      throw new Error("Proxy request failed and no direct URL is available.");
+    }
+  }
+
+  const directResponse = await fetch(directUrl, { cache: "no-store" });
+  const directData = responseType === "json"
+    ? await directResponse.json()
+    : await directResponse.text();
+
+  return {
+    ok: directResponse.ok,
+    status: directResponse.status,
+    data: directData,
+  };
+}
+
+async function loadLiveStage3GoalDiffs() {
+  const nativeHttp = getCapacitorHttp();
+
+  if (nativeHttp) {
+    const [stage3AResponse, stage3BResponse] = await Promise.all([
+      fetchViaCapacitor(nativeHttp, STAGE3_A_TABLES_URL, "text"),
+      fetchViaCapacitor(nativeHttp, STAGE3_B_TABLES_URL, "text"),
+    ]);
+
+    if (stage3AResponse.ok || stage3BResponse.ok) {
+      return {
+        ok: true,
+        status: 200,
+        data: {
+          ...parseStage3GoalDiffs(stage3AResponse.ok ? stage3AResponse.data : ""),
+          ...parseStage3GoalDiffs(stage3BResponse.ok ? stage3BResponse.data : ""),
+        },
+      };
+    }
+  }
+
+  return fetchLiveResource(PROXY_URLS.stage3GoalDiffs, null, "json");
+}
+
+function getCapacitorHttp() {
+  const capacitor = window.Capacitor;
+  if (!capacitor || typeof capacitor.isNativePlatform !== "function" || !capacitor.isNativePlatform()) {
+    return null;
+  }
+
+  return window.CapacitorHttp || capacitor.Plugins?.[CAPACITOR_HTTP_PLUGIN_ID] || null;
+}
+
+async function fetchViaCapacitor(nativeHttp, url, responseType) {
+  try {
+    const response = await nativeHttp.request({
+      url,
+      method: "GET",
+      responseType: responseType === "json" ? "json" : "text",
+      headers: {
+        Accept: responseType === "json"
+          ? "application/json,text/plain;q=0.9,*/*;q=0.8"
+          : "text/html,application/xhtml+xml,application/json;q=0.9,*/*;q=0.8",
+      },
+      connectTimeout: 15000,
+      readTimeout: 15000,
+    });
+
+    return {
+      ok: response.status >= 200 && response.status < 300,
+      status: response.status,
+      data: response.data,
+    };
+  } catch (error) {
+    return {
+      ok: false,
+      status: 0,
+      data: null,
+      error,
+    };
+  }
 }
 
 function applyDataset(dataset, sourceLabel) {

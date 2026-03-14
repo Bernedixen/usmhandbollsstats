@@ -1,0 +1,18 @@
+{
+  "name": "handball-stats",
+  "version": "1.0.0",
+  "private": true,
+  "description": "USM F14 stage 4 tracker prepared for later Capacitor packaging.",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "serve": "node server.js",
+    "serve:dist": "node server.js --dist",
+    "cap:copy": "npx cap copy",
+    "cap:sync": "npx cap sync"
+  },
+  "dependencies": {
+    "@capacitor/cli": "^6.2.1",
+    "@capacitor/core": "^6.2.1",
+    "@capacitor/ios": "^6.2.1"
+  }
+}

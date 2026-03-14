@@ -1,6 +1,6 @@
 # Handball Stats
 
-Offline-first web app scaffold for tracking USM F14 stage 4, built so it can later be wrapped with Capacitor for iOS.
+Offline-first web app scaffold for tracking USM F14 stage 4, prepared so it can later be wrapped with Capacitor for iOS.
 
 ## Current focus
 
@@ -20,7 +20,7 @@ Offline-first web app scaffold for tracking USM F14 stage 4, built so it can lat
 
 ## Run locally during development
 
-Preferred for live Profixio refresh:
+Preferred for live Profixio refresh during desktop development:
 
 ```powershell
 node server.js
@@ -41,9 +41,42 @@ python -m http.server 8000
 
 Then open `http://localhost:8000`.
 
+## Capacitor-ready structure
+
+- `npm run build` copies the web assets into `dist/`
+- `capacitor.config.json` points Capacitor at `dist/`
+- `manifest.webmanifest` and iOS-friendly meta tags are already in place
+- `server.js --dist` can serve the built app locally if you want to test the packaged web output
+
 ## Live data note
 
-Direct browser fetch to Profixio may fail because of cross-origin restrictions. The included `server.js` avoids that in local development by fetching Profixio server-side. Once the app is wrapped with Capacitor, the same source logic can be routed through a native HTTP plugin to make the live sync much more reliable.
+Direct browser fetch to Profixio may fail because of cross-origin restrictions. The included `server.js` avoids that in local development by fetching Profixio server-side.
+
+Inside Capacitor, the app now prefers native HTTP for:
+
+- the main Profixio competition page
+- the Stage 3 A and Stage 3 B table pages used to derive `GD`
+
+That means the iPhone app no longer has to depend on the local `/api/profixio/*` proxy for live refresh.
+
+## Typical Capacitor flow
+
+When you are ready to move toward iPhone packaging:
+
+```powershell
+npm run build
+npx cap init
+npx cap add ios
+npx cap copy ios
+```
+
+Then open the generated Xcode project on a Mac.
+
+Note:
+
+- Capacitor dependencies and the generated `ios/` project are already in this repo.
+- Desktop live refresh still uses the local Node proxy.
+- The Capacitor app is set up to try native HTTP first for live Profixio refresh.
 
 ## Next useful steps
 
