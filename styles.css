@@ -102,6 +102,8 @@ select {
   border: 1px solid var(--line);
   background: var(--surface-strong);
   min-width: 0;
+  width: 100%;
+  max-width: 100%;
 }
 
 .hero-stat span,
@@ -201,14 +203,31 @@ select {
 
 .qualifiers-list {
   margin: 0;
-  padding-left: 1.2rem;
+  padding-left: 0;
+  list-style: none;
   display: grid;
   gap: 0.7rem;
 }
 
-.qualifier-row::marker {
-  color: var(--accent);
-  font-weight: 700;
+.qualifier-row {
+  min-width: 0;
+  padding: 0.8rem 0.9rem;
+  border: 1px solid var(--border);
+  border-left: 5px solid var(--stage3-accent, var(--accent));
+  border-radius: 14px;
+  background: linear-gradient(180deg, var(--stage3-bg, rgba(255, 255, 255, 0.94)), rgba(255, 255, 255, 0.98));
+  box-shadow: 0 10px 24px rgba(16, 24, 40, 0.05);
+}
+
+.qualifier-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.8rem;
+}
+
+.qualifier-copy {
+  min-width: 0;
 }
 
 .qualifier-team,
@@ -218,11 +237,55 @@ select {
 
 .qualifier-team {
   font-weight: 700;
+  line-height: 1.25;
 }
 
 .qualifier-meta {
+  margin-top: 0.15rem;
   color: var(--muted);
   font-size: 0.86rem;
+}
+
+.qualifier-score {
+  flex: 0 0 auto;
+  padding: 0.25rem 0.55rem;
+  border-radius: 999px;
+  background: rgba(16, 24, 40, 0.08);
+  color: var(--text);
+  font-size: 0.84rem;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.qualifier-row .team-stage3-strip {
+  margin-top: 0.6rem;
+}
+
+.qualifier-row .team-stage3-strip-compact {
+  display: grid;
+  grid-template-columns: minmax(0, 1.45fr) repeat(3, minmax(0, 0.7fr));
+  gap: 0.28rem;
+  margin-top: 0.45rem;
+}
+
+.qualifier-row .team-stage3-strip-compact .team-stage3-chip {
+  padding: 0.22rem 0.32rem 0.26rem;
+  border-radius: 10px;
+}
+
+.qualifier-row .team-stage3-strip-compact .team-stage3-kicker {
+  font-size: 0.56rem;
+  letter-spacing: 0.1em;
+}
+
+.qualifier-row .team-stage3-strip-compact .team-stage3-chip strong {
+  margin-top: 0.08rem;
+  font-size: 0.79rem;
+  line-height: 1;
+}
+
+.qualifier-row .team-stage3-strip-compact .team-stage3-group {
+  font-size: 0.73rem;
 }
 
 .weights-header {
@@ -369,18 +432,39 @@ input[type="range"] {
   gap: 0.55rem;
   margin-top: 1rem;
   min-width: 0;
+  width: 100%;
+  max-width: 100%;
 }
 
 .team-row {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   gap: 0.75rem;
-  align-items: center;
+  align-items: flex-start;
   flex-wrap: wrap;
   padding: 0.65rem 0.75rem;
   border-radius: 14px;
   background: var(--stage3-bg, rgba(17, 60, 54, 0.04));
   border-left: 6px solid transparent;
+  min-width: 0;
+  width: 100%;
+  max-width: 100%;
+}
+
+.team-row > * {
+  min-width: 0;
+  max-width: 100%;
+}
+
+.team-main {
+  display: grid;
+  gap: 0.18rem;
+  width: 100%;
+  min-width: 0;
+}
+
+.team-head {
+  width: 100%;
   min-width: 0;
 }
 
@@ -408,12 +492,21 @@ input[type="range"] {
 }
 
 .team-name {
-  display: inline-flex;
-  align-items: center;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
   gap: 0.4rem;
   font-weight: 600;
   min-width: 0;
+  width: 100%;
   max-width: 100%;
+}
+
+.team-title {
+  min-width: 0;
+  flex: 1 1 auto;
+  overflow-wrap: anywhere;
+  word-break: break-word;
 }
 
 .info-button {
@@ -422,6 +515,7 @@ input[type="range"] {
   justify-content: center;
   width: 1.2rem;
   height: 1.2rem;
+  flex: 0 0 auto;
   padding: 0;
   border: 0;
   border-radius: 999px;
@@ -435,7 +529,11 @@ input[type="range"] {
 .team-district {
   color: var(--muted);
   font-size: 0.86rem;
-  white-space: nowrap;
+  min-width: 0;
+  max-width: 100%;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  word-break: break-word;
 }
 
 .team-stage3-strip {
@@ -443,6 +541,7 @@ input[type="range"] {
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 0.35rem;
   width: 100%;
+  max-width: 100%;
   flex-basis: 100%;
   margin-top: 0.15rem;
   align-items: stretch;
@@ -558,6 +657,14 @@ input[type="range"] {
   .team-row {
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .team-name,
+  .team-main,
+  .team-district,
+  .team-stage3-strip,
+  .team-breakdown {
+    width: 100%;
   }
 
   .team-stage3-strip,

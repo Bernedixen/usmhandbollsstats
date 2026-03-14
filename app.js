@@ -704,16 +704,21 @@ function renderGroups(groups) {
         ? '<span class="winner-star" title="Projected Stage 4 group winner">★</span>'
         : "";
       item.innerHTML = `
-        <span class="team-name">${winnerBadge}${team.name}<button type="button" class="info-button" aria-label="Show score breakdown">i</button></span>
-        <span class="team-district">${team.district}</span>
+        <div class="team-main">
+          <div class="team-head">
+            <span class="team-name"><span class="team-title">${winnerBadge}${team.name}</span><button type="button" class="info-button" aria-label="Show score breakdown">i</button></span>
+          </div>
+          <span class="team-district">${team.district}</span>
+        </div>
       `;
       const infoButton = item.querySelector(".info-button");
+      const teamMain = item.querySelector(".team-main");
       infoButton.addEventListener("click", (event) => {
         event.stopPropagation();
         window.alert(scoreBreakdown.tooltip);
       });
 
-      item.appendChild(createStage3Element(stage3));
+      teamMain.appendChild(createStage3Element(stage3));
 
       if (state.showBreakdowns) {
         item.appendChild(createBreakdownElement(scoreBreakdown));
@@ -738,6 +743,7 @@ function renderQualifiers(groups) {
 
     return {
       groupName: group.name,
+      district: projectedWinner.district,
       teamName: projectedWinner.name,
       score: projectedWinner.predictionScore,
     };
@@ -749,12 +755,29 @@ function renderQualifiers(groups) {
     );
 
   qualifiers.forEach((qualifier) => {
+    const stage3 = getStage3Data(qualifier.teamName);
+    const stage3Color = getStage3Color(qualifier.teamName);
     const item = document.createElement("li");
     item.className = "qualifier-row";
+    if (stage3Color.className) {
+      item.classList.add(stage3Color.className);
+    }
+    if (stage3Color.accent) {
+      item.style.setProperty("--stage3-accent", stage3Color.accent);
+      item.style.setProperty("--stage3-bg", stage3Color.background);
+    }
     item.innerHTML = `
-      <span class="qualifier-team">${qualifier.teamName}</span>
-      <span class="qualifier-meta">${qualifier.groupName} | ${qualifier.score.toFixed(1)}</span>
+      <div class="qualifier-head">
+        <div class="qualifier-copy">
+          <span class="qualifier-team">${qualifier.teamName}</span>
+          <span class="qualifier-meta">${qualifier.groupName} | ${qualifier.district}</span>
+        </div>
+        <span class="qualifier-score">${qualifier.score.toFixed(1)}</span>
+      </div>
     `;
+    const stage3Element = createStage3Element(stage3);
+    stage3Element.firstElementChild?.classList.add("team-stage3-strip-compact");
+    item.appendChild(stage3Element);
     elements.qualifiersList.appendChild(item);
   });
 }
