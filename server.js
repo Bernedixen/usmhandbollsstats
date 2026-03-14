@@ -100,9 +100,19 @@ async function serveStage3GoalDiffs(response) {
     fetchRemote(PROFIXIO_ENDPOINTS["/api/profixio/stage3-b"]),
   ]);
 
+  const stage3AHtml = stage3A.body.toString("utf8");
+  const stage3BHtml = stage3B.body.toString("utf8");
+  const baseGoalDiffs = {
+    ...extractStage3GoalDiffs(stage3AHtml),
+    ...extractStage3GoalDiffs(stage3BHtml),
+  };
+  const fallbackGoalDiffs = await fetchStage3GroupGoalDiffs([
+    ...extractStage3GroupUrls(stage3AHtml, PROFIXIO_ENDPOINTS["/api/profixio/stage3-a"]),
+    ...extractStage3GroupUrls(stage3BHtml, PROFIXIO_ENDPOINTS["/api/profixio/stage3-b"]),
+  ]);
   const goalDiffs = {
-    ...extractStage3GoalDiffs(stage3A.body.toString("utf8")),
-    ...extractStage3GoalDiffs(stage3B.body.toString("utf8")),
+    ...fallbackGoalDiffs,
+    ...baseGoalDiffs,
   };
 
   response.writeHead(200, {
@@ -111,6 +121,83 @@ async function serveStage3GoalDiffs(response) {
     "Access-Control-Allow-Origin": "*",
   });
   response.end(JSON.stringify(goalDiffs, null, 2));
+}
+
+async function fetchStage3GroupGoalDiffs(groupUrls) {
+  const uniqueUrls = [...new Set(groupUrls)];
+  if (!uniqueUrls.length) {
+    return {};
+  }
+
+  const pages = await Promise.all(
+    uniqueUrls.map(async (groupUrl) => {
+      try {
+        const response = await fetchRemote(groupUrl);
+        if ((response.statusCode || 0) >= 400) {
+          return "";
+        }
+
+        return response.body.toString("utf8");
+      } catch {
+        return "";
+      }
+    })
+  );
+
+  return pages.reduce((mergedGoalDiffs, html) => {
+    if (!html) {
+      return mergedGoalDiffs;
+    }
+
+    return {
+      ...mergedGoalDiffs,
+      ...extractStage3GoalDiffs(html),
+    };
+  }, {});
+}
+
+function extractStage3GroupUrls(html, categoryUrl) {
+  const category = new URL(categoryUrl);
+  const candidateUrls = new Set();
+  const hrefMatches = html.matchAll(/(?:href|data-href)=["']([^"']+)["']/gi);
+
+  for (const match of hrefMatches) {
+    const rawUrl = match[1];
+    if (!rawUrl || rawUrl.startsWith("#") || rawUrl.startsWith("javascript:")) {
+      continue;
+    }
+
+    let resolvedUrl;
+    try {
+      resolvedUrl = new URL(rawUrl, category.origin);
+    } catch {
+      continue;
+    }
+
+    if (!resolvedUrl.hostname.includes("profixio.com")) {
+      continue;
+    }
+
+    const samePath = resolvedUrl.pathname === category.pathname;
+    const sameSearch = resolvedUrl.search === category.search || !resolvedUrl.search;
+    const referencesStage3 =
+      resolvedUrl.href.includes("/group") ||
+      /[?&](group|groupid|layout|view)=/i.test(resolvedUrl.search) ||
+      (!samePath && resolvedUrl.pathname.includes("/category/"));
+
+    if (!referencesStage3) {
+      continue;
+    }
+
+    if (samePath && sameSearch) {
+      continue;
+    }
+
+    resolvedUrl.hash = "";
+    candidateUrls.add(resolvedUrl.toString());
+  }
+
+  return [...candidateUrls];
 }
 
 function extractStage3GoalDiffs(html) {

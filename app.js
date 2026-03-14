@@ -1101,74 +1101,43 @@ function parseProfixioCompetitionPage(html) {
 }
 
 function parseStage3GoalDiffs(html) {
-  const documentNode = new DOMParser().parseFromString(html, "text/html");
   const goalDiffs = {};
-  const knownTeams = Object.keys(STAGE3_LOOKUP);
+  let goalDiffIndex = -1;
+  let headerCellCount = 0;
+  const knownTeams = new Set(Object.keys(STAGE3_LOOKUP));
+  const rowMatches = html.match(/<tr[\s\S]*?<\/tr>/g) || [];
 
-  const tables = Array.from(documentNode.querySelectorAll("table"));
-  tables.forEach((table) => {
-    const headerRow = Array.from(table.querySelectorAll("tr")).find((row) => row.querySelector("th"));
-    if (!headerRow) {
+  rowMatches.forEach((rowHtml) => {
+    const cells = Array.from(rowHtml.matchAll(/<t[dh][^>]*>([\s\S]*?)<\/t[dh]>/g)).map((match) =>
+      normalizeHtmlCellText(match[1])
+    );
+    if (!cells.length) {
       return;
     }
 
-    const headerTexts = Array.from(headerRow.querySelectorAll("th, td")).map((cell) =>
-      normalizeWhitespace(cell.textContent).toLowerCase()
-    );
-    const goalDiffIndex = headerTexts.findIndex((header) =>
-      ["+/-", "g diff", "goal +/-", "diff"].includes(header)
-    );
+    const plusIndex = cells.findIndex((cell) => cell === "+/-");
+    const fallbackIndex = cells.findIndex((cell) => cell === "Mål +/-");
+    if (plusIndex !== -1 || fallbackIndex !== -1) {
+      goalDiffIndex = plusIndex !== -1 ? plusIndex : fallbackIndex;
+      headerCellCount = cells.length;
+      return;
+    }
+
     if (goalDiffIndex === -1) {
       return;
     }
 
-    const rows = Array.from(table.querySelectorAll("tr")).filter((row) => row !== headerRow);
-    rows.forEach((row) => {
-      const cells = Array.from(row.querySelectorAll("th, td"));
-      if (!cells.length) {
-        return;
-      }
-
-      const cellTexts = cells.map((cell) => normalizeWhitespace(cell.textContent));
-      const teamName = cellTexts.find((text) => knownTeams.includes(text));
-      if (!teamName) {
-        return;
-      }
-
-      const goalDiffValue = parseSignedNumber(cellTexts[goalDiffIndex]);
-      if (goalDiffValue !== null) {
-        goalDiffs[teamName] = goalDiffValue;
-      }
-    });
-  });
-
-  if (Object.keys(goalDiffs).length) {
-    return goalDiffs;
-  }
-
-  const normalizedLines = documentNode.body.textContent
-    .split("\n")
-    .map((line) => normalizeWhitespace(line))
-    .filter(Boolean);
-
-  normalizedLines.forEach((line, index) => {
-    const previousLine = normalizedLines[index - 1];
-    const nextLine = normalizedLines[index + 1];
-    const parsedGoalDiff = parseSignedNumber(line);
-
-    if (parsedGoalDiff === null) {
+    const teamName = cells.find((cell) => knownTeams.has(cell));
+    if (!teamName) {
       return;
     }
 
-    if (!["G diff", "Goal +/-", "+/-", "Diff"].includes(previousLine)) {
-      return;
+    const cellOffset = Math.max(cells.length - headerCellCount, 0);
+    const rawGoalDiff = cells[goalDiffIndex + cellOffset];
+    const goalDiffValue = parseSignedNumber(rawGoalDiff);
+    if (goalDiffValue !== null) {
+      goalDiffs[teamName] = goalDiffValue;
     }
-
-    if (!nextLine || !STAGE3_LOOKUP[nextLine]) {
-      return;
-    }
-
-    goalDiffs[nextLine] = parsedGoalDiff;
   });
 
   return goalDiffs;
@@ -1186,6 +1155,15 @@ function parseSignedNumber(value) {
 
 function normalizeWhitespace(value) {
   return String(value || "").replace(/\s+/g, " ").trim();
+}
+
+function normalizeHtmlCellText(value) {
+  return String(value || "")
+    .replace(/<!--[\s\S]*?-->/g, " ")
+    .replace(/<[^>]+>/g, " ")
+    .replace(/&nbsp;/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
 }
 
 function mergeStage3GoalDiffs(groups, goalDiffs) {
