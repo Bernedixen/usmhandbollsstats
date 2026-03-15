@@ -1,0 +1,5272 @@
+{
+  "generatedAt": "2026-03-15T09:39:38.097Z",
+  "teams": {
+    "Härnösands HF 1": {
+      "stage1": {
+        "group": "01:25",
+        "place": 1,
+        "points": 8,
+        "maxPoints": 8,
+        "goalDiff": null,
+        "field": [
+          "Alfta GIF Handboll",
+          "VästeråsIrsta HF",
+          "Sannadals SK",
+          "Skånela IF 2",
+          "Härnösands HF 1"
+        ],
+        "matches": [
+          {
+            "matchId": "32408927",
+            "opponent": "VästeråsIrsta HF",
+            "result": "W",
+            "teamScore": 25,
+            "opponentScore": 15,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32408927/protocol/shf_m"
+          },
+          {
+            "matchId": "32408925",
+            "opponent": "Sannadals SK",
+            "result": "W",
+            "teamScore": 36,
+            "opponentScore": 8,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32408925/protocol/shf_m"
+          },
+          {
+            "matchId": "32408922",
+            "opponent": "Skånela IF 2",
+            "result": "W",
+            "teamScore": 31,
+            "opponentScore": 11,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32408922/protocol/shf_m"
+          },
+          {
+            "matchId": "32408920",
+            "opponent": "Alfta GIF Handboll",
+            "result": "W",
+            "teamScore": 36,
+            "opponentScore": 8,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32408920/protocol/shf_m"
+          }
+        ],
+        "groupPageUrl": "https://www.profixio.com/app/leagueid17925/category/1171543/group/3383407"
+      },
+      "stage2": {
+        "group": "2:09 A",
+        "place": 1,
+        "points": 4,
+        "maxPoints": 4,
+        "goalDiff": null,
+        "field": [
+          "Haninge HK",
+          "Härnösands HF 1",
+          "LIF Lindesberg"
+        ],
+        "matches": [
+          {
+            "matchId": "32494626",
+            "opponent": "Haninge HK",
+            "result": "W",
+            "teamScore": 27,
+            "opponentScore": 13,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32494626/protocol/shf_m"
+          },
+          {
+            "matchId": "32494625",
+            "opponent": "LIF Lindesberg",
+            "result": "W",
+            "teamScore": 28,
+            "opponentScore": 8,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32494625/protocol/shf_m"
+          }
+        ],
+        "groupPageUrl": "https://www.profixio.com/app/leagueid17925/category/1175158/group/3389829"
+      },
+      "stage3": {
+        "group": "3:02 A",
+        "place": 2,
+        "points": 4,
+        "maxPoints": null,
+        "goalDiff": 20,
+        "field": [
+          "Härnösands HF 1",
+          "Tyresö Handboll",
+          "Eskilstuna Guif IF",
+          "Örebro SK U"
+        ],
+        "matches": [
+          {
+            "matchId": "32538648",
+            "opponent": "Tyresö Handboll",
+            "result": "L",
+            "teamScore": 16,
+            "opponentScore": 17,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32538648/protocol/shf_m"
+          },
+          {
+            "matchId": "32538645",
+            "opponent": "Örebro SK U",
+            "result": "W",
+            "teamScore": 29,
+            "opponentScore": 11,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32538645/protocol/shf_m"
+          },
+          {
+            "matchId": "32538623",
+            "opponent": "Eskilstuna Guif IF",
+            "result": "W",
+            "teamScore": 15,
+            "opponentScore": 12,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32538623/protocol/shf_m"
+          }
+        ],
+        "groupPageUrl": "https://www.profixio.com/app/leagueid17925/category/1176782/group/3393924"
+      }
+    },
+    "IFK Nyköping": {
+      "stage1": {
+        "group": "01:06",
+        "place": 2,
+        "points": 6,
+        "maxPoints": 8,
+        "goalDiff": null,
+        "field": [
+          "Huddinge HK",
+          "IFK Nyköping",
+          "Eskilstuna Guif IF",
+          "HK Country",
+          "GT Söder HK"
+        ],
+        "matches": [
+          {
+            "matchId": "32387146",
+            "opponent": "Huddinge HK",
+            "result": "W",
+            "teamScore": 17,
+            "opponentScore": 16,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32387146/protocol/shf_m"
+          },
+          {
+            "matchId": "32387144",
+            "opponent": "GT Söder HK",
+            "result": "W",
+            "teamScore": 24,
+            "opponentScore": 15,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32387144/protocol/shf_m"
+          },
+          {
+            "matchId": "32387141",
+            "opponent": "HK Country",
+            "result": "W",
+            "teamScore": 44,
+            "opponentScore": 6,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32387141/protocol/shf_m"
+          },
+          {
+            "matchId": "32387138",
+            "opponent": "Eskilstuna Guif IF",
+            "result": "L",
+            "teamScore": 17,
+            "opponentScore": 23,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32387138/protocol/shf_m"
+          }
+        ],
+        "groupPageUrl": "https://www.profixio.com/app/leagueid17925/category/1171543/group/3381744"
+      },
+      "stage2": {
+        "group": "2:02 A",
+        "place": 2,
+        "points": 2,
+        "maxPoints": 4,
+        "goalDiff": null,
+        "field": [
+          "IFK Nyköping",
+          "HK Halmstad",
+          "AIK"
+        ],
+        "matches": [
+          {
+            "matchId": "32504303",
+            "opponent": "HK Halmstad",
+            "result": "L",
+            "teamScore": 7,
+            "opponentScore": 23,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32504303/protocol/shf_m"
+          },
+          {
+            "matchId": "32494489",
+            "opponent": "AIK",
+            "result": "W",
+            "teamScore": 29,
+            "opponentScore": 12,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32494489/protocol/shf_m"
+          }
+        ],
+        "groupPageUrl": "https://www.profixio.com/app/leagueid17925/category/1175151/group/3389802"
+      },
+      "stage3": {
+        "group": "3:01 A",
+        "place": 3,
+        "points": 2,
+        "maxPoints": null,
+        "goalDiff": -30,
+        "field": [
+          "HK Eskil",
+          "IFK Nyköping",
+          "GF Kroppskultur 1",
+          "Växjö HF Gul"
+        ],
+        "matches": [
+          {
+            "matchId": "32538644",
+            "opponent": "HK Eskil",
+            "result": "W",
+            "teamScore": 21,
+            "opponentScore": 17,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32538644/protocol/shf_m"
+          },
+          {
+            "matchId": "32538642",
+            "opponent": "GF Kroppskultur 1",
+            "result": "L",
+            "teamScore": 18,
+            "opponentScore": 27,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32538642/protocol/shf_m"
+          },
+          {
+            "matchId": "32538622",
+            "opponent": "Växjö HF Gul",
+            "result": "L",
+            "teamScore": 10,
+            "opponentScore": 35,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32538622/protocol/shf_m"
+          }
+        ],
+        "groupPageUrl": "https://www.profixio.com/app/leagueid17925/category/1176782/group/3393923"
+      }
+    },
+    "IFK Tumba HK": {
+      "stage1": {
+        "group": "01:27",
+        "place": 2,
+        "points": 4,
+        "maxPoints": 6,
+        "goalDiff": null,
+        "field": [
+          "IFK Tumba HK",
+          "Haninge HK",
+          "Jakobsbergs GOIF",
+          "Kiruna HK"
+        ],
+        "matches": [
+          {
+            "matchId": "32473569",
+            "opponent": "Haninge HK",
+            "result": "L",
+            "teamScore": 17,
+            "opponentScore": 18,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32473569/protocol/shf_m"
+          },
+          {
+            "matchId": "32473566",
+            "opponent": "Kiruna HK",
+            "result": "W",
+            "teamScore": 25,
+            "opponentScore": 18,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32473566/protocol/shf_m"
+          },
+          {
+            "matchId": "32473564",
+            "opponent": "Jakobsbergs GOIF",
+            "result": "W",
+            "teamScore": 27,
+            "opponentScore": 5,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32473564/protocol/shf_m"
+          }
+        ],
+        "groupPageUrl": "https://www.profixio.com/app/leagueid17925/category/1171543/group/3383409"
+      },
+      "stage2": {
+        "group": "2:09 B",
+        "place": 3,
+        "points": 0,
+        "maxPoints": 4,
+        "goalDiff": null,
+        "field": [
+          "IFK Tumba HK",
+          "Växjö HF Gul",
+          "VästeråsIrsta HF"
+        ],
+        "matches": [
+          {
+            "matchId": "32494629",
+            "opponent": "Växjö HF Gul",
+            "result": "L",
+            "teamScore": 8,
+            "opponentScore": 27,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32494629/protocol/shf_m"
+          },
+          {
+            "matchId": "32494627",
+            "opponent": "VästeråsIrsta HF",
+            "result": "L",
+            "teamScore": 13,
+            "opponentScore": 14,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32494627/protocol/shf_m"
+          }
+        ],
+        "groupPageUrl": "https://www.profixio.com/app/leagueid17925/category/1175158/group/3389830"
+      },
+      "stage3": {
+        "group": "3:11 B",
+        "place": 1,
+        "points": 6,
+        "maxPoints": null,
+        "goalDiff": 25,
+        "field": [
+          "Arbrå HK",
+          "Skånela IF 2",
+          "Enköpings HF",
+          "IFK Tumba HK"
+        ],
+        "matches": [
+          {
+            "matchId": "32538703",
+            "opponent": "Enköpings HF",
+            "result": "W",
+            "teamScore": 19,
+            "opponentScore": 14,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32538703/protocol/shf_m"
+          },
+          {
+            "matchId": "32538701",
+            "opponent": "Arbrå HK",
+            "result": "W",
+            "teamScore": 23,
+            "opponentScore": 17,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32538701/protocol/shf_m"
+          },
+          {
+            "matchId": "32538682",
+            "opponent": "Skånela IF 2",
+            "result": "W",
+            "teamScore": 25,
+            "opponentScore": 11,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32538682/protocol/shf_m"
+          }
+        ],
+        "groupPageUrl": "https://www.profixio.com/app/leagueid17925/category/1176783/group/3393933"
+      }
+    },
+    "Skuru IK": {
+      "stage1": {
+        "group": "01:28",
+        "place": 1,
+        "points": 6,
+        "maxPoints": 6,
+        "goalDiff": null,
+        "field": [
+          "Vadstena HF",
+          "Årsta AIK HF",
+          "Skuru IK",
+          "Enköpings HF"
+        ],
+        "matches": [
+          {
+            "matchId": "32408946",
+            "opponent": "Enköpings HF",
+            "result": "W",
+            "teamScore": 39,
+            "opponentScore": 13,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32408946/protocol/shf_m"
+          },
+          {
+            "matchId": "32408945",
+            "opponent": "Årsta AIK HF",
+            "result": "W",
+            "teamScore": 22,
+            "opponentScore": 16,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32408945/protocol/shf_m"
+          },
+          {
+            "matchId": "32408942",
+            "opponent": "Vadstena HF",
+            "result": "W",
+            "teamScore": 24,
+            "opponentScore": 4,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32408942/protocol/shf_m"
+          }
+        ],
+        "groupPageUrl": "https://www.profixio.com/app/leagueid17925/category/1171543/group/3383410"
+      },
+      "stage2": {
+        "group": "2:10 B",
+        "place": 1,
+        "points": 4,
+        "maxPoints": 4,
+        "goalDiff": null,
+        "field": [
+          "Skuru IK",
+          "Kramfors-Alliansen",
+          "IK Bolton"
+        ],
+        "matches": [
+          {
+            "matchId": "32494737",
+            "opponent": "Kramfors-Alliansen",
+            "result": "W",
+            "teamScore": 21,
+            "opponentScore": 13,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32494737/protocol/shf_m"
+          },
+          {
+            "matchId": "32494735",
+            "opponent": "IK Bolton",
+            "result": "W",
+            "teamScore": 24,
+            "opponentScore": 13,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32494735/protocol/shf_m"
+          }
+        ],
+        "groupPageUrl": "https://www.profixio.com/app/leagueid17925/category/1175165/group/3389843"
+      },
+      "stage3": {
+        "group": "3:10 A",
+        "place": 1,
+        "points": 6,
+        "maxPoints": null,
+        "goalDiff": 29,
+        "field": [
+          "Skuru IK",
+          "Haninge HK",
+          "Kärra HF",
+          "Härnösands HF 2"
+        ],
+        "matches": [
+          {
+            "matchId": "32538680",
+            "opponent": "Haninge HK",
+            "result": "W",
+            "teamScore": 20,
+            "opponentScore": 15,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32538680/protocol/shf_m"
+          },
+          {
+            "matchId": "32538677",
+            "opponent": "Härnösands HF 2",
+            "result": "W",
+            "teamScore": 31,
+            "opponentScore": 8,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32538677/protocol/shf_m"
+          },
+          {
+            "matchId": "32538639",
+            "opponent": "Kärra HF",
+            "result": "W",
+            "teamScore": 16,
+            "opponentScore": 15,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32538639/protocol/shf_m"
+          }
+        ],
+        "groupPageUrl": "https://www.profixio.com/app/leagueid17925/category/1176782/group/3393932"
+      }
+    },
+    "Täby HBK 1": {
+      "stage1": {
+        "group": "01:02",
+        "place": 1,
+        "points": 8,
+        "maxPoints": 8,
+        "goalDiff": null,
+        "field": [
+          "Täby HBK 1",
+          "HK Eskil",
+          "Borlänge HK 1",
+          "Sundsvall HK",
+          "Skånela IF 1"
+        ],
+        "matches": [
+          {
+            "matchId": "32387114",
+            "opponent": "HK Eskil",
+            "result": "W",
+            "teamScore": 27,
+            "opponentScore": 11,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32387114/protocol/shf_m"
+          },
+          {
+            "matchId": "32387111",
+            "opponent": "Sundsvall HK",
+            "result": "W",
+            "teamScore": 31,
+            "opponentScore": 7,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32387111/protocol/shf_m"
+          },
+          {
+            "matchId": "32387108",
+            "opponent": "Borlänge HK 1",
+            "result": "W",
+            "teamScore": 31,
+            "opponentScore": 10,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32387108/protocol/shf_m"
+          },
+          {
+            "matchId": "32387105",
+            "opponent": "Skånela IF 1",
+            "result": "W",
+            "teamScore": 26,
+            "opponentScore": 13,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32387105/protocol/shf_m"
+          }
+        ],
+        "groupPageUrl": "https://www.profixio.com/app/leagueid17925/category/1171543/group/3381740"
+      },
+      "stage2": {
+        "group": "2:01 B",
+        "place": 1,
+        "points": 4,
+        "maxPoints": 4,
+        "goalDiff": null,
+        "field": [
+          "Strands IF",
+          "Härnösands HF 2",
+          "Täby HBK 1"
+        ],
+        "matches": [
+          {
+            "matchId": "32494447",
+            "opponent": "Härnösands HF 2",
+            "result": "W",
+            "teamScore": 41,
+            "opponentScore": 15,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32494447/protocol/shf_m"
+          },
+          {
+            "matchId": "32494446",
+            "opponent": "Strands IF",
+            "result": "W",
+            "teamScore": 25,
+            "opponentScore": 21,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32494446/protocol/shf_m"
+          }
+        ],
+        "groupPageUrl": "https://www.profixio.com/app/leagueid17925/category/1175149/group/3389795"
+      },
+      "stage3": {
+        "group": "3:09 A",
+        "place": 2,
+        "points": 5,
+        "maxPoints": null,
+        "goalDiff": 10,
+        "field": [
+          "Gustavsbergs IF HK",
+          "HK Aranäs Vit",
+          "Täby HBK 1",
+          "Önnereds HK 1"
+        ],
+        "matches": [
+          {
+            "matchId": "32538675",
+            "opponent": "Önnereds HK 1",
+            "result": "D",
+            "teamScore": 25,
+            "opponentScore": 25,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32538675/protocol/shf_m"
+          },
+          {
+            "matchId": "32538674",
+            "opponent": "HK Aranäs Vit",
+            "result": "W",
+            "teamScore": 32,
+            "opponentScore": 25,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32538674/protocol/shf_m"
+          },
+          {
+            "matchId": "32538637",
+            "opponent": "Gustavsbergs IF HK",
+            "result": "W",
+            "teamScore": 21,
+            "opponentScore": 18,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32538637/protocol/shf_m"
+          }
+        ],
+        "groupPageUrl": "https://www.profixio.com/app/leagueid17925/category/1176782/group/3393931"
+      }
+    },
+    "Alingsås HK": {
+      "stage1": {
+        "group": "01:17",
+        "place": 1,
+        "points": 6,
+        "maxPoints": 6,
+        "goalDiff": null,
+        "field": [
+          "HK Lidköping",
+          "Alingsås HK",
+          "Lysekils HK",
+          "HK Malmö"
+        ],
+        "matches": [
+          {
+            "matchId": "32387228",
+            "opponent": "HK Lidköping",
+            "result": "W",
+            "teamScore": 22,
+            "opponentScore": 17,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32387228/protocol/shf_m"
+          },
+          {
+            "matchId": "32387226",
+            "opponent": "Lysekils HK",
+            "result": "W",
+            "teamScore": 28,
+            "opponentScore": 22,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32387226/protocol/shf_m"
+          },
+          {
+            "matchId": "32387224",
+            "opponent": "HK Malmö",
+            "result": "W",
+            "teamScore": 29,
+            "opponentScore": 16,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32387224/protocol/shf_m"
+          }
+        ],
+        "groupPageUrl": "https://www.profixio.com/app/leagueid17925/category/1171543/group/3381755"
+      },
+      "stage2": {
+        "group": "2:06 A",
+        "place": 1,
+        "points": 4,
+        "maxPoints": 4,
+        "goalDiff": null,
+        "field": [
+          "Alingsås HK",
+          "Lugi HF 1",
+          "IK Sävehof Gul"
+        ],
+        "matches": [
+          {
+            "matchId": "32494553",
+            "opponent": "Lugi HF 1",
+            "result": "W",
+            "teamScore": 25,
+            "opponentScore": 20,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32494553/protocol/shf_m"
+          },
+          {
+            "matchId": "32494551",
+            "opponent": "IK Sävehof Gul",
+            "result": "W",
+            "teamScore": 31,
+            "opponentScore": 19,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32494551/protocol/shf_m"
+          }
+        ],
+        "groupPageUrl": "https://www.profixio.com/app/leagueid17925/category/1175154/group/3389815"
+      },
+      "stage3": {
+        "group": "3:05 A",
+        "place": 1,
+        "points": 6,
+        "maxPoints": null,
+        "goalDiff": 27,
+        "field": [
+          "Alingsås HK",
+          "HK Bollebygd",
+          "Lugi HF 2",
+          "Lödde Vikings HK"
+        ],
+        "matches": [
+          {
+            "matchId": "32538660",
+            "opponent": "HK Bollebygd",
+            "result": "W",
+            "teamScore": 30,
+            "opponentScore": 13,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32538660/protocol/shf_m"
+          },
+          {
+            "matchId": "32538657",
+            "opponent": "Lödde Vikings HK",
+            "result": "W",
+            "teamScore": 16,
+            "opponentScore": 14,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32538657/protocol/shf_m"
+          },
+          {
+            "matchId": "32538629",
+            "opponent": "Lugi HF 2",
+            "result": "W",
+            "teamScore": 29,
+            "opponentScore": 21,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32538629/protocol/shf_m"
+          }
+        ],
+        "groupPageUrl": "https://www.profixio.com/app/leagueid17925/category/1176782/group/3393927"
+      }
+    },
+    "BK Heid": {
+      "stage1": {
+        "group": "01:24",
+        "place": 3,
+        "points": 2,
+        "maxPoints": 6,
+        "goalDiff": null,
+        "field": [
+          "Kärra HF",
+          "BK Heid",
+          "Lugi HF 2",
+          "Kävlinge HK"
+        ],
+        "matches": [
+          {
+            "matchId": "32408919",
+            "opponent": "Kärra HF",
+            "result": "L",
+            "teamScore": 21,
+            "opponentScore": 29,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32408919/protocol/shf_m"
+          },
+          {
+            "matchId": "32408917",
+            "opponent": "Lugi HF 2",
+            "result": "L",
+            "teamScore": 21,
+            "opponentScore": 26,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32408917/protocol/shf_m"
+          },
+          {
+            "matchId": "32408915",
+            "opponent": "Kävlinge HK",
+            "result": "W",
+            "teamScore": 24,
+            "opponentScore": 19,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32408915/protocol/shf_m"
+          }
+        ],
+        "groupPageUrl": "https://www.profixio.com/app/leagueid17925/category/1171543/group/3383406"
+      },
+      "stage2": {
+        "group": "2:08 C",
+        "place": 1,
+        "points": 4,
+        "maxPoints": 4,
+        "goalDiff": null,
+        "field": [
+          "BK Heid",
+          "Lidingö SK",
+          "IFK Hammarö"
+        ],
+        "matches": [
+          {
+            "matchId": "32494610",
+            "opponent": "Lidingö SK",
+            "result": "W",
+            "teamScore": 20,
+            "opponentScore": 13,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32494610/protocol/shf_m"
+          },
+          {
+            "matchId": "32494608",
+            "opponent": "IFK Hammarö",
+            "result": "W",
+            "teamScore": 26,
+            "opponentScore": 4,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32494608/protocol/shf_m"
+          }
+        ],
+        "groupPageUrl": "https://www.profixio.com/app/leagueid17925/category/1175157/group/3389826"
+      },
+      "stage3": {
+        "group": "3:16 B",
+        "place": 1,
+        "points": 6,
+        "maxPoints": null,
+        "goalDiff": 46,
+        "field": [
+          "Ljunghusens HK",
+          "H43 Lund HF Vit",
+          "HK Ankaret Vit",
+          "BK Heid"
+        ],
+        "matches": [
+          {
+            "matchId": "32538723",
+            "opponent": "HK Ankaret Vit",
+            "result": "W",
+            "teamScore": 28,
+            "opponentScore": 8,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32538723/protocol/shf_m"
+          },
+          {
+            "matchId": "32538721",
+            "opponent": "Ljunghusens HK",
+            "result": "W",
+            "teamScore": 26,
+            "opponentScore": 17,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32538721/protocol/shf_m"
+          },
+          {
+            "matchId": "32538692",
+            "opponent": "H43 Lund HF Vit",
+            "result": "W",
+            "teamScore": 25,
+            "opponentScore": 8,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32538692/protocol/shf_m"
+          }
+        ],
+        "groupPageUrl": "https://www.profixio.com/app/leagueid17925/category/1176783/group/3393938"
+      }
+    },
+    "HF Karlskrona": {
+      "stage1": {
+        "group": "01:12",
+        "place": 3,
+        "points": 2,
+        "maxPoints": 6,
+        "goalDiff": null,
+        "field": [
+          "GF Kroppskultur 1",
+          "IK Sävehof Svart",
+          "Tollarps IF",
+          "HF Karlskrona"
+        ],
+        "matches": [
+          {
+            "matchId": "32387189",
+            "opponent": "Tollarps IF",
+            "result": "W",
+            "teamScore": 24,
+            "opponentScore": 8,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32387189/protocol/shf_m"
+          },
+          {
+            "matchId": "32387187",
+            "opponent": "GF Kroppskultur 1",
+            "result": "L",
+            "teamScore": 16,
+            "opponentScore": 24,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32387187/protocol/shf_m"
+          },
+          {
+            "matchId": "32387186",
+            "opponent": "IK Sävehof Svart",
+            "result": "L",
+            "teamScore": 14,
+            "opponentScore": 30,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32387186/protocol/shf_m"
+          }
+        ],
+        "groupPageUrl": "https://www.profixio.com/app/leagueid17925/category/1171543/group/3381750"
+      },
+      "stage2": {
+        "group": "2:04 C",
+        "place": 1,
+        "points": 4,
+        "maxPoints": 4,
+        "goalDiff": null,
+        "field": [
+          "Mörrums GOIS HK",
+          "Stenungsunds HK",
+          "HF Karlskrona"
+        ],
+        "matches": [
+          {
+            "matchId": "32494518",
+            "opponent": "Stenungsunds HK",
+            "result": "W",
+            "teamScore": 36,
+            "opponentScore": 17,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32494518/protocol/shf_m"
+          },
+          {
+            "matchId": "32494517",
+            "opponent": "Mörrums GOIS HK",
+            "result": "W",
+            "teamScore": 32,
+            "opponentScore": 6,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32494517/protocol/shf_m"
+          }
+        ],
+        "groupPageUrl": "https://www.profixio.com/app/leagueid17925/category/1175152/group/3389809"
+      },
+      "stage3": {
+        "group": "3:14 B",
+        "place": 1,
+        "points": 6,
+        "maxPoints": null,
+        "goalDiff": 32,
+        "field": [
+          "HF Karlskrona",
+          "KFUM Lundagård",
+          "Lugi HF 1",
+          "HK Guldkroken Hjo"
+        ],
+        "matches": [
+          {
+            "matchId": "32538716",
+            "opponent": "KFUM Lundagård",
+            "result": "W",
+            "teamScore": 32,
+            "opponentScore": 18,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32538716/protocol/shf_m"
+          },
+          {
+            "matchId": "32538713",
+            "opponent": "HK Guldkroken Hjo",
+            "result": "W",
+            "teamScore": 22,
+            "opponentScore": 19,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32538713/protocol/shf_m"
+          },
+          {
+            "matchId": "32538687",
+            "opponent": "Lugi HF 1",
+            "result": "W",
+            "teamScore": 37,
+            "opponentScore": 22,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32538687/protocol/shf_m"
+          }
+        ],
+        "groupPageUrl": "https://www.profixio.com/app/leagueid17925/category/1176783/group/3393936"
+      }
+    },
+    "KFUM Kalmar HK": {
+      "stage1": {
+        "group": "01:09",
+        "place": 2,
+        "points": 4,
+        "maxPoints": 6,
+        "goalDiff": null,
+        "field": [
+          "IFK Bankeryd",
+          "Särökometernas HK",
+          "Lödde Vikings HK",
+          "KFUM Kalmar HK"
+        ],
+        "matches": [
+          {
+            "matchId": "32387171",
+            "opponent": "Lödde Vikings HK",
+            "result": "L",
+            "teamScore": 18,
+            "opponentScore": 25,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32387171/protocol/shf_m"
+          },
+          {
+            "matchId": "32387169",
+            "opponent": "IFK Bankeryd",
+            "result": "W",
+            "teamScore": 20,
+            "opponentScore": 15,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32387169/protocol/shf_m"
+          },
+          {
+            "matchId": "32387168",
+            "opponent": "Särökometernas HK",
+            "result": "W",
+            "teamScore": 26,
+            "opponentScore": 9,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32387168/protocol/shf_m"
+          }
+        ],
+        "groupPageUrl": "https://www.profixio.com/app/leagueid17925/category/1171543/group/3381747"
+      },
+      "stage2": {
+        "group": "2:03 B",
+        "place": 1,
+        "points": 4,
+        "maxPoints": 4,
+        "goalDiff": null,
+        "field": [
+          "HK Björnen",
+          "Skövde HF 1",
+          "KFUM Kalmar HK"
+        ],
+        "matches": [
+          {
+            "matchId": "32494472",
+            "opponent": "Skövde HF 1",
+            "result": "W",
+            "teamScore": 27,
+            "opponentScore": 18,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32494472/protocol/shf_m"
+          },
+          {
+            "matchId": "32494471",
+            "opponent": "HK Björnen",
+            "result": "W",
+            "teamScore": 27,
+            "opponentScore": 14,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32494471/protocol/shf_m"
+          }
+        ],
+        "groupPageUrl": "https://www.profixio.com/app/leagueid17925/category/1175150/group/3389799"
+      },
+      "stage3": {
+        "group": "3:03 A",
+        "place": 2,
+        "points": 4,
+        "maxPoints": null,
+        "goalDiff": 4,
+        "field": [
+          "Eslövs HK",
+          "KFUM Kalmar HK",
+          "Anderstorps SK",
+          "IK Sävehof Svart"
+        ],
+        "matches": [
+          {
+            "matchId": "32538652",
+            "opponent": "Eslövs HK",
+            "result": "W",
+            "teamScore": 26,
+            "opponentScore": 14,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32538652/protocol/shf_m"
+          },
+          {
+            "matchId": "32538650",
+            "opponent": "Anderstorps SK",
+            "result": "W",
+            "teamScore": 18,
+            "opponentScore": 17,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32538650/protocol/shf_m"
+          },
+          {
+            "matchId": "32538626",
+            "opponent": "IK Sävehof Svart",
+            "result": "L",
+            "teamScore": 17,
+            "opponentScore": 26,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32538626/protocol/shf_m"
+          }
+        ],
+        "groupPageUrl": "https://www.profixio.com/app/leagueid17925/category/1176782/group/3393925"
+      }
+    },
+    "Redbergslids IK Blå": {
+      "stage1": {
+        "group": "01:18",
+        "place": 2,
+        "points": 4,
+        "maxPoints": 6,
+        "goalDiff": null,
+        "field": [
+          "Redbergslids IK Blå",
+          "Byttorps IF Vit",
+          "Lugi HF 1",
+          "Vintrosa IS"
+        ],
+        "matches": [
+          {
+            "matchId": "32387234",
+            "opponent": "Byttorps IF Vit",
+            "result": "W",
+            "teamScore": 33,
+            "opponentScore": 7,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32387234/protocol/shf_m"
+          },
+          {
+            "matchId": "32387231",
+            "opponent": "Vintrosa IS",
+            "result": "W",
+            "teamScore": 27,
+            "opponentScore": 15,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32387231/protocol/shf_m"
+          },
+          {
+            "matchId": "32387229",
+            "opponent": "Lugi HF 1",
+            "result": "L",
+            "teamScore": 21,
+            "opponentScore": 29,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32387229/protocol/shf_m"
+          }
+        ],
+        "groupPageUrl": "https://www.profixio.com/app/leagueid17925/category/1171543/group/3381756"
+      },
+      "stage2": {
+        "group": "2:06 B",
+        "place": 2,
+        "points": 2,
+        "maxPoints": 4,
+        "goalDiff": null,
+        "field": [
+          "Önnereds HK 1",
+          "Redbergslids IK Blå",
+          "HK Lidköping"
+        ],
+        "matches": [
+          {
+            "matchId": "32494556",
+            "opponent": "Önnereds HK 1",
+            "result": "L",
+            "teamScore": 10,
+            "opponentScore": 27,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32494556/protocol/shf_m"
+          },
+          {
+            "matchId": "32494555",
+            "opponent": "HK Lidköping",
+            "result": "W",
+            "teamScore": 22,
+            "opponentScore": 13,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32494555/protocol/shf_m"
+          }
+        ],
+        "groupPageUrl": "https://www.profixio.com/app/leagueid17925/category/1175154/group/3389816"
+      },
+      "stage3": {
+        "group": "3:07 A",
+        "place": 2,
+        "points": 4,
+        "maxPoints": null,
+        "goalDiff": 13,
+        "field": [
+          "Mölndals HF",
+          "IK Sund",
+          "Redbergslids IK Blå",
+          "Årsta AIK HF"
+        ],
+        "matches": [
+          {
+            "matchId": "32538667",
+            "opponent": "Årsta AIK HF",
+            "result": "W",
+            "teamScore": 28,
+            "opponentScore": 17,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32538667/protocol/shf_m"
+          },
+          {
+            "matchId": "32538666",
+            "opponent": "IK Sund",
+            "result": "W",
+            "teamScore": 25,
+            "opponentScore": 21,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32538666/protocol/shf_m"
+          },
+          {
+            "matchId": "32538633",
+            "opponent": "Mölndals HF",
+            "result": "L",
+            "teamScore": 15,
+            "opponentScore": 17,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32538633/protocol/shf_m"
+          }
+        ],
+        "groupPageUrl": "https://www.profixio.com/app/leagueid17925/category/1176782/group/3393929"
+      }
+    },
+    "GF Kroppskultur 1": {
+      "stage1": {
+        "group": "01:12",
+        "place": 2,
+        "points": 4,
+        "maxPoints": 6,
+        "goalDiff": null,
+        "field": [
+          "GF Kroppskultur 1",
+          "IK Sävehof Svart",
+          "Tollarps IF",
+          "HF Karlskrona"
+        ],
+        "matches": [
+          {
+            "matchId": "32387190",
+            "opponent": "IK Sävehof Svart",
+            "result": "L",
+            "teamScore": 16,
+            "opponentScore": 19,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32387190/protocol/shf_m"
+          },
+          {
+            "matchId": "32387187",
+            "opponent": "HF Karlskrona",
+            "result": "W",
+            "teamScore": 24,
+            "opponentScore": 16,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32387187/protocol/shf_m"
+          },
+          {
+            "matchId": "32387185",
+            "opponent": "Tollarps IF",
+            "result": "W",
+            "teamScore": 25,
+            "opponentScore": 17,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32387185/protocol/shf_m"
+          }
+        ],
+        "groupPageUrl": "https://www.profixio.com/app/leagueid17925/category/1171543/group/3381750"
+      },
+      "stage2": {
+        "group": "2:04 A",
+        "place": 1,
+        "points": 4,
+        "maxPoints": 4,
+        "goalDiff": null,
+        "field": [
+          "Eksjö BK",
+          "GF Kroppskultur 1",
+          "Anderstorps SK"
+        ],
+        "matches": [
+          {
+            "matchId": "32494513",
+            "opponent": "Eksjö BK",
+            "result": "W",
+            "teamScore": 29,
+            "opponentScore": 11,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32494513/protocol/shf_m"
+          },
+          {
+            "matchId": "32494512",
+            "opponent": "Anderstorps SK",
+            "result": "W",
+            "teamScore": 27,
+            "opponentScore": 15,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32494512/protocol/shf_m"
+          }
+        ],
+        "groupPageUrl": "https://www.profixio.com/app/leagueid17925/category/1175152/group/3389807"
+      },
+      "stage3": {
+        "group": "3:01 A",
+        "place": 2,
+        "points": 4,
+        "maxPoints": null,
+        "goalDiff": 1,
+        "field": [
+          "HK Eskil",
+          "IFK Nyköping",
+          "GF Kroppskultur 1",
+          "Växjö HF Gul"
+        ],
+        "matches": [
+          {
+            "matchId": "32538643",
+            "opponent": "Växjö HF Gul",
+            "result": "L",
+            "teamScore": 13,
+            "opponentScore": 35,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32538643/protocol/shf_m"
+          },
+          {
+            "matchId": "32538642",
+            "opponent": "IFK Nyköping",
+            "result": "W",
+            "teamScore": 27,
+            "opponentScore": 18,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32538642/protocol/shf_m"
+          },
+          {
+            "matchId": "32538621",
+            "opponent": "HK Eskil",
+            "result": "W",
+            "teamScore": 30,
+            "opponentScore": 16,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32538621/protocol/shf_m"
+          }
+        ],
+        "groupPageUrl": "https://www.profixio.com/app/leagueid17925/category/1176782/group/3393923"
+      }
+    },
+    "IFK Bankeryd": {
+      "stage1": {
+        "group": "01:09",
+        "place": 3,
+        "points": 2,
+        "maxPoints": 6,
+        "goalDiff": null,
+        "field": [
+          "IFK Bankeryd",
+          "Särökometernas HK",
+          "Lödde Vikings HK",
+          "KFUM Kalmar HK"
+        ],
+        "matches": [
+          {
+            "matchId": "32387172",
+            "opponent": "Särökometernas HK",
+            "result": "W",
+            "teamScore": 27,
+            "opponentScore": 22,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32387172/protocol/shf_m"
+          },
+          {
+            "matchId": "32387169",
+            "opponent": "KFUM Kalmar HK",
+            "result": "L",
+            "teamScore": 15,
+            "opponentScore": 20,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32387169/protocol/shf_m"
+          },
+          {
+            "matchId": "32387167",
+            "opponent": "Lödde Vikings HK",
+            "result": "L",
+            "teamScore": 17,
+            "opponentScore": 19,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32387167/protocol/shf_m"
+          }
+        ],
+        "groupPageUrl": "https://www.profixio.com/app/leagueid17925/category/1171543/group/3381747"
+      },
+      "stage2": {
+        "group": "2:03 C",
+        "place": 1,
+        "points": 4,
+        "maxPoints": 4,
+        "goalDiff": null,
+        "field": [
+          "H43 Lund HF Vit",
+          "IFK Bankeryd",
+          "Stavsten HK U"
+        ],
+        "matches": [
+          {
+            "matchId": "32494476",
+            "opponent": "H43 Lund HF Vit",
+            "result": "W",
+            "teamScore": 33,
+            "opponentScore": 15,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32494476/protocol/shf_m"
+          },
+          {
+            "matchId": "32494475",
+            "opponent": "Stavsten HK U",
+            "result": "W",
+            "teamScore": 17,
+            "opponentScore": 2,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32494475/protocol/shf_m"
+          }
+        ],
+        "groupPageUrl": "https://www.profixio.com/app/leagueid17925/category/1175150/group/3389800"
+      },
+      "stage3": {
+        "group": "3:13 B",
+        "place": 1,
+        "points": 6,
+        "maxPoints": null,
+        "goalDiff": 28,
+        "field": [
+          "LIF Lindesberg",
+          "IFK Bankeryd",
+          "Eksjö BK",
+          "Lysekils HK"
+        ],
+        "matches": [
+          {
+            "matchId": "32538712",
+            "opponent": "LIF Lindesberg",
+            "result": "W",
+            "teamScore": 20,
+            "opponentScore": 16,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32538712/protocol/shf_m"
+          },
+          {
+            "matchId": "32538710",
+            "opponent": "Eksjö BK",
+            "result": "W",
+            "teamScore": 26,
+            "opponentScore": 16,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32538710/protocol/shf_m"
+          },
+          {
+            "matchId": "32538686",
+            "opponent": "Lysekils HK",
+            "result": "W",
+            "teamScore": 35,
+            "opponentScore": 21,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32538686/protocol/shf_m"
+          }
+        ],
+        "groupPageUrl": "https://www.profixio.com/app/leagueid17925/category/1176783/group/3393935"
+      }
+    },
+    "Kävlinge HK": {
+      "stage1": {
+        "group": "01:24",
+        "place": 4,
+        "points": 0,
+        "maxPoints": 6,
+        "goalDiff": null,
+        "field": [
+          "Kärra HF",
+          "BK Heid",
+          "Lugi HF 2",
+          "Kävlinge HK"
+        ],
+        "matches": [
+          {
+            "matchId": "32408918",
+            "opponent": "Lugi HF 2",
+            "result": "L",
+            "teamScore": 20,
+            "opponentScore": 24,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32408918/protocol/shf_m"
+          },
+          {
+            "matchId": "32408916",
+            "opponent": "Kärra HF",
+            "result": "L",
+            "teamScore": 20,
+            "opponentScore": 29,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32408916/protocol/shf_m"
+          },
+          {
+            "matchId": "32408915",
+            "opponent": "BK Heid",
+            "result": "L",
+            "teamScore": 19,
+            "opponentScore": 24,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32408915/protocol/shf_m"
+          }
+        ],
+        "groupPageUrl": "https://www.profixio.com/app/leagueid17925/category/1171543/group/3383406"
+      },
+      "stage2": {
+        "group": "2:08 D",
+        "place": 1,
+        "points": 4,
+        "maxPoints": 4,
+        "goalDiff": null,
+        "field": [
+          "Vårgårda IK HK",
+          "Kävlinge HK",
+          "HK Järnvägen"
+        ],
+        "matches": [
+          {
+            "matchId": "32494613",
+            "opponent": "Vårgårda IK HK",
+            "result": "W",
+            "teamScore": 30,
+            "opponentScore": 20,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32494613/protocol/shf_m"
+          },
+          {
+            "matchId": "32494612",
+            "opponent": "HK Järnvägen",
+            "result": "W",
+            "teamScore": 23,
+            "opponentScore": 7,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32494612/protocol/shf_m"
+          }
+        ],
+        "groupPageUrl": "https://www.profixio.com/app/leagueid17925/category/1175157/group/3389827"
+      },
+      "stage3": {
+        "group": "3:15 B",
+        "place": 1,
+        "points": 5,
+        "maxPoints": null,
+        "goalDiff": 16,
+        "field": [
+          "Kävlinge HK",
+          "H43 Lund HF Svart",
+          "Höörs HK H 65",
+          "Önnereds HK 2"
+        ],
+        "matches": [
+          {
+            "matchId": "32538720",
+            "opponent": "H43 Lund HF Svart",
+            "result": "W",
+            "teamScore": 28,
+            "opponentScore": 15,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32538720/protocol/shf_m"
+          },
+          {
+            "matchId": "32538717",
+            "opponent": "Önnereds HK 2",
+            "result": "D",
+            "teamScore": 22,
+            "opponentScore": 22,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32538717/protocol/shf_m"
+          },
+          {
+            "matchId": "32538689",
+            "opponent": "Höörs HK H 65",
+            "result": "W",
+            "teamScore": 27,
+            "opponentScore": 24,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32538689/protocol/shf_m"
+          }
+        ],
+        "groupPageUrl": "https://www.profixio.com/app/leagueid17925/category/1176783/group/3393937"
+      }
+    },
+    "Skara HF": {
+      "stage1": {
+        "group": "01:13",
+        "place": 2,
+        "points": 6,
+        "maxPoints": 8,
+        "goalDiff": null,
+        "field": [
+          "Hässleholms HF",
+          "OV Helsingborg HK",
+          "Skara HF",
+          "Kungälvs HK",
+          "Vinslövs HK"
+        ],
+        "matches": [
+          {
+            "matchId": "32387199",
+            "opponent": "Kungälvs HK",
+            "result": "W",
+            "teamScore": 27,
+            "opponentScore": 19,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32387199/protocol/shf_m"
+          },
+          {
+            "matchId": "32387196",
+            "opponent": "Vinslövs HK",
+            "result": "W",
+            "teamScore": 26,
+            "opponentScore": 5,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32387196/protocol/shf_m"
+          },
+          {
+            "matchId": "32387194",
+            "opponent": "Hässleholms HF",
+            "result": "L",
+            "teamScore": 15,
+            "opponentScore": 23,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32387194/protocol/shf_m"
+          },
+          {
+            "matchId": "32387192",
+            "opponent": "OV Helsingborg HK",
+            "result": "W",
+            "teamScore": 28,
+            "opponentScore": 13,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32387192/protocol/shf_m"
+          }
+        ],
+        "groupPageUrl": "https://www.profixio.com/app/leagueid17925/category/1171543/group/3381751"
+      },
+      "stage2": {
+        "group": "2:05 A",
+        "place": 1,
+        "points": 4,
+        "maxPoints": 4,
+        "goalDiff": null,
+        "field": [
+          "Eslövs HK",
+          "Skara HF",
+          "Skövde HF 2"
+        ],
+        "matches": [
+          {
+            "matchId": "32494531",
+            "opponent": "Eslövs HK",
+            "result": "W",
+            "teamScore": 22,
+            "opponentScore": 17,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32494531/protocol/shf_m"
+          },
+          {
+            "matchId": "32494530",
+            "opponent": "Skövde HF 2",
+            "result": "W",
+            "teamScore": 25,
+            "opponentScore": 17,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32494530/protocol/shf_m"
+          }
+        ],
+        "groupPageUrl": "https://www.profixio.com/app/leagueid17925/category/1175153/group/3389811"
+      },
+      "stage3": {
+        "group": "3:08 A",
+        "place": 2,
+        "points": 4,
+        "maxPoints": null,
+        "goalDiff": 15,
+        "field": [
+          "Skara HF",
+          "Skövde HF 1",
+          "HK Ankaret Röd",
+          "IK Bolton"
+        ],
+        "matches": [
+          {
+            "matchId": "32538672",
+            "opponent": "Skövde HF 1",
+            "result": "W",
+            "teamScore": 20,
+            "opponentScore": 13,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32538672/protocol/shf_m"
+          },
+          {
+            "matchId": "32538669",
+            "opponent": "IK Bolton",
+            "result": "W",
+            "teamScore": 26,
+            "opponentScore": 17,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32538669/protocol/shf_m"
+          },
+          {
+            "matchId": "32538635",
+            "opponent": "HK Ankaret Röd",
+            "result": "L",
+            "teamScore": 26,
+            "opponentScore": 27,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32538635/protocol/shf_m"
+          }
+        ],
+        "groupPageUrl": "https://www.profixio.com/app/leagueid17925/category/1176782/group/3393930"
+      }
+    },
+    "Åhus Handboll": {
+      "stage1": {
+        "group": "01:11",
+        "place": 1,
+        "points": 6,
+        "maxPoints": 6,
+        "goalDiff": null,
+        "field": [
+          "Mörrums GOIS HK",
+          "Åhus Handboll",
+          "Ystads IF HF",
+          "Anderstorps SK"
+        ],
+        "matches": [
+          {
+            "matchId": "32387184",
+            "opponent": "Mörrums GOIS HK",
+            "result": "W",
+            "teamScore": 36,
+            "opponentScore": 6,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32387184/protocol/shf_m"
+          },
+          {
+            "matchId": "32387182",
+            "opponent": "Ystads IF HF",
+            "result": "W",
+            "teamScore": 32,
+            "opponentScore": 9,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32387182/protocol/shf_m"
+          },
+          {
+            "matchId": "32387180",
+            "opponent": "Anderstorps SK",
+            "result": "W",
+            "teamScore": 33,
+            "opponentScore": 20,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32387180/protocol/shf_m"
+          }
+        ],
+        "groupPageUrl": "https://www.profixio.com/app/leagueid17925/category/1171543/group/3381749"
+      },
+      "stage2": {
+        "group": "2:04 B",
+        "place": 2,
+        "points": 2,
+        "maxPoints": 4,
+        "goalDiff": null,
+        "field": [
+          "Åhus Handboll",
+          "IK Sävehof Svart",
+          "H43 Lund HF Svart"
+        ],
+        "matches": [
+          {
+            "matchId": "32494516",
+            "opponent": "IK Sävehof Svart",
+            "result": "L",
+            "teamScore": 18,
+            "opponentScore": 22,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32494516/protocol/shf_m"
+          },
+          {
+            "matchId": "32494514",
+            "opponent": "H43 Lund HF Svart",
+            "result": "W",
+            "teamScore": 33,
+            "opponentScore": 13,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32494514/protocol/shf_m"
+          }
+        ],
+        "groupPageUrl": "https://www.profixio.com/app/leagueid17925/category/1175152/group/3389808"
+      },
+      "stage3": {
+        "group": "3:04 A",
+        "place": 1,
+        "points": 6,
+        "maxPoints": null,
+        "goalDiff": 29,
+        "field": [
+          "Hässleholms HF",
+          "Åhus Handboll",
+          "IK Sävehof Gul",
+          "Torslanda HK"
+        ],
+        "matches": [
+          {
+            "matchId": "32538656",
+            "opponent": "Hässleholms HF",
+            "result": "W",
+            "teamScore": 19,
+            "opponentScore": 16,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32538656/protocol/shf_m"
+          },
+          {
+            "matchId": "32538654",
+            "opponent": "IK Sävehof Gul",
+            "result": "W",
+            "teamScore": 30,
+            "opponentScore": 18,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32538654/protocol/shf_m"
+          },
+          {
+            "matchId": "32538628",
+            "opponent": "Torslanda HK",
+            "result": "W",
+            "teamScore": 26,
+            "opponentScore": 12,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32538628/protocol/shf_m"
+          }
+        ],
+        "groupPageUrl": "https://www.profixio.com/app/leagueid17925/category/1176782/group/3393926"
+      }
+    },
+    "IK Sund": {
+      "stage1": {
+        "group": "01:20",
+        "place": 1,
+        "points": 6,
+        "maxPoints": 6,
+        "goalDiff": null,
+        "field": [
+          "Habo HK",
+          "Strömstad HK",
+          "IK Sund",
+          "Ljunghusens HK"
+        ],
+        "matches": [
+          {
+            "matchId": "32387245",
+            "opponent": "Ljunghusens HK",
+            "result": "W",
+            "teamScore": 29,
+            "opponentScore": 16,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32387245/protocol/shf_m"
+          },
+          {
+            "matchId": "32387244",
+            "opponent": "Strömstad HK",
+            "result": "W",
+            "teamScore": 26,
+            "opponentScore": 10,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32387244/protocol/shf_m"
+          },
+          {
+            "matchId": "32387241",
+            "opponent": "Habo HK",
+            "result": "W",
+            "teamScore": 21,
+            "opponentScore": 10,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32387241/protocol/shf_m"
+          }
+        ],
+        "groupPageUrl": "https://www.profixio.com/app/leagueid17925/category/1171543/group/3381758"
+      },
+      "stage2": {
+        "group": "2:07 B",
+        "place": 1,
+        "points": 4,
+        "maxPoints": 4,
+        "goalDiff": null,
+        "field": [
+          "IK Sund",
+          "Örebro SK U",
+          "IF Hellton Karlstad"
+        ],
+        "matches": [
+          {
+            "matchId": "32509764",
+            "opponent": "Örebro SK U",
+            "result": "W",
+            "teamScore": 28,
+            "opponentScore": 18,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32509764/protocol/shf_m"
+          },
+          {
+            "matchId": "32509762",
+            "opponent": "IF Hellton Karlstad",
+            "result": "W",
+            "teamScore": 27,
+            "opponentScore": 15,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32509762/protocol/shf_m"
+          }
+        ],
+        "groupPageUrl": "https://www.profixio.com/app/leagueid17925/category/1175155/group/3389820"
+      },
+      "stage3": {
+        "group": "3:07 A",
+        "place": 3,
+        "points": 2,
+        "maxPoints": null,
+        "goalDiff": 1,
+        "field": [
+          "Mölndals HF",
+          "IK Sund",
+          "Redbergslids IK Blå",
+          "Årsta AIK HF"
+        ],
+        "matches": [
+          {
+            "matchId": "32538668",
+            "opponent": "Mölndals HF",
+            "result": "L",
+            "teamScore": 18,
+            "opponentScore": 26,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32538668/protocol/shf_m"
+          },
+          {
+            "matchId": "32538666",
+            "opponent": "Redbergslids IK Blå",
+            "result": "L",
+            "teamScore": 21,
+            "opponentScore": 25,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32538666/protocol/shf_m"
+          },
+          {
+            "matchId": "32538634",
+            "opponent": "Årsta AIK HF",
+            "result": "W",
+            "teamScore": 30,
+            "opponentScore": 17,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32538634/protocol/shf_m"
+          }
+        ],
+        "groupPageUrl": "https://www.profixio.com/app/leagueid17925/category/1176782/group/3393929"
+      }
+    },
+    "Kungälvs HK": {
+      "stage1": {
+        "group": "01:13",
+        "place": 4,
+        "points": 2,
+        "maxPoints": 8,
+        "goalDiff": null,
+        "field": [
+          "Hässleholms HF",
+          "OV Helsingborg HK",
+          "Skara HF",
+          "Kungälvs HK",
+          "Vinslövs HK"
+        ],
+        "matches": [
+          {
+            "matchId": "32387199",
+            "opponent": "Skara HF",
+            "result": "L",
+            "teamScore": 19,
+            "opponentScore": 27,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32387199/protocol/shf_m"
+          },
+          {
+            "matchId": "32387197",
+            "opponent": "Hässleholms HF",
+            "result": "L",
+            "teamScore": 13,
+            "opponentScore": 26,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32387197/protocol/shf_m"
+          },
+          {
+            "matchId": "32387195",
+            "opponent": "OV Helsingborg HK",
+            "result": "L",
+            "teamScore": 19,
+            "opponentScore": 20,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32387195/protocol/shf_m"
+          },
+          {
+            "matchId": "32387193",
+            "opponent": "Vinslövs HK",
+            "result": "W",
+            "teamScore": 23,
+            "opponentScore": 15,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32387193/protocol/shf_m"
+          }
+        ],
+        "groupPageUrl": "https://www.profixio.com/app/leagueid17925/category/1171543/group/3381751"
+      },
+      "stage2": {
+        "group": "2:05 D",
+        "place": 2,
+        "points": 4,
+        "maxPoints": 6,
+        "goalDiff": null,
+        "field": [
+          "HK Ankaret Vit",
+          "HK Aranäs Blå",
+          "H43 Lund HF Blå",
+          "Kungälvs HK"
+        ],
+        "matches": [
+          {
+            "matchId": "32494543",
+            "opponent": "H43 Lund HF Blå",
+            "result": "W",
+            "teamScore": 11,
+            "opponentScore": 10,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32494543/protocol/shf_m"
+          },
+          {
+            "matchId": "32494541",
+            "opponent": "HK Ankaret Vit",
+            "result": "L",
+            "teamScore": 23,
+            "opponentScore": 25,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32494541/protocol/shf_m"
+          },
+          {
+            "matchId": "32494539",
+            "opponent": "HK Aranäs Blå",
+            "result": "W",
+            "teamScore": 21,
+            "opponentScore": 13,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32494539/protocol/shf_m"
+          }
+        ],
+        "groupPageUrl": "https://www.profixio.com/app/leagueid17925/category/1175153/group/3389814"
+      },
+      "stage3": {
+        "group": "3:17 B",
+        "place": 1,
+        "points": 6,
+        "maxPoints": null,
+        "goalDiff": 24,
+        "field": [
+          "IF Hellton Karlstad",
+          "Katrineholms AIK",
+          "Vadstena HF",
+          "Kungälvs HK"
+        ],
+        "matches": [
+          {
+            "matchId": "32538727",
+            "opponent": "Vadstena HF",
+            "result": "W",
+            "teamScore": 23,
+            "opponentScore": 9,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32538727/protocol/shf_m"
+          },
+          {
+            "matchId": "32538725",
+            "opponent": "IF Hellton Karlstad",
+            "result": "W",
+            "teamScore": 16,
+            "opponentScore": 15,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32538725/protocol/shf_m"
+          },
+          {
+            "matchId": "32538694",
+            "opponent": "Katrineholms AIK",
+            "result": "W",
+            "teamScore": 23,
+            "opponentScore": 14,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32538694/protocol/shf_m"
+          }
+        ],
+        "groupPageUrl": "https://www.profixio.com/app/leagueid17925/category/1176783/group/3393939"
+      }
+    },
+    "Skövde HF 1": {
+      "stage1": {
+        "group": "01:07",
+        "place": 2,
+        "points": 6,
+        "maxPoints": 8,
+        "goalDiff": null,
+        "field": [
+          "KFUM Lundagård",
+          "IFK Kristianstad",
+          "HK Aranäs Vit",
+          "Skövde HF 1",
+          "H43 Lund HF Vit"
+        ],
+        "matches": [
+          {
+            "matchId": "32387155",
+            "opponent": "HK Aranäs Vit",
+            "result": "L",
+            "teamScore": 20,
+            "opponentScore": 32,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32387155/protocol/shf_m"
+          },
+          {
+            "matchId": "32387153",
+            "opponent": "KFUM Lundagård",
+            "result": "W",
+            "teamScore": 19,
+            "opponentScore": 17,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32387153/protocol/shf_m"
+          },
+          {
+            "matchId": "32387151",
+            "opponent": "IFK Kristianstad",
+            "result": "W",
+            "teamScore": 24,
+            "opponentScore": 20,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32387151/protocol/shf_m"
+          },
+          {
+            "matchId": "32387149",
+            "opponent": "H43 Lund HF Vit",
+            "result": "W",
+            "teamScore": 17,
+            "opponentScore": 15,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32387149/protocol/shf_m"
+          }
+        ],
+        "groupPageUrl": "https://www.profixio.com/app/leagueid17925/category/1171543/group/3381745"
+      },
+      "stage2": {
+        "group": "2:03 B",
+        "place": 2,
+        "points": 2,
+        "maxPoints": 4,
+        "goalDiff": null,
+        "field": [
+          "HK Björnen",
+          "Skövde HF 1",
+          "KFUM Kalmar HK"
+        ],
+        "matches": [
+          {
+            "matchId": "32494473",
+            "opponent": "HK Björnen",
+            "result": "W",
+            "teamScore": 25,
+            "opponentScore": 15,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32494473/protocol/shf_m"
+          },
+          {
+            "matchId": "32494472",
+            "opponent": "KFUM Kalmar HK",
+            "result": "L",
+            "teamScore": 18,
+            "opponentScore": 27,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32494472/protocol/shf_m"
+          }
+        ],
+        "groupPageUrl": "https://www.profixio.com/app/leagueid17925/category/1175150/group/3389799"
+      },
+      "stage3": {
+        "group": "3:08 A",
+        "place": 3,
+        "points": 2,
+        "maxPoints": null,
+        "goalDiff": -9,
+        "field": [
+          "Skara HF",
+          "Skövde HF 1",
+          "HK Ankaret Röd",
+          "IK Bolton"
+        ],
+        "matches": [
+          {
+            "matchId": "32538672",
+            "opponent": "Skara HF",
+            "result": "L",
+            "teamScore": 13,
+            "opponentScore": 20,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32538672/protocol/shf_m"
+          },
+          {
+            "matchId": "32538670",
+            "opponent": "HK Ankaret Röd",
+            "result": "L",
+            "teamScore": 16,
+            "opponentScore": 24,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32538670/protocol/shf_m"
+          },
+          {
+            "matchId": "32538636",
+            "opponent": "IK Bolton",
+            "result": "W",
+            "teamScore": 22,
+            "opponentScore": 16,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32538636/protocol/shf_m"
+          }
+        ],
+        "groupPageUrl": "https://www.profixio.com/app/leagueid17925/category/1176782/group/3393930"
+      }
+    },
+    "Tyresö Handboll": {
+      "stage1": {
+        "group": "01:30",
+        "place": 2,
+        "points": 5,
+        "maxPoints": 6,
+        "goalDiff": null,
+        "field": [
+          "IK Bolton",
+          "Tyresö Handboll",
+          "NKIK Norrköping",
+          "Gustafs GoIF"
+        ],
+        "matches": [
+          {
+            "matchId": "32473733",
+            "opponent": "IK Bolton",
+            "result": "D",
+            "teamScore": 16,
+            "opponentScore": 16,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32473733/protocol/shf_m"
+          },
+          {
+            "matchId": "32473731",
+            "opponent": "NKIK Norrköping",
+            "result": "W",
+            "teamScore": 22,
+            "opponentScore": 14,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32473731/protocol/shf_m"
+          },
+          {
+            "matchId": "32473729",
+            "opponent": "Gustafs GoIF",
+            "result": "W",
+            "teamScore": 32,
+            "opponentScore": 5,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32473729/protocol/shf_m"
+          }
+        ],
+        "groupPageUrl": "https://www.profixio.com/app/leagueid17925/category/1171543/group/3383412"
+      },
+      "stage2": {
+        "group": "2:10 A",
+        "place": 1,
+        "points": 4,
+        "maxPoints": 4,
+        "goalDiff": null,
+        "field": [
+          "Tyresö Handboll",
+          "Arbrå HK",
+          "Årsta AIK HF"
+        ],
+        "matches": [
+          {
+            "matchId": "32494734",
+            "opponent": "Arbrå HK",
+            "result": "W",
+            "teamScore": 22,
+            "opponentScore": 14,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32494734/protocol/shf_m"
+          },
+          {
+            "matchId": "32494732",
+            "opponent": "Årsta AIK HF",
+            "result": "W",
+            "teamScore": 27,
+            "opponentScore": 15,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32494732/protocol/shf_m"
+          }
+        ],
+        "groupPageUrl": "https://www.profixio.com/app/leagueid17925/category/1175165/group/3389842"
+      },
+      "stage3": {
+        "group": "3:02 A",
+        "place": 1,
+        "points": 6,
+        "maxPoints": null,
+        "goalDiff": 21,
+        "field": [
+          "Härnösands HF 1",
+          "Tyresö Handboll",
+          "Eskilstuna Guif IF",
+          "Örebro SK U"
+        ],
+        "matches": [
+          {
+            "matchId": "32538648",
+            "opponent": "Härnösands HF 1",
+            "result": "W",
+            "teamScore": 17,
+            "opponentScore": 16,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32538648/protocol/shf_m"
+          },
+          {
+            "matchId": "32538646",
+            "opponent": "Eskilstuna Guif IF",
+            "result": "W",
+            "teamScore": 20,
+            "opponentScore": 15,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32538646/protocol/shf_m"
+          },
+          {
+            "matchId": "32538624",
+            "opponent": "Örebro SK U",
+            "result": "W",
+            "teamScore": 31,
+            "opponentScore": 16,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32538624/protocol/shf_m"
+          }
+        ],
+        "groupPageUrl": "https://www.profixio.com/app/leagueid17925/category/1176782/group/3393924"
+      }
+    },
+    "Önnereds HK 1": {
+      "stage1": {
+        "group": "01:16",
+        "place": 1,
+        "points": 6,
+        "maxPoints": 6,
+        "goalDiff": null,
+        "field": [
+          "Höörs HK H 65",
+          "IFK Malmö HF Gul",
+          "IK Sävehof Gul",
+          "Önnereds HK 1"
+        ],
+        "matches": [
+          {
+            "matchId": "32387221",
+            "opponent": "IK Sävehof Gul",
+            "result": "W",
+            "teamScore": 26,
+            "opponentScore": 16,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32387221/protocol/shf_m"
+          },
+          {
+            "matchId": "32387219",
+            "opponent": "Höörs HK H 65",
+            "result": "W",
+            "teamScore": 27,
+            "opponentScore": 11,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32387219/protocol/shf_m"
+          },
+          {
+            "matchId": "32387218",
+            "opponent": "IFK Malmö HF Gul",
+            "result": "W",
+            "teamScore": 41,
+            "opponentScore": 7,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32387218/protocol/shf_m"
+          }
+        ],
+        "groupPageUrl": "https://www.profixio.com/app/leagueid17925/category/1171543/group/3381754"
+      },
+      "stage2": {
+        "group": "2:06 B",
+        "place": 1,
+        "points": 4,
+        "maxPoints": 4,
+        "goalDiff": null,
+        "field": [
+          "Önnereds HK 1",
+          "Redbergslids IK Blå",
+          "HK Lidköping"
+        ],
+        "matches": [
+          {
+            "matchId": "32494556",
+            "opponent": "Redbergslids IK Blå",
+            "result": "W",
+            "teamScore": 27,
+            "opponentScore": 10,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32494556/protocol/shf_m"
+          },
+          {
+            "matchId": "32494554",
+            "opponent": "HK Lidköping",
+            "result": "W",
+            "teamScore": 24,
+            "opponentScore": 13,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32494554/protocol/shf_m"
+          }
+        ],
+        "groupPageUrl": "https://www.profixio.com/app/leagueid17925/category/1175154/group/3389816"
+      },
+      "stage3": {
+        "group": "3:09 A",
+        "place": 1,
+        "points": 5,
+        "maxPoints": null,
+        "goalDiff": 24,
+        "field": [
+          "Gustavsbergs IF HK",
+          "HK Aranäs Vit",
+          "Täby HBK 1",
+          "Önnereds HK 1"
+        ],
+        "matches": [
+          {
+            "matchId": "32538675",
+            "opponent": "Täby HBK 1",
+            "result": "D",
+            "teamScore": 25,
+            "opponentScore": 25,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32538675/protocol/shf_m"
+          },
+          {
+            "matchId": "32538673",
+            "opponent": "Gustavsbergs IF HK",
+            "result": "W",
+            "teamScore": 22,
+            "opponentScore": 12,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32538673/protocol/shf_m"
+          },
+          {
+            "matchId": "32538638",
+            "opponent": "HK Aranäs Vit",
+            "result": "W",
+            "teamScore": 33,
+            "opponentScore": 19,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32538638/protocol/shf_m"
+          }
+        ],
+        "groupPageUrl": "https://www.profixio.com/app/leagueid17925/category/1176782/group/3393931"
+      }
+    },
+    "Hässleholms HF": {
+      "stage1": {
+        "group": "01:13",
+        "place": 1,
+        "points": 8,
+        "maxPoints": 8,
+        "goalDiff": null,
+        "field": [
+          "Hässleholms HF",
+          "OV Helsingborg HK",
+          "Skara HF",
+          "Kungälvs HK",
+          "Vinslövs HK"
+        ],
+        "matches": [
+          {
+            "matchId": "32387200",
+            "opponent": "OV Helsingborg HK",
+            "result": "W",
+            "teamScore": 18,
+            "opponentScore": 11,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32387200/protocol/shf_m"
+          },
+          {
+            "matchId": "32387197",
+            "opponent": "Kungälvs HK",
+            "result": "W",
+            "teamScore": 26,
+            "opponentScore": 13,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32387197/protocol/shf_m"
+          },
+          {
+            "matchId": "32387194",
+            "opponent": "Skara HF",
+            "result": "W",
+            "teamScore": 23,
+            "opponentScore": 15,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32387194/protocol/shf_m"
+          },
+          {
+            "matchId": "32387191",
+            "opponent": "Vinslövs HK",
+            "result": "W",
+            "teamScore": 27,
+            "opponentScore": 7,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32387191/protocol/shf_m"
+          }
+        ],
+        "groupPageUrl": "https://www.profixio.com/app/leagueid17925/category/1171543/group/3381751"
+      },
+      "stage2": {
+        "group": "2:05 B",
+        "place": 1,
+        "points": 4,
+        "maxPoints": 4,
+        "goalDiff": null,
+        "field": [
+          "Hässleholms HF",
+          "HK Bollebygd",
+          "IFK Malmö HF Blå"
+        ],
+        "matches": [
+          {
+            "matchId": "32494533",
+            "opponent": "HK Bollebygd",
+            "result": "W",
+            "teamScore": 25,
+            "opponentScore": 6,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32494533/protocol/shf_m"
+          },
+          {
+            "matchId": "32494532",
+            "opponent": "IFK Malmö HF Blå",
+            "result": "W",
+            "teamScore": 28,
+            "opponentScore": 12,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32494532/protocol/shf_m"
+          }
+        ],
+        "groupPageUrl": "https://www.profixio.com/app/leagueid17925/category/1175153/group/3389812"
+      },
+      "stage3": {
+        "group": "3:04 A",
+        "place": 2,
+        "points": 4,
+        "maxPoints": null,
+        "goalDiff": 13,
+        "field": [
+          "Hässleholms HF",
+          "Åhus Handboll",
+          "IK Sävehof Gul",
+          "Torslanda HK"
+        ],
+        "matches": [
+          {
+            "matchId": "32538656",
+            "opponent": "Åhus Handboll",
+            "result": "L",
+            "teamScore": 16,
+            "opponentScore": 19,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32538656/protocol/shf_m"
+          },
+          {
+            "matchId": "32538653",
+            "opponent": "Torslanda HK",
+            "result": "W",
+            "teamScore": 23,
+            "opponentScore": 20,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32538653/protocol/shf_m"
+          },
+          {
+            "matchId": "32538627",
+            "opponent": "IK Sävehof Gul",
+            "result": "W",
+            "teamScore": 22,
+            "opponentScore": 9,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32538627/protocol/shf_m"
+          }
+        ],
+        "groupPageUrl": "https://www.profixio.com/app/leagueid17925/category/1176782/group/3393926"
+      }
+    },
+    "IK Sävehof Svart": {
+      "stage1": {
+        "group": "01:12",
+        "place": 1,
+        "points": 6,
+        "maxPoints": 6,
+        "goalDiff": null,
+        "field": [
+          "GF Kroppskultur 1",
+          "IK Sävehof Svart",
+          "Tollarps IF",
+          "HF Karlskrona"
+        ],
+        "matches": [
+          {
+            "matchId": "32387190",
+            "opponent": "GF Kroppskultur 1",
+            "result": "W",
+            "teamScore": 19,
+            "opponentScore": 16,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32387190/protocol/shf_m"
+          },
+          {
+            "matchId": "32387188",
+            "opponent": "Tollarps IF",
+            "result": "W",
+            "teamScore": 34,
+            "opponentScore": 13,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32387188/protocol/shf_m"
+          },
+          {
+            "matchId": "32387186",
+            "opponent": "HF Karlskrona",
+            "result": "W",
+            "teamScore": 30,
+            "opponentScore": 14,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32387186/protocol/shf_m"
+          }
+        ],
+        "groupPageUrl": "https://www.profixio.com/app/leagueid17925/category/1171543/group/3381750"
+      },
+      "stage2": {
+        "group": "2:04 B",
+        "place": 1,
+        "points": 4,
+        "maxPoints": 4,
+        "goalDiff": null,
+        "field": [
+          "Åhus Handboll",
+          "IK Sävehof Svart",
+          "H43 Lund HF Svart"
+        ],
+        "matches": [
+          {
+            "matchId": "32494516",
+            "opponent": "Åhus Handboll",
+            "result": "W",
+            "teamScore": 22,
+            "opponentScore": 18,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32494516/protocol/shf_m"
+          },
+          {
+            "matchId": "32494515",
+            "opponent": "H43 Lund HF Svart",
+            "result": "W",
+            "teamScore": 32,
+            "opponentScore": 13,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32494515/protocol/shf_m"
+          }
+        ],
+        "groupPageUrl": "https://www.profixio.com/app/leagueid17925/category/1175152/group/3389808"
+      },
+      "stage3": {
+        "group": "3:03 A",
+        "place": 1,
+        "points": 6,
+        "maxPoints": null,
+        "goalDiff": 33,
+        "field": [
+          "Eslövs HK",
+          "KFUM Kalmar HK",
+          "Anderstorps SK",
+          "IK Sävehof Svart"
+        ],
+        "matches": [
+          {
+            "matchId": "32538651",
+            "opponent": "Anderstorps SK",
+            "result": "W",
+            "teamScore": 29,
+            "opponentScore": 19,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32538651/protocol/shf_m"
+          },
+          {
+            "matchId": "32538649",
+            "opponent": "Eslövs HK",
+            "result": "W",
+            "teamScore": 27,
+            "opponentScore": 13,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32538649/protocol/shf_m"
+          },
+          {
+            "matchId": "32538626",
+            "opponent": "KFUM Kalmar HK",
+            "result": "W",
+            "teamScore": 26,
+            "opponentScore": 17,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32538626/protocol/shf_m"
+          }
+        ],
+        "groupPageUrl": "https://www.profixio.com/app/leagueid17925/category/1176782/group/3393925"
+      }
+    },
+    "Kärra HF": {
+      "stage1": {
+        "group": "01:24",
+        "place": 1,
+        "points": 6,
+        "maxPoints": 6,
+        "goalDiff": null,
+        "field": [
+          "Kärra HF",
+          "BK Heid",
+          "Lugi HF 2",
+          "Kävlinge HK"
+        ],
+        "matches": [
+          {
+            "matchId": "32408919",
+            "opponent": "BK Heid",
+            "result": "W",
+            "teamScore": 29,
+            "opponentScore": 21,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32408919/protocol/shf_m"
+          },
+          {
+            "matchId": "32408916",
+            "opponent": "Kävlinge HK",
+            "result": "W",
+            "teamScore": 29,
+            "opponentScore": 20,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32408916/protocol/shf_m"
+          },
+          {
+            "matchId": "32408914",
+            "opponent": "Lugi HF 2",
+            "result": "W",
+            "teamScore": 26,
+            "opponentScore": 24,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32408914/protocol/shf_m"
+          }
+        ],
+        "groupPageUrl": "https://www.profixio.com/app/leagueid17925/category/1171543/group/3383406"
+      },
+      "stage2": {
+        "group": "2:08 B",
+        "place": 1,
+        "points": 4,
+        "maxPoints": 4,
+        "goalDiff": null,
+        "field": [
+          "Kärra HF",
+          "Hammarby IF HF",
+          "Gustavsbergs IF HK"
+        ],
+        "matches": [
+          {
+            "matchId": "32494607",
+            "opponent": "Hammarby IF HF",
+            "result": "W",
+            "teamScore": 28,
+            "opponentScore": 11,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32494607/protocol/shf_m"
+          },
+          {
+            "matchId": "32494605",
+            "opponent": "Gustavsbergs IF HK",
+            "result": "W",
+            "teamScore": 27,
+            "opponentScore": 22,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32494605/protocol/shf_m"
+          }
+        ],
+        "groupPageUrl": "https://www.profixio.com/app/leagueid17925/category/1175157/group/3389825"
+      },
+      "stage3": {
+        "group": "3:10 A",
+        "place": 2,
+        "points": 4,
+        "maxPoints": null,
+        "goalDiff": 26,
+        "field": [
+          "Skuru IK",
+          "Haninge HK",
+          "Kärra HF",
+          "Härnösands HF 2"
+        ],
+        "matches": [
+          {
+            "matchId": "32538679",
+            "opponent": "Härnösands HF 2",
+            "result": "W",
+            "teamScore": 37,
+            "opponentScore": 17,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32538679/protocol/shf_m"
+          },
+          {
+            "matchId": "32538678",
+            "opponent": "Haninge HK",
+            "result": "W",
+            "teamScore": 25,
+            "opponentScore": 18,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32538678/protocol/shf_m"
+          },
+          {
+            "matchId": "32538639",
+            "opponent": "Skuru IK",
+            "result": "L",
+            "teamScore": 15,
+            "opponentScore": 16,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32538639/protocol/shf_m"
+          }
+        ],
+        "groupPageUrl": "https://www.profixio.com/app/leagueid17925/category/1176782/group/3393932"
+      }
+    },
+    "Lödde Vikings HK": {
+      "stage1": {
+        "group": "01:09",
+        "place": 1,
+        "points": 6,
+        "maxPoints": 6,
+        "goalDiff": null,
+        "field": [
+          "IFK Bankeryd",
+          "Särökometernas HK",
+          "Lödde Vikings HK",
+          "KFUM Kalmar HK"
+        ],
+        "matches": [
+          {
+            "matchId": "32387171",
+            "opponent": "KFUM Kalmar HK",
+            "result": "W",
+            "teamScore": 25,
+            "opponentScore": 18,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32387171/protocol/shf_m"
+          },
+          {
+            "matchId": "32387170",
+            "opponent": "Särökometernas HK",
+            "result": "W",
+            "teamScore": 25,
+            "opponentScore": 17,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32387170/protocol/shf_m"
+          },
+          {
+            "matchId": "32387167",
+            "opponent": "IFK Bankeryd",
+            "result": "W",
+            "teamScore": 19,
+            "opponentScore": 17,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32387167/protocol/shf_m"
+          }
+        ],
+        "groupPageUrl": "https://www.profixio.com/app/leagueid17925/category/1171543/group/3381747"
+      },
+      "stage2": {
+        "group": "2:03 A",
+        "place": 1,
+        "points": 4,
+        "maxPoints": 4,
+        "goalDiff": null,
+        "field": [
+          "Lödde Vikings HK",
+          "Byttorps IF Grön",
+          "HK Aranäs Vit"
+        ],
+        "matches": [
+          {
+            "matchId": "32494470",
+            "opponent": "Byttorps IF Grön",
+            "result": "W",
+            "teamScore": 29,
+            "opponentScore": 12,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32494470/protocol/shf_m"
+          },
+          {
+            "matchId": "32494468",
+            "opponent": "HK Aranäs Vit",
+            "result": "W",
+            "teamScore": 21,
+            "opponentScore": 19,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32494468/protocol/shf_m"
+          }
+        ],
+        "groupPageUrl": "https://www.profixio.com/app/leagueid17925/category/1175150/group/3389798"
+      },
+      "stage3": {
+        "group": "3:05 A",
+        "place": 3,
+        "points": 2,
+        "maxPoints": null,
+        "goalDiff": 15,
+        "field": [
+          "Alingsås HK",
+          "HK Bollebygd",
+          "Lugi HF 2",
+          "Lödde Vikings HK"
+        ],
+        "matches": [
+          {
+            "matchId": "32538659",
+            "opponent": "Lugi HF 2",
+            "result": "L",
+            "teamScore": 22,
+            "opponentScore": 25,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32538659/protocol/shf_m"
+          },
+          {
+            "matchId": "32538657",
+            "opponent": "Alingsås HK",
+            "result": "L",
+            "teamScore": 14,
+            "opponentScore": 16,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32538657/protocol/shf_m"
+          },
+          {
+            "matchId": "32538630",
+            "opponent": "HK Bollebygd",
+            "result": "W",
+            "teamScore": 27,
+            "opponentScore": 7,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32538630/protocol/shf_m"
+          }
+        ],
+        "groupPageUrl": "https://www.profixio.com/app/leagueid17925/category/1176782/group/3393927"
+      }
+    },
+    "RP IF Linköping": {
+      "stage1": {
+        "group": "01:04",
+        "place": 3,
+        "points": 2,
+        "maxPoints": 6,
+        "goalDiff": null,
+        "field": [
+          "HK Halmstad (steg 1)",
+          "Mölndals HF",
+          "GF Kroppskultur 2",
+          "RP IF Linköping"
+        ],
+        "matches": [
+          {
+            "matchId": "32387125",
+            "opponent": "GF Kroppskultur 2",
+            "result": "W",
+            "teamScore": 34,
+            "opponentScore": 7,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32387125/protocol/shf_m"
+          },
+          {
+            "matchId": "32387123",
+            "opponent": "HK Halmstad (steg 1)",
+            "result": "L",
+            "teamScore": 16,
+            "opponentScore": 23,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32387123/protocol/shf_m"
+          },
+          {
+            "matchId": "32387122",
+            "opponent": "Mölndals HF",
+            "result": "L",
+            "teamScore": 16,
+            "opponentScore": 21,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32387122/protocol/shf_m"
+          }
+        ],
+        "groupPageUrl": "https://www.profixio.com/app/leagueid17925/category/1171543/group/3381742"
+      },
+      "stage2": {
+        "group": "2:02 D",
+        "place": 2,
+        "points": 2,
+        "maxPoints": 4,
+        "goalDiff": null,
+        "field": [
+          "RP IF Linköping",
+          "Skåre HK",
+          "Huddinge HK"
+        ],
+        "matches": [
+          {
+            "matchId": "32494500",
+            "opponent": "Skåre HK",
+            "result": "W",
+            "teamScore": 30,
+            "opponentScore": 16,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32494500/protocol/shf_m"
+          },
+          {
+            "matchId": "32494498",
+            "opponent": "Huddinge HK",
+            "result": "L",
+            "teamScore": 16,
+            "opponentScore": 17,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32494498/protocol/shf_m"
+          }
+        ],
+        "groupPageUrl": "https://www.profixio.com/app/leagueid17925/category/1175151/group/3389805"
+      },
+      "stage3": {
+        "group": "3:19 B",
+        "place": 1,
+        "points": 6,
+        "maxPoints": null,
+        "goalDiff": 14,
+        "field": [
+          "GT Söder HK",
+          "Skånela IF 1",
+          "RP IF Linköping",
+          "HK Lidköping"
+        ],
+        "matches": [
+          {
+            "matchId": "32538735",
+            "opponent": "HK Lidköping",
+            "result": "W",
+            "teamScore": 21,
+            "opponentScore": 15,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32538735/protocol/shf_m"
+          },
+          {
+            "matchId": "32538734",
+            "opponent": "Skånela IF 1",
+            "result": "W",
+            "teamScore": 23,
+            "opponentScore": 18,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32538734/protocol/shf_m"
+          },
+          {
+            "matchId": "32538697",
+            "opponent": "GT Söder HK",
+            "result": "W",
+            "teamScore": 17,
+            "opponentScore": 14,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32538697/protocol/shf_m"
+          }
+        ],
+        "groupPageUrl": "https://www.profixio.com/app/leagueid17925/category/1176783/group/3393941"
+      }
+    },
+    "Anderstorps SK": {
+      "stage1": {
+        "group": "01:11",
+        "place": 2,
+        "points": 3,
+        "maxPoints": 6,
+        "goalDiff": null,
+        "field": [
+          "Mörrums GOIS HK",
+          "Åhus Handboll",
+          "Ystads IF HF",
+          "Anderstorps SK"
+        ],
+        "matches": [
+          {
+            "matchId": "32387183",
+            "opponent": "Ystads IF HF",
+            "result": "W",
+            "teamScore": 14,
+            "opponentScore": 13,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32387183/protocol/shf_m"
+          },
+          {
+            "matchId": "32387181",
+            "opponent": "Mörrums GOIS HK",
+            "result": "D",
+            "teamScore": 17,
+            "opponentScore": 17,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32387181/protocol/shf_m"
+          },
+          {
+            "matchId": "32387180",
+            "opponent": "Åhus Handboll",
+            "result": "L",
+            "teamScore": 20,
+            "opponentScore": 33,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32387180/protocol/shf_m"
+          }
+        ],
+        "groupPageUrl": "https://www.profixio.com/app/leagueid17925/category/1171543/group/3381749"
+      },
+      "stage2": {
+        "group": "2:04 A",
+        "place": 2,
+        "points": 2,
+        "maxPoints": 4,
+        "goalDiff": null,
+        "field": [
+          "Eksjö BK",
+          "GF Kroppskultur 1",
+          "Anderstorps SK"
+        ],
+        "matches": [
+          {
+            "matchId": "32494512",
+            "opponent": "GF Kroppskultur 1",
+            "result": "L",
+            "teamScore": 15,
+            "opponentScore": 27,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32494512/protocol/shf_m"
+          },
+          {
+            "matchId": "32494511",
+            "opponent": "Eksjö BK",
+            "result": "W",
+            "teamScore": 19,
+            "opponentScore": 12,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32494511/protocol/shf_m"
+          }
+        ],
+        "groupPageUrl": "https://www.profixio.com/app/leagueid17925/category/1175152/group/3389807"
+      },
+      "stage3": {
+        "group": "3:03 A",
+        "place": 3,
+        "points": 2,
+        "maxPoints": null,
+        "goalDiff": -8,
+        "field": [
+          "Eslövs HK",
+          "KFUM Kalmar HK",
+          "Anderstorps SK",
+          "IK Sävehof Svart"
+        ],
+        "matches": [
+          {
+            "matchId": "32538651",
+            "opponent": "IK Sävehof Svart",
+            "result": "L",
+            "teamScore": 19,
+            "opponentScore": 29,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32538651/protocol/shf_m"
+          },
+          {
+            "matchId": "32538650",
+            "opponent": "KFUM Kalmar HK",
+            "result": "L",
+            "teamScore": 17,
+            "opponentScore": 18,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32538650/protocol/shf_m"
+          },
+          {
+            "matchId": "32538625",
+            "opponent": "Eslövs HK",
+            "result": "W",
+            "teamScore": 23,
+            "opponentScore": 20,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32538625/protocol/shf_m"
+          }
+        ],
+        "groupPageUrl": "https://www.profixio.com/app/leagueid17925/category/1176782/group/3393925"
+      }
+    },
+    "KFUM Trollhättan": {
+      "stage1": {
+        "group": "01:19",
+        "place": 1,
+        "points": 6,
+        "maxPoints": 6,
+        "goalDiff": null,
+        "field": [
+          "Växjö HF Svart",
+          "Vetlanda HF",
+          "KFUM Trollhättan",
+          "Örebro SK U"
+        ],
+        "matches": [
+          {
+            "matchId": "32387239",
+            "opponent": "Örebro SK U",
+            "result": "W",
+            "teamScore": 23,
+            "opponentScore": 21,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32387239/protocol/shf_m"
+          },
+          {
+            "matchId": "32387238",
+            "opponent": "Vetlanda HF",
+            "result": "W",
+            "teamScore": 24,
+            "opponentScore": 7,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32387238/protocol/shf_m"
+          },
+          {
+            "matchId": "32387235",
+            "opponent": "Växjö HF Svart",
+            "result": "W",
+            "teamScore": 27,
+            "opponentScore": 10,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32387235/protocol/shf_m"
+          }
+        ],
+        "groupPageUrl": "https://www.profixio.com/app/leagueid17925/category/1171543/group/3381757"
+      },
+      "stage2": {
+        "group": "2:07 A",
+        "place": 2,
+        "points": 2,
+        "maxPoints": 4,
+        "goalDiff": null,
+        "field": [
+          "KFUM Trollhättan",
+          "Ljunghusens HK",
+          "HK Ankaret Röd"
+        ],
+        "matches": [
+          {
+            "matchId": "32509761",
+            "opponent": "Ljunghusens HK",
+            "result": "W",
+            "teamScore": 20,
+            "opponentScore": 17,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32509761/protocol/shf_m"
+          },
+          {
+            "matchId": "32509759",
+            "opponent": "HK Ankaret Röd",
+            "result": "L",
+            "teamScore": 13,
+            "opponentScore": 18,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32509759/protocol/shf_m"
+          }
+        ],
+        "groupPageUrl": "https://www.profixio.com/app/leagueid17925/category/1175155/group/3389819"
+      },
+      "stage3": {
+        "group": "3:06 A",
+        "place": 3,
+        "points": 2,
+        "maxPoints": null,
+        "goalDiff": -7,
+        "field": [
+          "IF Hallby HK",
+          "KFUM Trollhättan",
+          "HK Halmstad",
+          "VästeråsIrsta HF"
+        ],
+        "matches": [
+          {
+            "matchId": "32538664",
+            "opponent": "IF Hallby HK",
+            "result": "L",
+            "teamScore": 15,
+            "opponentScore": 20,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32538664/protocol/shf_m"
+          },
+          {
+            "matchId": "32538662",
+            "opponent": "HK Halmstad",
+            "result": "L",
+            "teamScore": 12,
+            "opponentScore": 18,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32538662/protocol/shf_m"
+          },
+          {
+            "matchId": "32538632",
+            "opponent": "VästeråsIrsta HF",
+            "result": "W",
+            "teamScore": 18,
+            "opponentScore": 14,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32538632/protocol/shf_m"
+          }
+        ],
+        "groupPageUrl": "https://www.profixio.com/app/leagueid17925/category/1176782/group/3393928"
+      }
+    },
+    "Lugi HF 2": {
+      "stage1": {
+        "group": "01:24",
+        "place": 2,
+        "points": 4,
+        "maxPoints": 6,
+        "goalDiff": null,
+        "field": [
+          "Kärra HF",
+          "BK Heid",
+          "Lugi HF 2",
+          "Kävlinge HK"
+        ],
+        "matches": [
+          {
+            "matchId": "32408918",
+            "opponent": "Kävlinge HK",
+            "result": "W",
+            "teamScore": 24,
+            "opponentScore": 20,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32408918/protocol/shf_m"
+          },
+          {
+            "matchId": "32408917",
+            "opponent": "BK Heid",
+            "result": "W",
+            "teamScore": 26,
+            "opponentScore": 21,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32408917/protocol/shf_m"
+          },
+          {
+            "matchId": "32408914",
+            "opponent": "Kärra HF",
+            "result": "L",
+            "teamScore": 24,
+            "opponentScore": 26,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32408914/protocol/shf_m"
+          }
+        ],
+        "groupPageUrl": "https://www.profixio.com/app/leagueid17925/category/1171543/group/3383406"
+      },
+      "stage2": {
+        "group": "2:08 A",
+        "place": 2,
+        "points": 2,
+        "maxPoints": 4,
+        "goalDiff": null,
+        "field": [
+          "Torslanda HK",
+          "Lugi HF 2",
+          "Önnereds HK 2"
+        ],
+        "matches": [
+          {
+            "matchId": "32494604",
+            "opponent": "Torslanda HK",
+            "result": "L",
+            "teamScore": 9,
+            "opponentScore": 20,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32494604/protocol/shf_m"
+          },
+          {
+            "matchId": "32494603",
+            "opponent": "Önnereds HK 2",
+            "result": "W",
+            "teamScore": 23,
+            "opponentScore": 19,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32494603/protocol/shf_m"
+          }
+        ],
+        "groupPageUrl": "https://www.profixio.com/app/leagueid17925/category/1175157/group/3389824"
+      },
+      "stage3": {
+        "group": "3:05 A",
+        "place": 2,
+        "points": 4,
+        "maxPoints": null,
+        "goalDiff": 4,
+        "field": [
+          "Alingsås HK",
+          "HK Bollebygd",
+          "Lugi HF 2",
+          "Lödde Vikings HK"
+        ],
+        "matches": [
+          {
+            "matchId": "32538659",
+            "opponent": "Lödde Vikings HK",
+            "result": "W",
+            "teamScore": 25,
+            "opponentScore": 22,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32538659/protocol/shf_m"
+          },
+          {
+            "matchId": "32538658",
+            "opponent": "HK Bollebygd",
+            "result": "W",
+            "teamScore": 35,
+            "opponentScore": 26,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32538658/protocol/shf_m"
+          },
+          {
+            "matchId": "32538629",
+            "opponent": "Alingsås HK",
+            "result": "L",
+            "teamScore": 21,
+            "opponentScore": 29,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32538629/protocol/shf_m"
+          }
+        ],
+        "groupPageUrl": "https://www.profixio.com/app/leagueid17925/category/1176782/group/3393927"
+      }
+    },
+    "Strömstad HK": {
+      "stage1": {
+        "group": "01:20",
+        "place": 3,
+        "points": 2,
+        "maxPoints": 6,
+        "goalDiff": null,
+        "field": [
+          "Habo HK",
+          "Strömstad HK",
+          "IK Sund",
+          "Ljunghusens HK"
+        ],
+        "matches": [
+          {
+            "matchId": "32387246",
+            "opponent": "Habo HK",
+            "result": "W",
+            "teamScore": 14,
+            "opponentScore": 9,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32387246/protocol/shf_m"
+          },
+          {
+            "matchId": "32387244",
+            "opponent": "IK Sund",
+            "result": "L",
+            "teamScore": 10,
+            "opponentScore": 26,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32387244/protocol/shf_m"
+          },
+          {
+            "matchId": "32387242",
+            "opponent": "Ljunghusens HK",
+            "result": "L",
+            "teamScore": 20,
+            "opponentScore": 26,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32387242/protocol/shf_m"
+          }
+        ],
+        "groupPageUrl": "https://www.profixio.com/app/leagueid17925/category/1171543/group/3381758"
+      },
+      "stage2": {
+        "group": "2:07 C",
+        "place": 1,
+        "points": 4,
+        "maxPoints": 4,
+        "goalDiff": null,
+        "field": [
+          "Strömstad HK",
+          "IFK Mullsjö",
+          "Växjö HF Svart"
+        ],
+        "matches": [
+          {
+            "matchId": "32509767",
+            "opponent": "IFK Mullsjö",
+            "result": "W",
+            "teamScore": 27,
+            "opponentScore": 14,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32509767/protocol/shf_m"
+          },
+          {
+            "matchId": "32509765",
+            "opponent": "Växjö HF Svart",
+            "result": "W",
+            "teamScore": 20,
+            "opponentScore": 10,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32509765/protocol/shf_m"
+          }
+        ],
+        "groupPageUrl": "https://www.profixio.com/app/leagueid17925/category/1175155/group/3389821"
+      },
+      "stage3": {
+        "group": "3:12 B",
+        "place": 1,
+        "points": 6,
+        "maxPoints": null,
+        "goalDiff": 24,
+        "field": [
+          "Borlänge HK 1",
+          "Edsbyns IF HF",
+          "AIK",
+          "Strömstad HK"
+        ],
+        "matches": [
+          {
+            "matchId": "32538707",
+            "opponent": "AIK",
+            "result": "W",
+            "teamScore": 19,
+            "opponentScore": 10,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32538707/protocol/shf_m"
+          },
+          {
+            "matchId": "32538705",
+            "opponent": "Borlänge HK 1",
+            "result": "W",
+            "teamScore": 19,
+            "opponentScore": 15,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32538705/protocol/shf_m"
+          },
+          {
+            "matchId": "32538684",
+            "opponent": "Edsbyns IF HF",
+            "result": "W",
+            "teamScore": 18,
+            "opponentScore": 7,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32538684/protocol/shf_m"
+          }
+        ],
+        "groupPageUrl": "https://www.profixio.com/app/leagueid17925/category/1176783/group/3393934"
+      }
+    },
+    "Växjö HF Gul": {
+      "stage1": {
+        "group": "01:26",
+        "place": 1,
+        "points": 6,
+        "maxPoints": 6,
+        "goalDiff": null,
+        "field": [
+          "Katrineholms AIK",
+          "LIF Lindesberg",
+          "Täby HBK 2",
+          "Växjö HF Gul"
+        ],
+        "matches": [
+          {
+            "matchId": "32408934",
+            "opponent": "Täby HBK 2",
+            "result": "W",
+            "teamScore": 38,
+            "opponentScore": 12,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32408934/protocol/shf_m"
+          },
+          {
+            "matchId": "32408932",
+            "opponent": "Katrineholms AIK",
+            "result": "W",
+            "teamScore": 28,
+            "opponentScore": 9,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32408932/protocol/shf_m"
+          },
+          {
+            "matchId": "32408931",
+            "opponent": "LIF Lindesberg",
+            "result": "W",
+            "teamScore": 30,
+            "opponentScore": 5,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32408931/protocol/shf_m"
+          }
+        ],
+        "groupPageUrl": "https://www.profixio.com/app/leagueid17925/category/1171543/group/3383408"
+      },
+      "stage2": {
+        "group": "2:09 B",
+        "place": 1,
+        "points": 4,
+        "maxPoints": 4,
+        "goalDiff": null,
+        "field": [
+          "IFK Tumba HK",
+          "Växjö HF Gul",
+          "VästeråsIrsta HF"
+        ],
+        "matches": [
+          {
+            "matchId": "32494629",
+            "opponent": "IFK Tumba HK",
+            "result": "W",
+            "teamScore": 27,
+            "opponentScore": 8,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32494629/protocol/shf_m"
+          },
+          {
+            "matchId": "32494628",
+            "opponent": "VästeråsIrsta HF",
+            "result": "W",
+            "teamScore": 25,
+            "opponentScore": 10,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32494628/protocol/shf_m"
+          }
+        ],
+        "groupPageUrl": "https://www.profixio.com/app/leagueid17925/category/1175158/group/3389830"
+      },
+      "stage3": {
+        "group": "3:01 A",
+        "place": 1,
+        "points": 6,
+        "maxPoints": null,
+        "goalDiff": 53,
+        "field": [
+          "HK Eskil",
+          "IFK Nyköping",
+          "GF Kroppskultur 1",
+          "Växjö HF Gul"
+        ],
+        "matches": [
+          {
+            "matchId": "32538643",
+            "opponent": "GF Kroppskultur 1",
+            "result": "W",
+            "teamScore": 35,
+            "opponentScore": 13,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32538643/protocol/shf_m"
+          },
+          {
+            "matchId": "32538641",
+            "opponent": "HK Eskil",
+            "result": "W",
+            "teamScore": 27,
+            "opponentScore": 21,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32538641/protocol/shf_m"
+          },
+          {
+            "matchId": "32538622",
+            "opponent": "IFK Nyköping",
+            "result": "W",
+            "teamScore": 35,
+            "opponentScore": 10,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32538622/protocol/shf_m"
+          }
+        ],
+        "groupPageUrl": "https://www.profixio.com/app/leagueid17925/category/1176782/group/3393923"
+      }
+    },
+    "Eskilstuna Guif IF": {
+      "stage1": {
+        "group": "01:06",
+        "place": 1,
+        "points": 8,
+        "maxPoints": 8,
+        "goalDiff": null,
+        "field": [
+          "Huddinge HK",
+          "IFK Nyköping",
+          "Eskilstuna Guif IF",
+          "HK Country",
+          "GT Söder HK"
+        ],
+        "matches": [
+          {
+            "matchId": "32387145",
+            "opponent": "HK Country",
+            "result": "W",
+            "teamScore": 28,
+            "opponentScore": 15,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32387145/protocol/shf_m"
+          },
+          {
+            "matchId": "32387142",
+            "opponent": "GT Söder HK",
+            "result": "W",
+            "teamScore": 21,
+            "opponentScore": 13,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32387142/protocol/shf_m"
+          },
+          {
+            "matchId": "32387140",
+            "opponent": "Huddinge HK",
+            "result": "W",
+            "teamScore": 23,
+            "opponentScore": 17,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32387140/protocol/shf_m"
+          },
+          {
+            "matchId": "32387138",
+            "opponent": "IFK Nyköping",
+            "result": "W",
+            "teamScore": 23,
+            "opponentScore": 17,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32387138/protocol/shf_m"
+          }
+        ],
+        "groupPageUrl": "https://www.profixio.com/app/leagueid17925/category/1171543/group/3381744"
+      },
+      "stage2": {
+        "group": "2:02 B",
+        "place": 2,
+        "points": 3,
+        "maxPoints": 4,
+        "goalDiff": null,
+        "field": [
+          "Eskilstuna Guif IF",
+          "Mölndals HF",
+          "Mantorps IF HF"
+        ],
+        "matches": [
+          {
+            "matchId": "32494494",
+            "opponent": "Mölndals HF",
+            "result": "D",
+            "teamScore": 19,
+            "opponentScore": 19,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32494494/protocol/shf_m"
+          },
+          {
+            "matchId": "32494492",
+            "opponent": "Mantorps IF HF",
+            "result": "W",
+            "teamScore": 21,
+            "opponentScore": 16,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32494492/protocol/shf_m"
+          }
+        ],
+        "groupPageUrl": "https://www.profixio.com/app/leagueid17925/category/1175151/group/3389803"
+      },
+      "stage3": {
+        "group": "3:02 A",
+        "place": 3,
+        "points": 2,
+        "maxPoints": null,
+        "goalDiff": -1,
+        "field": [
+          "Härnösands HF 1",
+          "Tyresö Handboll",
+          "Eskilstuna Guif IF",
+          "Örebro SK U"
+        ],
+        "matches": [
+          {
+            "matchId": "32538647",
+            "opponent": "Örebro SK U",
+            "result": "W",
+            "teamScore": 19,
+            "opponentScore": 12,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32538647/protocol/shf_m"
+          },
+          {
+            "matchId": "32538646",
+            "opponent": "Tyresö Handboll",
+            "result": "L",
+            "teamScore": 15,
+            "opponentScore": 20,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32538646/protocol/shf_m"
+          },
+          {
+            "matchId": "32538623",
+            "opponent": "Härnösands HF 1",
+            "result": "L",
+            "teamScore": 12,
+            "opponentScore": 15,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32538623/protocol/shf_m"
+          }
+        ],
+        "groupPageUrl": "https://www.profixio.com/app/leagueid17925/category/1176782/group/3393924"
+      }
+    },
+    "Gustavsbergs IF HK": {
+      "stage1": {
+        "group": "01:23",
+        "place": 1,
+        "points": 8,
+        "maxPoints": 8,
+        "goalDiff": null,
+        "field": [
+          "Ramunder HK",
+          "Gustavsbergs IF HK",
+          "Torslanda HK",
+          "Vårgårda IK HK",
+          "Lidingö SK"
+        ],
+        "matches": [
+          {
+            "matchId": "32408913",
+            "opponent": "Ramunder HK",
+            "result": "W",
+            "teamScore": 29,
+            "opponentScore": 11,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32408913/protocol/shf_m"
+          },
+          {
+            "matchId": "32387270",
+            "opponent": "Lidingö SK",
+            "result": "W",
+            "teamScore": 28,
+            "opponentScore": 6,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32387270/protocol/shf_m"
+          },
+          {
+            "matchId": "32387267",
+            "opponent": "Vårgårda IK HK",
+            "result": "W",
+            "teamScore": 29,
+            "opponentScore": 9,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32387267/protocol/shf_m"
+          },
+          {
+            "matchId": "32387264",
+            "opponent": "Torslanda HK",
+            "result": "W",
+            "teamScore": 25,
+            "opponentScore": 20,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32387264/protocol/shf_m"
+          }
+        ],
+        "groupPageUrl": "https://www.profixio.com/app/leagueid17925/category/1171543/group/3381761"
+      },
+      "stage2": {
+        "group": "2:08 B",
+        "place": 2,
+        "points": 2,
+        "maxPoints": 4,
+        "goalDiff": null,
+        "field": [
+          "Kärra HF",
+          "Hammarby IF HF",
+          "Gustavsbergs IF HK"
+        ],
+        "matches": [
+          {
+            "matchId": "32494606",
+            "opponent": "Hammarby IF HF",
+            "result": "W",
+            "teamScore": 39,
+            "opponentScore": 16,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32494606/protocol/shf_m"
+          },
+          {
+            "matchId": "32494605",
+            "opponent": "Kärra HF",
+            "result": "L",
+            "teamScore": 22,
+            "opponentScore": 27,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32494605/protocol/shf_m"
+          }
+        ],
+        "groupPageUrl": "https://www.profixio.com/app/leagueid17925/category/1175157/group/3389825"
+      },
+      "stage3": {
+        "group": "3:09 A",
+        "place": 3,
+        "points": 2,
+        "maxPoints": null,
+        "goalDiff": -12,
+        "field": [
+          "Gustavsbergs IF HK",
+          "HK Aranäs Vit",
+          "Täby HBK 1",
+          "Önnereds HK 1"
+        ],
+        "matches": [
+          {
+            "matchId": "32538676",
+            "opponent": "HK Aranäs Vit",
+            "result": "W",
+            "teamScore": 28,
+            "opponentScore": 27,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32538676/protocol/shf_m"
+          },
+          {
+            "matchId": "32538673",
+            "opponent": "Önnereds HK 1",
+            "result": "L",
+            "teamScore": 12,
+            "opponentScore": 22,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32538673/protocol/shf_m"
+          },
+          {
+            "matchId": "32538637",
+            "opponent": "Täby HBK 1",
+            "result": "L",
+            "teamScore": 18,
+            "opponentScore": 21,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32538637/protocol/shf_m"
+          }
+        ],
+        "groupPageUrl": "https://www.profixio.com/app/leagueid17925/category/1176782/group/3393931"
+      }
+    },
+    "HK Ankaret Röd": {
+      "stage1": {
+        "group": "01:21",
+        "place": 1,
+        "points": 6,
+        "maxPoints": 6,
+        "goalDiff": null,
+        "field": [
+          "IFK Mullsjö",
+          "Backa HK",
+          "IF Hellton Karlstad",
+          "HK Ankaret Röd"
+        ],
+        "matches": [
+          {
+            "matchId": "32387251",
+            "opponent": "IF Hellton Karlstad",
+            "result": "W",
+            "teamScore": 23,
+            "opponentScore": 9,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32387251/protocol/shf_m"
+          },
+          {
+            "matchId": "32387249",
+            "opponent": "IFK Mullsjö",
+            "result": "W",
+            "teamScore": 28,
+            "opponentScore": 17,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32387249/protocol/shf_m"
+          },
+          {
+            "matchId": "32387248",
+            "opponent": "Backa HK",
+            "result": "W",
+            "teamScore": 21,
+            "opponentScore": 15,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32387248/protocol/shf_m"
+          }
+        ],
+        "groupPageUrl": "https://www.profixio.com/app/leagueid17925/category/1171543/group/3381759"
+      },
+      "stage2": {
+        "group": "2:07 A",
+        "place": 1,
+        "points": 4,
+        "maxPoints": 4,
+        "goalDiff": null,
+        "field": [
+          "KFUM Trollhättan",
+          "Ljunghusens HK",
+          "HK Ankaret Röd"
+        ],
+        "matches": [
+          {
+            "matchId": "32509760",
+            "opponent": "Ljunghusens HK",
+            "result": "W",
+            "teamScore": 19,
+            "opponentScore": 9,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32509760/protocol/shf_m"
+          },
+          {
+            "matchId": "32509759",
+            "opponent": "KFUM Trollhättan",
+            "result": "W",
+            "teamScore": 18,
+            "opponentScore": 13,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32509759/protocol/shf_m"
+          }
+        ],
+        "groupPageUrl": "https://www.profixio.com/app/leagueid17925/category/1175155/group/3389819"
+      },
+      "stage3": {
+        "group": "3:08 A",
+        "place": 1,
+        "points": 4,
+        "maxPoints": null,
+        "goalDiff": 6,
+        "field": [
+          "Skara HF",
+          "Skövde HF 1",
+          "HK Ankaret Röd",
+          "IK Bolton"
+        ],
+        "matches": [
+          {
+            "matchId": "32538671",
+            "opponent": "IK Bolton",
+            "result": "L",
+            "teamScore": 20,
+            "opponentScore": 23,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32538671/protocol/shf_m"
+          },
+          {
+            "matchId": "32538670",
+            "opponent": "Skövde HF 1",
+            "result": "W",
+            "teamScore": 24,
+            "opponentScore": 16,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32538670/protocol/shf_m"
+          },
+          {
+            "matchId": "32538635",
+            "opponent": "Skara HF",
+            "result": "W",
+            "teamScore": 27,
+            "opponentScore": 26,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32538635/protocol/shf_m"
+          }
+        ],
+        "groupPageUrl": "https://www.profixio.com/app/leagueid17925/category/1176782/group/3393930"
+      }
+    },
+    "HK Halmstad": {
+      "stage1": {
+        "group": "01:04",
+        "place": 2,
+        "points": 5,
+        "maxPoints": 6,
+        "goalDiff": null,
+        "field": [],
+        "matches": [],
+        "groupPageUrl": ""
+      },
+      "stage2": {
+        "group": "2:02 A",
+        "place": 1,
+        "points": 4,
+        "maxPoints": 4,
+        "goalDiff": null,
+        "field": [
+          "IFK Nyköping",
+          "HK Halmstad",
+          "AIK"
+        ],
+        "matches": [
+          {
+            "matchId": "32504303",
+            "opponent": "IFK Nyköping",
+            "result": "W",
+            "teamScore": 23,
+            "opponentScore": 7,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32504303/protocol/shf_m"
+          },
+          {
+            "matchId": "32504302",
+            "opponent": "AIK",
+            "result": "W",
+            "teamScore": 28,
+            "opponentScore": 14,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32504302/protocol/shf_m"
+          }
+        ],
+        "groupPageUrl": "https://www.profixio.com/app/leagueid17925/category/1175151/group/3389802"
+      },
+      "stage3": {
+        "group": "3:06 A",
+        "place": 1,
+        "points": 6,
+        "maxPoints": null,
+        "goalDiff": 15,
+        "field": [
+          "IF Hallby HK",
+          "KFUM Trollhättan",
+          "HK Halmstad",
+          "VästeråsIrsta HF"
+        ],
+        "matches": [
+          {
+            "matchId": "32538663",
+            "opponent": "VästeråsIrsta HF",
+            "result": "W",
+            "teamScore": 24,
+            "opponentScore": 17,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32538663/protocol/shf_m"
+          },
+          {
+            "matchId": "32538662",
+            "opponent": "KFUM Trollhättan",
+            "result": "W",
+            "teamScore": 18,
+            "opponentScore": 12,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32538662/protocol/shf_m"
+          },
+          {
+            "matchId": "32538631",
+            "opponent": "IF Hallby HK",
+            "result": "W",
+            "teamScore": 20,
+            "opponentScore": 18,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32538631/protocol/shf_m"
+          }
+        ],
+        "groupPageUrl": "https://www.profixio.com/app/leagueid17925/category/1176782/group/3393928"
+      }
+    },
+    "Skövde HF 2": {
+      "stage1": {
+        "group": "01:14",
+        "place": 1,
+        "points": 8,
+        "maxPoints": 8,
+        "goalDiff": null,
+        "field": [
+          "IFK Malmö HF Blå",
+          "Karlshamns HF",
+          "HK Aranäs Blå",
+          "Skövde HF 2",
+          "H43 Lund HF Blå"
+        ],
+        "matches": [
+          {
+            "matchId": "32387209",
+            "opponent": "HK Aranäs Blå",
+            "result": "W",
+            "teamScore": 21,
+            "opponentScore": 12,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32387209/protocol/shf_m"
+          },
+          {
+            "matchId": "32387207",
+            "opponent": "IFK Malmö HF Blå",
+            "result": "W",
+            "teamScore": 20,
+            "opponentScore": 16,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32387207/protocol/shf_m"
+          },
+          {
+            "matchId": "32387205",
+            "opponent": "Karlshamns HF",
+            "result": "W",
+            "teamScore": 18,
+            "opponentScore": 12,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32387205/protocol/shf_m"
+          },
+          {
+            "matchId": "32387203",
+            "opponent": "H43 Lund HF Blå",
+            "result": "W",
+            "teamScore": 14,
+            "opponentScore": 13,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32387203/protocol/shf_m"
+          }
+        ],
+        "groupPageUrl": "https://www.profixio.com/app/leagueid17925/category/1171543/group/3381752"
+      },
+      "stage2": {
+        "group": "2:05 A",
+        "place": 3,
+        "points": 0,
+        "maxPoints": 4,
+        "goalDiff": null,
+        "field": [
+          "Eslövs HK",
+          "Skara HF",
+          "Skövde HF 2"
+        ],
+        "matches": [
+          {
+            "matchId": "32494530",
+            "opponent": "Skara HF",
+            "result": "L",
+            "teamScore": 17,
+            "opponentScore": 25,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32494530/protocol/shf_m"
+          },
+          {
+            "matchId": "32494529",
+            "opponent": "Eslövs HK",
+            "result": "L",
+            "teamScore": 16,
+            "opponentScore": 21,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32494529/protocol/shf_m"
+          }
+        ],
+        "groupPageUrl": "https://www.profixio.com/app/leagueid17925/category/1175153/group/3389811"
+      },
+      "stage3": {
+        "group": "3:18 B",
+        "place": 1,
+        "points": 6,
+        "maxPoints": null,
+        "goalDiff": 31,
+        "field": [
+          "Skövde HF 2",
+          "OV Helsingborg HK",
+          "HK Björnen",
+          "Ystads IF HF"
+        ],
+        "matches": [
+          {
+            "matchId": "32538732",
+            "opponent": "OV Helsingborg HK",
+            "result": "W",
+            "teamScore": 15,
+            "opponentScore": 14,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32538732/protocol/shf_m"
+          },
+          {
+            "matchId": "32538729",
+            "opponent": "Ystads IF HF",
+            "result": "W",
+            "teamScore": 20,
+            "opponentScore": 9,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32538729/protocol/shf_m"
+          },
+          {
+            "matchId": "32538695",
+            "opponent": "HK Björnen",
+            "result": "W",
+            "teamScore": 26,
+            "opponentScore": 7,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32538695/protocol/shf_m"
+          }
+        ],
+        "groupPageUrl": "https://www.profixio.com/app/leagueid17925/category/1176783/group/3393940"
+      }
+    },
+    "Haninge HK": {
+      "stage1": {
+        "group": "01:27",
+        "place": 1,
+        "points": 6,
+        "maxPoints": 6,
+        "goalDiff": null,
+        "field": [
+          "IFK Tumba HK",
+          "Haninge HK",
+          "Jakobsbergs GOIF",
+          "Kiruna HK"
+        ],
+        "matches": [
+          {
+            "matchId": "32473569",
+            "opponent": "IFK Tumba HK",
+            "result": "W",
+            "teamScore": 18,
+            "opponentScore": 17,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32473569/protocol/shf_m"
+          },
+          {
+            "matchId": "32473567",
+            "opponent": "Jakobsbergs GOIF",
+            "result": "W",
+            "teamScore": 15,
+            "opponentScore": 2,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32473567/protocol/shf_m"
+          },
+          {
+            "matchId": "32473565",
+            "opponent": "Kiruna HK",
+            "result": "W",
+            "teamScore": 27,
+            "opponentScore": 17,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32473565/protocol/shf_m"
+          }
+        ],
+        "groupPageUrl": "https://www.profixio.com/app/leagueid17925/category/1171543/group/3383409"
+      },
+      "stage2": {
+        "group": "2:09 A",
+        "place": 2,
+        "points": 2,
+        "maxPoints": 4,
+        "goalDiff": null,
+        "field": [
+          "Haninge HK",
+          "Härnösands HF 1",
+          "LIF Lindesberg"
+        ],
+        "matches": [
+          {
+            "matchId": "32494626",
+            "opponent": "Härnösands HF 1",
+            "result": "L",
+            "teamScore": 13,
+            "opponentScore": 27,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32494626/protocol/shf_m"
+          },
+          {
+            "matchId": "32494624",
+            "opponent": "LIF Lindesberg",
+            "result": "W",
+            "teamScore": 19,
+            "opponentScore": 17,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32494624/protocol/shf_m"
+          }
+        ],
+        "groupPageUrl": "https://www.profixio.com/app/leagueid17925/category/1175158/group/3389829"
+      },
+      "stage3": {
+        "group": "3:10 A",
+        "place": 3,
+        "points": 2,
+        "maxPoints": null,
+        "goalDiff": -3,
+        "field": [
+          "Skuru IK",
+          "Haninge HK",
+          "Kärra HF",
+          "Härnösands HF 2"
+        ],
+        "matches": [
+          {
+            "matchId": "32538680",
+            "opponent": "Skuru IK",
+            "result": "L",
+            "teamScore": 15,
+            "opponentScore": 20,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32538680/protocol/shf_m"
+          },
+          {
+            "matchId": "32538678",
+            "opponent": "Kärra HF",
+            "result": "L",
+            "teamScore": 18,
+            "opponentScore": 25,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32538678/protocol/shf_m"
+          },
+          {
+            "matchId": "32538640",
+            "opponent": "Härnösands HF 2",
+            "result": "W",
+            "teamScore": 26,
+            "opponentScore": 17,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32538640/protocol/shf_m"
+          }
+        ],
+        "groupPageUrl": "https://www.profixio.com/app/leagueid17925/category/1176782/group/3393932"
+      }
+    },
+    "Huddinge HK": {
+      "stage1": {
+        "group": "01:06",
+        "place": 4,
+        "points": 2,
+        "maxPoints": 8,
+        "goalDiff": null,
+        "field": [
+          "Huddinge HK",
+          "IFK Nyköping",
+          "Eskilstuna Guif IF",
+          "HK Country",
+          "GT Söder HK"
+        ],
+        "matches": [
+          {
+            "matchId": "32387146",
+            "opponent": "IFK Nyköping",
+            "result": "L",
+            "teamScore": 16,
+            "opponentScore": 17,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32387146/protocol/shf_m"
+          },
+          {
+            "matchId": "32387143",
+            "opponent": "HK Country",
+            "result": "W",
+            "teamScore": 33,
+            "opponentScore": 10,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32387143/protocol/shf_m"
+          },
+          {
+            "matchId": "32387140",
+            "opponent": "Eskilstuna Guif IF",
+            "result": "L",
+            "teamScore": 17,
+            "opponentScore": 23,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32387140/protocol/shf_m"
+          },
+          {
+            "matchId": "32387137",
+            "opponent": "GT Söder HK",
+            "result": "L",
+            "teamScore": 20,
+            "opponentScore": 22,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32387137/protocol/shf_m"
+          }
+        ],
+        "groupPageUrl": "https://www.profixio.com/app/leagueid17925/category/1171543/group/3381744"
+      },
+      "stage2": {
+        "group": "2:02 D",
+        "place": 1,
+        "points": 4,
+        "maxPoints": 4,
+        "goalDiff": null,
+        "field": [
+          "RP IF Linköping",
+          "Skåre HK",
+          "Huddinge HK"
+        ],
+        "matches": [
+          {
+            "matchId": "32494499",
+            "opponent": "Skåre HK",
+            "result": "W",
+            "teamScore": 18,
+            "opponentScore": 13,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32494499/protocol/shf_m"
+          },
+          {
+            "matchId": "32494498",
+            "opponent": "RP IF Linköping",
+            "result": "W",
+            "teamScore": 17,
+            "opponentScore": 16,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32494498/protocol/shf_m"
+          }
+        ],
+        "groupPageUrl": "https://www.profixio.com/app/leagueid17925/category/1175151/group/3389805"
+      },
+      "stage3": {
+        "group": "3:20 B",
+        "place": 1,
+        "points": 6,
+        "maxPoints": null,
+        "goalDiff": 15,
+        "field": [
+          "Huddinge HK",
+          "Hammarby IF HF",
+          "Strands IF",
+          "Backa HK"
+        ],
+        "matches": [
+          {
+            "matchId": "32538740",
+            "opponent": "Hammarby IF HF",
+            "result": "W",
+            "teamScore": 28,
+            "opponentScore": 23,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32538740/protocol/shf_m"
+          },
+          {
+            "matchId": "32538737",
+            "opponent": "Backa HK",
+            "result": "W",
+            "teamScore": 23,
+            "opponentScore": 19,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32538737/protocol/shf_m"
+          },
+          {
+            "matchId": "32538699",
+            "opponent": "Strands IF",
+            "result": "W",
+            "teamScore": 32,
+            "opponentScore": 26,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32538699/protocol/shf_m"
+          }
+        ],
+        "groupPageUrl": "https://www.profixio.com/app/leagueid17925/category/1176783/group/3393942"
+      }
+    },
+    "IF Hallby HK": {
+      "stage1": {
+        "group": "01:03",
+        "place": 2,
+        "points": 5,
+        "maxPoints": 6,
+        "goalDiff": null,
+        "field": [
+          "Åkersberga HK",
+          "Borlänge HK 2",
+          "Strands IF",
+          "IF Hallby HK"
+        ],
+        "matches": [
+          {
+            "matchId": "32387119",
+            "opponent": "Strands IF",
+            "result": "D",
+            "teamScore": 16,
+            "opponentScore": 16,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32387119/protocol/shf_m"
+          },
+          {
+            "matchId": "32387117",
+            "opponent": "Åkersberga HK",
+            "result": "W",
+            "teamScore": 23,
+            "opponentScore": 9,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32387117/protocol/shf_m"
+          },
+          {
+            "matchId": "32387116",
+            "opponent": "Borlänge HK 2",
+            "result": "W",
+            "teamScore": 29,
+            "opponentScore": 13,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32387116/protocol/shf_m"
+          }
+        ],
+        "groupPageUrl": "https://www.profixio.com/app/leagueid17925/category/1171543/group/3381741"
+      },
+      "stage2": {
+        "group": "2:01 A",
+        "place": 1,
+        "points": 4,
+        "maxPoints": 4,
+        "goalDiff": null,
+        "field": [
+          "Ludvika HF",
+          "IF Hallby HK",
+          "HK Eskil"
+        ],
+        "matches": [
+          {
+            "matchId": "32494445",
+            "opponent": "Ludvika HF",
+            "result": "W",
+            "teamScore": 17,
+            "opponentScore": 13,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32494445/protocol/shf_m"
+          },
+          {
+            "matchId": "32494444",
+            "opponent": "HK Eskil",
+            "result": "W",
+            "teamScore": 21,
+            "opponentScore": 15,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32494444/protocol/shf_m"
+          }
+        ],
+        "groupPageUrl": "https://www.profixio.com/app/leagueid17925/category/1175149/group/3389794"
+      },
+      "stage3": {
+        "group": "3:06 A",
+        "place": 2,
+        "points": 4,
+        "maxPoints": null,
+        "goalDiff": 4,
+        "field": [
+          "IF Hallby HK",
+          "KFUM Trollhättan",
+          "HK Halmstad",
+          "VästeråsIrsta HF"
+        ],
+        "matches": [
+          {
+            "matchId": "32538664",
+            "opponent": "KFUM Trollhättan",
+            "result": "W",
+            "teamScore": 20,
+            "opponentScore": 15,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32538664/protocol/shf_m"
+          },
+          {
+            "matchId": "32538661",
+            "opponent": "VästeråsIrsta HF",
+            "result": "W",
+            "teamScore": 18,
+            "opponentScore": 17,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32538661/protocol/shf_m"
+          },
+          {
+            "matchId": "32538631",
+            "opponent": "HK Halmstad",
+            "result": "L",
+            "teamScore": 18,
+            "opponentScore": 20,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32538631/protocol/shf_m"
+          }
+        ],
+        "groupPageUrl": "https://www.profixio.com/app/leagueid17925/category/1176782/group/3393928"
+      }
+    },
+    "Mölndals HF": {
+      "stage1": {
+        "group": "01:04",
+        "place": 1,
+        "points": 5,
+        "maxPoints": 6,
+        "goalDiff": null,
+        "field": [
+          "HK Halmstad (steg 1)",
+          "Mölndals HF",
+          "GF Kroppskultur 2",
+          "RP IF Linköping"
+        ],
+        "matches": [
+          {
+            "matchId": "32387126",
+            "opponent": "HK Halmstad (steg 1)",
+            "result": "D",
+            "teamScore": 17,
+            "opponentScore": 17,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32387126/protocol/shf_m"
+          },
+          {
+            "matchId": "32387124",
+            "opponent": "GF Kroppskultur 2",
+            "result": "W",
+            "teamScore": 39,
+            "opponentScore": 13,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32387124/protocol/shf_m"
+          },
+          {
+            "matchId": "32387122",
+            "opponent": "RP IF Linköping",
+            "result": "W",
+            "teamScore": 21,
+            "opponentScore": 16,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32387122/protocol/shf_m"
+          }
+        ],
+        "groupPageUrl": "https://www.profixio.com/app/leagueid17925/category/1171543/group/3381742"
+      },
+      "stage2": {
+        "group": "2:02 B",
+        "place": 1,
+        "points": 3,
+        "maxPoints": 4,
+        "goalDiff": null,
+        "field": [
+          "Eskilstuna Guif IF",
+          "Mölndals HF",
+          "Mantorps IF HF"
+        ],
+        "matches": [
+          {
+            "matchId": "32494494",
+            "opponent": "Eskilstuna Guif IF",
+            "result": "D",
+            "teamScore": 19,
+            "opponentScore": 19,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32494494/protocol/shf_m"
+          },
+          {
+            "matchId": "32494493",
+            "opponent": "Mantorps IF HF",
+            "result": "W",
+            "teamScore": 26,
+            "opponentScore": 7,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32494493/protocol/shf_m"
+          }
+        ],
+        "groupPageUrl": "https://www.profixio.com/app/leagueid17925/category/1175151/group/3389803"
+      },
+      "stage3": {
+        "group": "3:07 A",
+        "place": 1,
+        "points": 6,
+        "maxPoints": null,
+        "goalDiff": 26,
+        "field": [
+          "Mölndals HF",
+          "IK Sund",
+          "Redbergslids IK Blå",
+          "Årsta AIK HF"
+        ],
+        "matches": [
+          {
+            "matchId": "32538668",
+            "opponent": "IK Sund",
+            "result": "W",
+            "teamScore": 26,
+            "opponentScore": 18,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32538668/protocol/shf_m"
+          },
+          {
+            "matchId": "32538665",
+            "opponent": "Årsta AIK HF",
+            "result": "W",
+            "teamScore": 29,
+            "opponentScore": 13,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32538665/protocol/shf_m"
+          },
+          {
+            "matchId": "32538633",
+            "opponent": "Redbergslids IK Blå",
+            "result": "W",
+            "teamScore": 17,
+            "opponentScore": 15,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32538633/protocol/shf_m"
+          }
+        ],
+        "groupPageUrl": "https://www.profixio.com/app/leagueid17925/category/1176782/group/3393929"
+      }
+    },
+    "Torslanda HK": {
+      "stage1": {
+        "group": "01:23",
+        "place": 2,
+        "points": 6,
+        "maxPoints": 8,
+        "goalDiff": null,
+        "field": [
+          "Ramunder HK",
+          "Gustavsbergs IF HK",
+          "Torslanda HK",
+          "Vårgårda IK HK",
+          "Lidingö SK"
+        ],
+        "matches": [
+          {
+            "matchId": "32408912",
+            "opponent": "Vårgårda IK HK",
+            "result": "W",
+            "teamScore": 21,
+            "opponentScore": 15,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32408912/protocol/shf_m"
+          },
+          {
+            "matchId": "32387268",
+            "opponent": "Lidingö SK",
+            "result": "W",
+            "teamScore": 19,
+            "opponentScore": 11,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32387268/protocol/shf_m"
+          },
+          {
+            "matchId": "32387266",
+            "opponent": "Ramunder HK",
+            "result": "W",
+            "teamScore": 23,
+            "opponentScore": 7,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32387266/protocol/shf_m"
+          },
+          {
+            "matchId": "32387264",
+            "opponent": "Gustavsbergs IF HK",
+            "result": "L",
+            "teamScore": 20,
+            "opponentScore": 25,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32387264/protocol/shf_m"
+          }
+        ],
+        "groupPageUrl": "https://www.profixio.com/app/leagueid17925/category/1171543/group/3381761"
+      },
+      "stage2": {
+        "group": "2:08 A",
+        "place": 1,
+        "points": 4,
+        "maxPoints": 4,
+        "goalDiff": null,
+        "field": [
+          "Torslanda HK",
+          "Lugi HF 2",
+          "Önnereds HK 2"
+        ],
+        "matches": [
+          {
+            "matchId": "32494604",
+            "opponent": "Lugi HF 2",
+            "result": "W",
+            "teamScore": 20,
+            "opponentScore": 9,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32494604/protocol/shf_m"
+          },
+          {
+            "matchId": "32494602",
+            "opponent": "Önnereds HK 2",
+            "result": "W",
+            "teamScore": 24,
+            "opponentScore": 9,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32494602/protocol/shf_m"
+          }
+        ],
+        "groupPageUrl": "https://www.profixio.com/app/leagueid17925/category/1175157/group/3389824"
+      },
+      "stage3": {
+        "group": "3:04 A",
+        "place": 3,
+        "points": 2,
+        "maxPoints": null,
+        "goalDiff": -13,
+        "field": [
+          "Hässleholms HF",
+          "Åhus Handboll",
+          "IK Sävehof Gul",
+          "Torslanda HK"
+        ],
+        "matches": [
+          {
+            "matchId": "32538655",
+            "opponent": "IK Sävehof Gul",
+            "result": "W",
+            "teamScore": 19,
+            "opponentScore": 15,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32538655/protocol/shf_m"
+          },
+          {
+            "matchId": "32538653",
+            "opponent": "Hässleholms HF",
+            "result": "L",
+            "teamScore": 20,
+            "opponentScore": 23,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32538653/protocol/shf_m"
+          },
+          {
+            "matchId": "32538628",
+            "opponent": "Åhus Handboll",
+            "result": "L",
+            "teamScore": 12,
+            "opponentScore": 26,
+            "dateLabel": "",
+            "timeLabel": "",
+            "protocolUrl": "https://www.profixio.com/app/leagueid17925/match/32538628/protocol/shf_m"
+          }
+        ],
+        "groupPageUrl": "https://www.profixio.com/app/leagueid17925/category/1176782/group/3393926"
+      }
+    }
+  }
+}

@@ -1,4 +1,5 @@
 const SNAPSHOT_URL = "./data/usm-f14-stage4-2026.json";
+const TEAM_PATHS_URL = "./data/usm-f14-team-paths-2026.json";
 const STAGE3_A_COLORS = [
   { accent: "#005f73", background: "#d9f0f3" },
   { accent: "#9b2226", background: "#f8d7d9" },
@@ -316,13 +317,14 @@ const state = {
   },
   showBreakdowns: false,
   activeSourceLabel: "official snapshot",
+  teamPaths: {},
 };
 
 initialize();
 
 async function initialize() {
   wireEvents();
-  await loadSnapshot();
+  await Promise.all([loadSnapshot(), loadTeamPaths()]);
 }
 
 function wireEvents() {
@@ -362,6 +364,21 @@ async function loadSnapshot() {
     setStatus(`Loaded ${state.groups.length} groups from the official snapshot.`);
   } catch (error) {
     setStatus(error.message || "Could not load snapshot.");
+  }
+}
+
+async function loadTeamPaths() {
+  try {
+    const response = await fetch(TEAM_PATHS_URL);
+    if (!response.ok) {
+      throw new Error(`Team path request failed with status ${response.status}.`);
+    }
+
+    const payload = await response.json();
+    state.teamPaths = payload.teams || {};
+  } catch (error) {
+    console.warn(error.message || "Could not load bundled team path data.");
+    state.teamPaths = {};
   }
 }
 
@@ -848,6 +865,22 @@ function renderTeamDetailScore(scoreBreakdown) {
 
 function renderTeamDetailPath(stagePath) {
   const stageMarkup = stagePath.map((round, index) => {
+    const matchesMarkup = round.matches.length
+      ? `
+        <div class="team-path-matches">
+          <span class="team-path-meta-label">Games played</span>
+          <div class="team-path-match-list">
+            ${round.matches.map((match) => `
+              <a class="team-path-match" href="${match.protocolUrl || "#"}" ${match.protocolUrl ? 'target="_blank" rel="noreferrer"' : ""}>
+                <span class="team-path-result team-path-result-${match.result.toLowerCase()}">${match.result}</span>
+                <span class="team-path-opponent">vs ${match.opponent}</span>
+                <strong>${match.teamScore}-${match.opponentScore}</strong>
+              </a>
+            `).join("")}
+          </div>
+        </div>
+      `
+      : "";
     const peersMarkup = round.peers.length
       ? `
         <div class="team-path-peers">
@@ -865,9 +898,10 @@ function renderTeamDetailPath(stagePath) {
         <div class="team-path-meta">
           <span>Finish <strong>${ordinal(round.place)}</strong></span>
           <span>Pts <strong>${round.points}</strong></span>
-          <span>Matches <strong>${round.matches}</strong></span>
+          <span>Matches <strong>${round.matchCount}</strong></span>
           <span>${round.goalDiffLabel}</span>
         </div>
+        ${matchesMarkup}
         ${peersMarkup}
       </article>
       ${connectorMarkup}
@@ -952,6 +986,16 @@ function getTeamProfile(teamName) {
 }
 
 function getTeamStagePath(teamName) {
+  const loadedPath = state.teamPaths[teamName];
+
+  if (loadedPath) {
+    return [
+      createPathStage("Stage 1", loadedPath.stage1),
+      createPathStage("Stage 2", loadedPath.stage2),
+      createPathStage("Stage 3", loadedPath.stage3),
+    ].filter(Boolean);
+  }
+
   const stage1 = STAGE1_LOOKUP[teamName];
   const stage2 = STAGE2_LOOKUP[teamName];
   const stage3 = STAGE3_LOOKUP[teamName];
@@ -968,10 +1012,11 @@ function createPathStage(label, round, groupEntries = []) {
     return null;
   }
 
-  const peers = groupEntries
-    .map((entry) => entry.team)
+  const peers = (round.field || groupEntries.map((entry) => entry.team))
     .filter(Boolean);
-  const matches = round.maxPoints ? Math.round(round.maxPoints / 2) : 3;
+  const matchesPlayed = Array.isArray(round.matches) && round.matches.length
+    ? round.matches.length
+    : round.maxPoints ? Math.round(round.maxPoints / 2) : 3;
   const goalDiffLabel = Number.isFinite(round.goalDiff)
     ? `GD ${formatSignedNumber(round.goalDiff)}`
     : "GD not bundled";
@@ -981,9 +1026,10 @@ function createPathStage(label, round, groupEntries = []) {
     group: round.group,
     place: round.place,
     points: round.points,
-    matches,
+    matchCount: matchesPlayed,
     goalDiffLabel,
     peers,
+    matches: round.matches || [],
   };
 }
 

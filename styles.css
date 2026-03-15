@@ -791,6 +791,61 @@ input[type="range"] {
   border-top: 1px solid rgba(21, 33, 31, 0.08);
 }
 
+.team-path-matches {
+  margin-top: 0.9rem;
+  padding-top: 0.8rem;
+  border-top: 1px solid rgba(21, 33, 31, 0.08);
+}
+
+.team-path-match-list {
+  display: grid;
+  gap: 0.45rem;
+  margin-top: 0.5rem;
+}
+
+.team-path-match {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  gap: 0.55rem;
+  align-items: center;
+  padding: 0.45rem 0.55rem;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.82);
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.team-path-result {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+
+.team-path-result-w {
+  background: rgba(43, 147, 72, 0.14);
+  color: #1f7a3a;
+}
+
+.team-path-result-d {
+  background: rgba(199, 125, 0, 0.14);
+  color: #9a5f00;
+}
+
+.team-path-result-l {
+  background: rgba(155, 34, 38, 0.14);
+  color: #9b2226;
+}
+
+.team-path-opponent {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
 .team-path-peer-list {
   display: flex;
   flex-wrap: wrap;
