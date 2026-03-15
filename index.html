@@ -225,6 +225,33 @@
     </div>
   </template>
 
+  <dialog id="team-detail-dialog" class="team-detail-dialog">
+    <form method="dialog" class="team-detail-shell">
+      <div class="team-detail-header">
+        <div>
+          <p class="section-label" id="team-detail-kicker">Team detail</p>
+          <h2 id="team-detail-title">Team path</h2>
+        </div>
+        <button type="submit" class="team-detail-close" aria-label="Close team detail">Close</button>
+      </div>
+
+      <div class="team-detail-grid">
+        <section class="team-detail-panel">
+          <p class="section-label">Prediction model</p>
+          <div id="team-detail-score" class="team-detail-score"></div>
+        </section>
+
+        <section class="team-detail-panel">
+          <p class="section-label">Stage path</p>
+          <div id="team-detail-path" class="team-path-graph"></div>
+          <p class="team-detail-note">
+            The app has round-level results for Stages 1-3. Full match-by-match scores are not bundled, so this view shows the progression path and known Stage 3 field instead.
+          </p>
+        </section>
+      </div>
+    </form>
+  </dialog>
+
   <script src="app.js"></script>
 </body>
 </html>

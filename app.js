@@ -294,6 +294,11 @@ const elements = {
   groupTemplate: document.querySelector("#group-template"),
   teamBreakdownTemplate: document.querySelector("#team-breakdown-template"),
   teamStage3Template: document.querySelector("#team-stage3-template"),
+  teamDetailDialog: document.querySelector("#team-detail-dialog"),
+  teamDetailTitle: document.querySelector("#team-detail-title"),
+  teamDetailKicker: document.querySelector("#team-detail-kicker"),
+  teamDetailScore: document.querySelector("#team-detail-score"),
+  teamDetailPath: document.querySelector("#team-detail-path"),
 };
 
 const state = {
@@ -561,7 +566,7 @@ function renderGroups(groups) {
       item.innerHTML = `
         <div class="team-main">
           <div class="team-head">
-            <span class="team-name"><span class="team-title">${winnerBadge}${team.name}</span><button type="button" class="info-button" aria-label="Show score breakdown">i</button></span>
+            <span class="team-name"><span class="team-title">${winnerBadge}${team.name}</span><button type="button" class="info-button" aria-label="Open team path and score details">i</button></span>
           </div>
           <span class="team-district">${team.district}</span>
         </div>
@@ -570,7 +575,7 @@ function renderGroups(groups) {
       const teamMain = item.querySelector(".team-main");
       infoButton.addEventListener("click", (event) => {
         event.stopPropagation();
-        window.alert(scoreBreakdown.tooltip);
+        openTeamDetail(team.name, team.district);
       });
 
       teamMain.appendChild(createStage3Element(stage3));
@@ -801,6 +806,77 @@ function getScoreBreakdown(teamName) {
   };
 }
 
+function openTeamDetail(teamName, district) {
+  const scoreBreakdown = getScoreBreakdown(teamName);
+  const stagePath = getTeamStagePath(teamName);
+
+  elements.teamDetailKicker.textContent = district || "Team detail";
+  elements.teamDetailTitle.textContent = teamName;
+  renderTeamDetailScore(scoreBreakdown);
+  renderTeamDetailPath(stagePath);
+
+  if (typeof elements.teamDetailDialog.showModal === "function") {
+    if (elements.teamDetailDialog.open) {
+      elements.teamDetailDialog.close();
+    }
+    elements.teamDetailDialog.showModal();
+  } else {
+    elements.teamDetailDialog.setAttribute("open", "open");
+  }
+}
+
+function renderTeamDetailScore(scoreBreakdown) {
+  const components = scoreBreakdown.components || [];
+  const componentsMarkup = components
+    .map((component) => `
+      <article class="team-detail-score-card">
+        <span>${component.label}</span>
+        <strong>${component.raw.toFixed(1)}</strong>
+        <small>${component.weight}% weight</small>
+      </article>
+    `)
+    .join("");
+
+  elements.teamDetailScore.innerHTML = `
+    <div class="team-detail-score-total">
+      <span>Weighted score</span>
+      <strong>${scoreBreakdown.totalScore.toFixed(1)}</strong>
+    </div>
+    <div class="team-detail-score-grid">${componentsMarkup || "<p class=\"team-detail-note\">No weighted breakdown is available for this team.</p>"}</div>
+  `;
+}
+
+function renderTeamDetailPath(stagePath) {
+  const stageMarkup = stagePath.map((round, index) => {
+    const peersMarkup = round.peers.length
+      ? `
+        <div class="team-path-peers">
+          <span class="team-path-meta-label">Known field</span>
+          <div class="team-path-peer-list">${round.peers.map((peer) => `<span>${peer}</span>`).join("")}</div>
+        </div>
+      `
+      : "";
+    const connectorMarkup = index < stagePath.length - 1 ? '<div class="team-path-connector" aria-hidden="true"></div>' : "";
+
+    return `
+      <article class="team-path-stage">
+        <span class="team-path-stage-label">${round.label}</span>
+        <strong class="team-path-stage-title">${round.group}</strong>
+        <div class="team-path-meta">
+          <span>Finish <strong>${ordinal(round.place)}</strong></span>
+          <span>Pts <strong>${round.points}</strong></span>
+          <span>Matches <strong>${round.matches}</strong></span>
+          <span>${round.goalDiffLabel}</span>
+        </div>
+        ${peersMarkup}
+      </article>
+      ${connectorMarkup}
+    `;
+  }).join("");
+
+  elements.teamDetailPath.innerHTML = stageMarkup;
+}
+
 function createBreakdownElement(scoreBreakdown) {
   const fragment = elements.teamBreakdownTemplate.content.cloneNode(true);
   fragment.querySelector(".team-breakdown-total").textContent = `Weighted score: ${scoreBreakdown.totalScore.toFixed(1)}`;
@@ -872,6 +948,42 @@ function getTeamProfile(teamName) {
     stage2: stage2Form,
     stage3: stage3Form,
     groupStrength,
+  };
+}
+
+function getTeamStagePath(teamName) {
+  const stage1 = STAGE1_LOOKUP[teamName];
+  const stage2 = STAGE2_LOOKUP[teamName];
+  const stage3 = STAGE3_LOOKUP[teamName];
+
+  return [
+    createPathStage("Stage 1", stage1),
+    createPathStage("Stage 2", stage2),
+    createPathStage("Stage 3", stage3, STAGE3_GROUP_TABLES[stage3?.group] || []),
+  ].filter(Boolean);
+}
+
+function createPathStage(label, round, groupEntries = []) {
+  if (!round) {
+    return null;
+  }
+
+  const peers = groupEntries
+    .map((entry) => entry.team)
+    .filter(Boolean);
+  const matches = round.maxPoints ? Math.round(round.maxPoints / 2) : 3;
+  const goalDiffLabel = Number.isFinite(round.goalDiff)
+    ? `GD ${formatSignedNumber(round.goalDiff)}`
+    : "GD not bundled";
+
+  return {
+    label,
+    group: round.group,
+    place: round.place,
+    points: round.points,
+    matches,
+    goalDiffLabel,
+    peers,
   };
 }
 
